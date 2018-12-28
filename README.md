@@ -18,17 +18,19 @@ During this time I attempted to get into design school twice ([YSDN](https://en.
 
 I guess you’d say I’m a Full Stack Developer. Now that you know a little bit about how I got to where I am, I’m going to share with you the tools that I use to perform my various roles as a software developer.
 
-These preferences I have developed over time, based on my experiences and requirements, also my privilege. Some of these things are expensive, and I’m fortunate enough to be able to afford them or be provided them by my workplace. This is not intended to convince you what I have chosen is better. You may have different preferences based on your own requirements, that’s a good thing!
+These preferences I have developed over time, based on my experiences and requirements, also my privilege. Some of these things are expensive, and I’m fortunate enough to be able to afford them or be provided them by my workplace. This is not intended to convince you what I have chosen is the best or better. You may have different preferences based on your own requirements, that’s a good thing! These tools and processes are constantly changing and evolving.
 
 ### MacBook Pro TouchBar 15’’
 
-This is my company issued laptop (thanks Crowdmark), it is also my choice of laptop. I would own this exact computer regardless of my workplace or not. I like Apple hardware, I like how well they support their products. My experience with Apple products since 2006 has been overwhelmingly positive.
+This is my company issued laptop (thanks [Crowdmark](https://crowdmark.com)), it is also my choice of laptop. I would own this exact computer regardless of my workplace or not. I like Apple hardware, I like how well they support their products, I like that they take security, reliability, and ease of use seriously. My experience with Apple products since 2006 has been overwhelmingly positive.
 
-In the fall I had an issue with the keyboard sticking, I took it in and they replaced the entire keyboard, battery, and TouchBar, no questions asked. Since then I have had zero issues.
+In the fall I had an issue with the keyboard sticking, I took it in and they replaced the entire keyboard, battery, and TouchBar, no questions asked. Since then I have had zero issues, and the keyboard feels even better.
 
 ### iPhone X
 
-When I was first diagnosed with lymphoma, my friend Jamie Gilgen rallied the cycling community and gathered enough money to buy me a much needed new phone! Amazing. I’m still in awe of all of the generosity I have received.
+When I was first diagnosed with lymphoma, my friend Jamie Gilgen rallied the cycling community and gathered enough money to buy me a much needed new phone! Amazing. I’m still in awe of all of the generosity I have received. This made me realize just how important phones have become in our lives. They are a communications and productivity tool. Any time I see a way to remove friction by changing tools or processes and I am able to act on it, I do.
+
+My previous phone (an iPhone 5) was fine, it functioned. But when I upgraded to a modern, fast phone it was stunning how much smoother it made everything. With a good phone you can do so much!
 
 ### iPad Pro
 
@@ -37,6 +39,8 @@ I have always thought of tablets as sort of a frivolous thing, useful, but also 
 - iA Writer: Awesome writing tool with Markdown support
 - Working Copy: Great app for interacting with Git repos
 - GoCoEdit: Great text editor for code and can SSH too
+
+All those apps work on the iPhone too and I've used them all on there too.
 
 ### VirtualBox
 
@@ -64,13 +68,13 @@ For about 5 years now I have been using zsh as my shell, with the help of Oh-My-
 
 ### Homebrew
 
-Installing command-line software on your host computer (directly on your laptop) can be a messy thing. Package managers like Homebrew attempt to solve this problem.
+Installing command-line software on your host computer (directly on your laptop) can be a messy thing. Package managers like Homebrew attempt to solve this problem, and Homebrew does a pretty good job! I have also used MacPorts but never went back after switching to Homebrew a number of years ago.
 
 ### Ansible
 
 At a time I was just happy to get a server running my code! Over time, I saw shortcomings in my processes. Manually building servers, became manually provisioning VPSes on Linode and AWS EC2. That then became a step-by-step [guide](https://gist.github.com/heycarsten/7230affa5b399a84e02e). Which then became a shell script, that then became a [CLI tool](https://github.com/heycarsten/propro) for building and deploying shell scripts. That became a series of [Ansible Playbooks](https://github.com/heycarsten/propro-ansible) (no longer maintained) for provisioning and configuring servers.
 
-These days I still use Ansible, but not as often for configuring servers and development environments since I just use Docker for that. It’s a great tool for automating systems administrator tasks.
+These days I still use Ansible, but not as often for configuring servers and development environments since I use Docker for that. It’s a great tool for automating systems administration tasks.
 
 ### pyenv / rvm / nvm
 
@@ -78,11 +82,17 @@ For running and installing Python, Ruby, and Node directly on my host machine, I
 
 ### SSH
 
-I use public key authentication exclusively for accessing remote systems.
+I use public key authentication exclusively for accessing remote systems. I rotate my private key usually every few years, I should maybe get on that more often 🤔
 
 ### 1Password
 
+There are numerous password managers these days, iCloud has a built in one even, but I love 1Password. It integrates on all of my devices, I can store other info in my vaults, not just login information. I also have a family plan so Erin and I can share logins for various shared stuff, along with our own personal vaults. 1Password integrates well virtually everywhere, and makes it dead easy to have a unique strong password for every account.
+
+Before I started using a password manager I was the doing the "one password" thing, as in I had one password I used for everything! 😂 Not a good idea. I'm lucky, to my knowledge nothing important was ever breached, but I don't do that anymore.
+
+### _Other notes_
+
 I do not have an external monitor at the moment, I plan to get one in the future when I am able.
 
-I have not included “tech stack” stuff here: programming languages, frameworks, libraries. 
+I have not included “tech stack” stuff here: programming languages, frameworks, libraries. This stuff is forever in flux, sure I have my core knowledge of Ruby, JavaScript, Rails, Ember, Node, Python, etc. but I'm also interested in Rust, Elixir, TypeScript, React, Elm, Go, and beyond. I consider it my job to be open to working with any technology under the right circumstances.
 
