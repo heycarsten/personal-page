@@ -18,45 +18,47 @@ During this time I attempted to get into design school twice ([YSDN](https://en.
 
 I guess you’d say I’m a Full Stack Developer. Now that you know a little bit about how I got to where I am, I’m going to share with you the tools that I use to perform my various roles as a software developer.
 
-These preferences I have developed over time, based on my experiences and requirements, also my privilege. Some of these things are expensive, and I’m fortunate enough to be able to afford them or be provided them by my workplace. This is not intended to convince you what I have chosen is the best or better. You may have different preferences based on your own requirements, that’s a good thing! These tools and processes are constantly changing and evolving.
+These preferences I have developed over time, based on my experiences and requirements, also my privilege. Some of these things are expensive! I’m fortunate enough to be able to afford them or be provided them by my workplace. This is not intended to convince you that my preferences are the best or that they should be your preferences too. You may have different needs based on your own requirements, experience, and budget, that’s a good thing!
 
-If you have any feedback for me on any of this stuff, feel free to hit me up on [Twitter](https://twitter.com/heycarsten) or send me an email: heycarsten 🌀 gmail 🌎 com
+My tools and processes are also constantly changing and evolving. If you have any feedback for me on any of this stuff, feel free to hit me up on [Twitter](https://twitter.com/heycarsten) or send me an email: heycarsten 🌀 gmail 🌎 com
 
-### MacBook Pro 15’’ (1st gen TouchBar)
+### [MacBook Pro 15’’ (1st gen TouchBar)](https://everymac.com/systems/apple/macbook_pro/specs/macbook-pro-core-i7-2.9-15-late-2016-retina-display-touch-bar-specs.html)
 
-This is my company issued laptop (thanks [Crowdmark](https://crowdmark.com)), it is also my choice of laptop. I would own this exact computer regardless of my workplace or not. I like Apple hardware, I like how well they support their products, I like that they take security, reliability, and ease of use seriously. My experience with Apple products since 2006 has been overwhelmingly positive.
+This is my company issued laptop (thanks [Crowdmark](https://crowdmark.com)), it is also my choice of laptop. I would own this exact computer regardless of my workplace or not. I like Apple hardware, I like how well they support their products, I like that they take privacy, security, reliability, and ease of use seriously. My experience with Apple products since 2006 has been overwhelmingly positive.
 
-In the fall I had an issue with the keyboard sticking, I took it in and they replaced the entire keyboard, battery, and TouchBar, no questions asked. Since then I have had zero issues, and the keyboard feels even better.
+_In the fall I had an issue with the keyboard sticking, I took it in and they replaced the entire keyboard, battery, and TouchBar, no questions asked. Since then I have had zero issues, and the keyboard feels even better._
 
-### iPhone X
+### [iPhone X](https://support.apple.com/kb/SP770?locale=en_CA)
 
-When I was first diagnosed with lymphoma, my friend Jamie Gilgen rallied the cycling community and gathered enough money to buy me a much needed new phone! Amazing. I’m still in awe of all of the generosity I have received. This made me realize just how important phones have become in our lives. They are a communications and productivity tool. Any time I see a way to remove friction by changing tools or processes and I am able to act on it, I do.
+When I was first diagnosed with lymphoma, my friend [Jamie Gilgen](https://en.m.wikipedia.org/wiki/Jamie_Gilgen) rallied the cycling community and gathered enough money to buy me a much needed new phone! Amazing. I’m still in awe of all of the generosity I have received. This made me realize just how important phones have become in our lives. They are a communications and productivity tool and an intergral part of our modern lives.
 
-My previous phone (an iPhone 5) was fine, it functioned. But when I upgraded to a modern, fast phone it was stunning how much smoother it made everything. With a good phone you can do so much!
+My previous phone (an iPhone 5) was fine, it functioned. But when I upgraded to a modern, fast phone it was stunning how much smoother it made everything. With a good phone you can do so much! Any time I see a way to remove friction by changing tools or processes and I am able to act on it, I do. I didn't realize that my phone was one of those tools, I do now.
 
-### iPad Pro
+### [iPad Pro](https://support.apple.com/kb/SP762?locale=en_CA)
 
 I have always thought of tablets as sort of a frivolous thing, useful, but also not really necessary. I don’t think that anymore. During my time sitting in chairs hooked up to IV pumps, I pulled the trigger and got an iPad. It was great! I could watch YouTube, do emails, play games, Facebook, all that good stuff so easily, without toting a 15’’ laptop everywhere. I also find the tablet incredibly useful as a writing tool, some of my fave apps:
 
-- iA Writer: Awesome writing tool with Markdown support
-- Working Copy: Great app for interacting with Git repos
-- GoCoEdit: Great text editor for code and can SSH too
+- [iA Writer](https://ia.net/writer): Awesome writing tool with Markdown support
+- [Working Copy](https://workingcopyapp.com): Great app for interacting with Git repos
+- [GoCoEdit](https://gocoedit.app): Great text editor for code and can SSH too
 
-All those apps work on the iPhone too and I've used them all on there too. I also really enjoy fronted dev on the iPad with Safari and remote dev tools. It works really well and makes interactively developing UIs on touch a lot nicer.
+All those apps work on the iPhone too and I've used them all on there too. I also really enjoy fronted dev on the iPad with Safari using the remote inspector / dev tools. It works really well and makes interactively developing UIs on an actual touch device a lot nicer.
 
-### VirtualBox
+### [VirtualBox](https://www.virtualbox.org)
 
-I’ve also used VMware Fusion for many years, it’s good. It works well, but it’s not free and I just don’t think it’s worth the cost given how good VirtualBox is these days. In the past I had all of my development environments in VMs managed with Vagrant. These days I’m using Docker.
+I’ve also used [VMware Fusion](https://www.vmware.com/ca/products/fusion.html) for many years. It’s good, it works well, but it’s not free and I just don’t think it’s worth the cost given how good VirtualBox is these days. In the past I had all of my development environments in VMs managed with Vagrant, these days I’m using Docker for that mostly. These days I find myself using Virtual Box mostly for testing things in Windows using Microsoft's [free VM images](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/).
 
-### Docker for Mac (Docker Desktop)
+### [Docker for Mac](https://www.docker.com/products/docker-desktop) (Docker Desktop)
 
-Docker and Docker Compose make creating and running development environments a breeze. You also gain the advantage of being able to apply a lot of these learnings directly to a production environment. These days with Docker Desktop the performance and stability of Docker is satisfactory or beyond satisfactory for my needs. _Shout-out to my lad [Aanand](http://aanandprasad.com/cv/), good friend and co-creator of Docker Compose!_
+[Docker](https://docs.docker.com/get-started/) and [Docker Compose](https://docs.docker.com/compose/overview/) make creating and running development environments a breeze. You also gain the advantage of being able to apply a lot of these learnings directly to production environments. These days with Docker Desktop the performance and stability of Docker is satisfactory or beyond satisfactory for my needs.
 
-### Visual Studio Code
+_Shout-out to my lad [Aanand](http://aanandprasad.com/cv/), good friend and co-creator of Docker Compose!_
 
-Oh, text editors. I have used a number of editors over the years, you name it, if it’s somewhat popular, I’ve probably tried it. Notepad+ back in my Windows days, TextMate 1 and 2, Coda, Sublime Text 2 and 3, Atom, vim, MacVim, NeoVim, Spacemacs, and Visual Studio Code.
+### [Visual Studio Code](https://code.visualstudio.com)
 
-These days I do 80% of my coding and writing in Visual Studio Code, it works fantastically. The ecosystem of extensions is incredibly rich and diverse, and often very high quality too. It works great for any project I am working on, and VS Code Live is a godsend for pairing. It’s a very powerful programming environment and is also incredibly accessible to newcomers. It even works really well on Linux.
+Oh, text editors. I have used a number of editors over the years, you name it, if it’s somewhat popular, I’ve probably tried it. [Notepad+](https://en.m.wikipedia.org/wiki/Notepad%2B) back in my Windows days, [TextMate](https://macromates.com) 1 and 2, [Coda](https://panic.com/coda/), [Sublime Text](https://www.sublimetext.com) 2 and 3, [Atom](https://atom.io), [vim](https://www.vim.org), [MacVim](https://macvim-dev.github.io/macvim/), [NeoVim](https://neovim.io), [Spacemacs](http://spacemacs.org), and over the past couple years Visual Studio Code.
+
+These days I do 80% of my coding and writing in Visual Studio Code, it works fantastically! The ecosystem of extensions is incredibly rich and diverse, and often very high quality too. It works great for any project I am working on, and [VS Code Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare) is a godsend. Collaboration and learning through pairing is becoming very important to me. It's exciting because I now have an editing and programming environment that's very powerful and is also incredibly accessible to newcomers. [Tmate](https://tmate.io) is excellent, and I have used tmate for years and will continue to. But terminal-based sharing can be daunting for someone new to programming or pairing in general. 
 
 I really like the Material Dark theme, I’ve always preferred dark themes, I find them less fatiguing. I set a visible gutter to 80 columns and keep my code within that boundary. I use spaces for indentation, defaulting to 2 spaces. I’ll change that depending on the project, but that’s my default. I also enable show trailing white spaces. I use the Source Code Pro typeface at 15pt.
 
