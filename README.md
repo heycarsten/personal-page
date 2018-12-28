@@ -34,9 +34,9 @@ When I was first diagnosed with lymphoma, my friend Jamie Gilgen rallied the cyc
 
 I have always thought of tablets as sort of a frivolous thing, useful, but also not really necessary. I don’t think that anymore. During my time sitting in chairs hooked up to IV pumps, I pulled the trigger and got an iPad. It was great! I could watch YouTube, do emails, play games, Facebook, all that good stuff so easily, without toting a 15’’ laptop everywhere. I also find the tablet incredibly useful as a writing tool, some of my fave apps:
 
-- iA Writer
-- Working Copy
-- GoCoEdit 
+- iA Writer: Awesome writing tool with Markdown support
+- Working Copy: Great app for interacting with Git repos
+- GoCoEdit: Great text editor for code and can SSH too
 
 ### VirtualBox
 
@@ -48,11 +48,15 @@ Docker and Docker Compose make creating and running development environments a b
 
 ### Visual Studio Code
 
-Oh, text editors. I have used a number of editors over the years, you name it, if it’s somewhat popular, I’ve probably tried it. 
+Oh, text editors. I have used a number of editors over the years, you name it, if it’s somewhat popular, I’ve probably tried it. Notepad+ back in my Windows days, TextMate 1 and 2, Coda, Sublime Text 2 and 3, Atom, vim, MacVim, NeoVim, Spacemacs, and Visual Studio Code.
+
+These days I do 80% of my coding and writing in Visual Studio Code, it works fantastically. The ecosystem of extensions is incredibly rich and diverse, and often very high quality too. It works great for any project I am working on, and VS Code Live is a godsend for pairing. It’s a very powerful programming environment and is also incredibly accessible to newcomers. It even works really well on Linux.
+
+I really like the Material Dark theme, I’ve always preferred dark themes, I find them less fatiguing. I set a visible gutter to 80 columns and keep my code within that boundary. I use spaces for indentation, defaulting to 2 spaces. I’ll change that depending on the project, but that’s my default. I also enable show trailing white spaces. I use the Source Code Pro typeface at 15pt.
 
 ### Git / GitHub
 
-However you decide to store your source repositories, it’s super important to use some form of version control. When I started my career Subversion was the standard, around 2007-2008 I learned about Git and was sold on it immediately.
+However you decide to store your source repositories, it’s super important to use some form of version control. When I started my career Subversion was the standard, around 2007-2008 I learned about Git and was sold on it immediately. I also really like GitHub, I have been using it since it launched and continue to be a satisfied customer.
 
 ### iTerm2 / Terminal
 
@@ -64,9 +68,17 @@ Installing command-line software on your host computer (directly on your laptop)
 
 ### Ansible
 
-### pyenv / rvm
+At a time I was just happy to get a server running my code! Over time, I saw shortcomings in my processes. Manually building servers, became manually provisioning VPSes on Linode and AWS EC2. That then became a step-by-step [guide](https://gist.github.com/heycarsten/7230affa5b399a84e02e). Which then became a shell script, that then became a [CLI tool](https://github.com/heycarsten/propro) for building and deploying shell scripts. That became a series of [Ansible Playbooks](https://github.com/heycarsten/propro-ansible) (no longer maintained) for provisioning and configuring servers.
+
+These days I still use Ansible, but not as often for configuring servers and development environments since I just use Docker for that. It’s a great tool for automating systems administrator tasks.
+
+### pyenv / rvm / nvm
+
+For running and installing Python, Ruby, and Node directly on my host machine, I use their respective version managers so that I can easily toggle between versions for different projects. I can also easily “implode” an environment and bring it back up if I need to. I prefer this method over installing specific versions of programming tools directly on my machine. 
 
 ### SSH
+
+I use public key authentication exclusively for accessing remote systems.
 
 ### 1Password
 
