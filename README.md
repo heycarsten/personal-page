@@ -60,43 +60,43 @@ Oh, text editors. I have used a number of editors over the years, you name it, i
 
 These days I do 80% of my coding and writing in Visual Studio Code, it works fantastically! The ecosystem of extensions is incredibly rich and diverse, and often very high quality too. It works great for any project I am working on, and [VS Code Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare) is a godsend. Collaboration and learning through pairing is becoming very important to me. It's exciting because I now have an editing and programming environment that's very powerful and is also incredibly accessible to newcomers. [Tmate](https://tmate.io) is excellent, and I have used tmate for years and will continue to. But terminal-based sharing can be daunting for someone new to programming or pairing in general. 
 
-I really like the Material Dark theme, I’ve always preferred dark themes, I find them less fatiguing. I set a visible gutter to 80 columns and keep my code within that boundary. I use spaces for indentation, defaulting to 2 spaces. I’ll change that depending on the project, but that’s my default. I also enable show trailing white spaces. I use the Source Code Pro typeface at 15pt.
+I really like the [Material Dark](https://material-theme.site) theme, I’ve always preferred dark themes, I find them less visually fatiguing. I set a visible gutter to 80 columns and keep my code within that boundary. I use spaces for indentation, defaulting to 2 spaces. I’ll change that depending on the project, but that’s my default. I also enable show trailing white spaces. I use the [Source Code Pro](https://fonts.google.com/specimen/Source+Code+Pro) typeface at 15pt.
 
-### Git / GitHub
+### [Git](https://git-scm.com) / [GitHub](https://github.com)
 
-However you decide to store your source repositories, I feel it’s super important to use some form of version control. When I started my career Subversion was the standard, around 2007-2008 I learned about Git and was sold on it immediately. I also really like GitHub, I have been using it since it launched and continue to be a satisfied customer.
+However you decide to store your source repositories, I feel it’s super important to use some form of version control. When I started my career [Subversion](https://en.m.wikipedia.org/wiki/Apache_Subversion) was the standard, around 2007-2008 I learned about Git and was sold on it immediately. I also really like GitHub, I have been using it since it launched and continue to be a satisfied customer.
 
-### iTerm2 / Terminal
+### [iTerm2](https://www.iterm2.com) / [Terminal](https://en.m.wikipedia.org/wiki/Terminal_(macOS))
 
-For about 5 years now I have been using zsh as my shell, with the help of Oh-My-ZSH. I still really like it a lot. I had a brief time with Hyper a year or so ago and I liked it but it just wasn’t quite for me at the time. I look forward to seeing how it has progressed since then. I think there is a lot of room for improvement in CLI interfaces and shells!
+For about 5 years now I have been using [Z shell](https://en.m.wikipedia.org/wiki/Z_shell) (zsh), with the help of [Oh My ZSH](https://ohmyz.sh). I still really like it a lot. I had a brief time with [Hyper](https://hyper.is) a year or so ago and I liked it but it just wasn’t quite for me at the time. I look forward to seeing how it has progressed since then. I think there is a lot of room for improvement in CLI interfaces and shells!
 
-### Chrome / Safari
+### [Chrome](https://www.google.com/chrome/) / [Safari](https://www.apple.com/ca/safari/)
 
-I tend to use Chrome on my desktop environment (macOS) and Safari on my touch devices (iOS). Firefox is also really great on macOS, but I just don't find myself using it very often. Developer Tools in Chrome are still my preference, but Safari is a close second.
+I tend to use Chrome on my desktop environment (macOS) and Safari on my touch devices (iOS). [Firefox](https://www.mozilla.org/en-US/firefox/new/) is also really great on macOS, but I just don't find myself using it very often. [Developer Tools](https://developers.google.com/web/tools/chrome-devtools/) in Chrome are still my preference, but Safari is a close second.
 
-### Homebrew
+### [Homebrew](https://brew.sh)
 
-Installing command-line software on your host computer (directly on your laptop) can be a messy thing. Package managers like Homebrew attempt to solve this problem, and Homebrew does a pretty good job! I have also used MacPorts but never went back after switching to Homebrew a number of years ago.
+Installing command-line software on your host computer (directly on your laptop) can be a messy thing. Package managers like Homebrew attempt to solve this problem, and Homebrew does a pretty good job! I have also used [MacPorts](https://www.macports.org) but never went back after switching to Homebrew a number of years ago.
 
-### Ansible
+### [Ansible](https://www.ansible.com/resources/get-started)
 
-At a time I was just happy to get a server running my code! Over time, I saw shortcomings in my processes. Manually building servers, became manually provisioning VPSes on Linode and AWS EC2. That then became a step-by-step [guide](https://gist.github.com/heycarsten/7230affa5b399a84e02e). Which then became a shell script, that then became a [CLI tool](https://github.com/heycarsten/propro) for building and deploying shell scripts. That became a series of [Ansible Playbooks](https://github.com/heycarsten/propro-ansible) (no longer maintained) for provisioning and configuring servers.
+At a time I was just happy to get a server running my code! Over time, I saw shortcomings in my processes. Manually building servers, became manually provisioning VPSes on Linode and AWS EC2. That then became a step-by-step [guide](https://gist.github.com/heycarsten/7230affa5b399a84e02e). Which then became a shell script ([bash](https://en.m.wikipedia.org/wiki/Bash_(Unix_shell))), that then became a [CLI tool](https://github.com/heycarsten/propro) for building and deploying shell scripts. That became a series of [Ansible Playbooks](https://github.com/heycarsten/propro-ansible) (no longer maintained) for provisioning and configuring servers.
 
-These days I still use Ansible, but not as often for configuring servers and development environments since I use Docker for that. It’s a great tool for automating systems administration tasks.
+These days I still use Ansible, but not as often for configuring server dependencies and software or for provisioning development environments, I use Docker for that now. It’s a great tool for automating systems administration tasks.
 
-### pyenv / rvm / nvm
+### [pyenv](https://github.com/pyenv/pyenv) / [rbenv](https://github.com/rbenv/rbenv) / [nvm](https://github.com/creationix/nvm)
 
-For running and installing Python, Ruby, and Node directly on my host machine, I use their respective version managers so that I can easily toggle between versions for different projects. I can also easily “implode” an environment and bring it back up if I need to. I prefer this method over installing specific versions of programming tools directly on my machine. 
+For running and installing [Python](https://www.python.org), [Ruby](https://www.ruby-lang.org/en/), and [Node](https://nodejs.org/en/) directly on my host machine, I use their respective version managers so that I can easily toggle between versions for different projects. I can also easily “implode” an environment and bring it back up if I need to. I prefer this method over installing specific versions of programming tools directly on my machine. 
 
-### SSH
+### [SSH](https://en.m.wikipedia.org/wiki/Secure_Shell)
 
-I use public key authentication exclusively for accessing remote systems. I rotate my private key usually every few years, I should maybe get on that more often 🤔
+I use [public key authentication](https://www.linode.com/docs/security/authentication/use-public-key-authentication-with-ssh/) exclusively for accessing remote systems. I rotate my private key usually every few years, I should maybe get on that more often 🤔
 
-### 1Password
+### [1Password](https://1password.com)
 
-There are numerous password managers these days, iCloud has a built in one even, but I love 1Password. It integrates on all of my devices, I can store other info in my vaults, not just login information. I also have a family plan so Erin and I can share logins for various shared stuff, along with our own personal vaults. 1Password integrates well virtually everywhere, and makes it dead easy to have a unique strong password for every account.
+There are numerous password managers these days, iCloud has a built-in one even, but I love 1Password. It integrates on all of my devices, I can store other info in my vaults, not just login information. I also have a family plan so Erin and I can share logins for various shared stuff, along with our own personal vaults. 1Password integrates well virtually everywhere, and makes it dead easy to have a unique strong password for every account.
 
-Before I started using a password manager I was the doing the "one password" thing, as in I had one password I used for everything! 😂 Not a good idea. I'm lucky, to my knowledge nothing important was ever breached, but I don't do that anymore.
+Before I started using a password manager I was the doing the "one password" thing the wrong way, as in I had one password I used for everything! 😂 Not a good idea. I'm lucky, to my knowledge nothing important was ever breached, but I don't do that anymore!
 
 ### _Other notes_
 
