@@ -8,11 +8,11 @@ Intro:
 
 Hi, I’m Carsten 👋🏼
 
-I’m a lead software developer specializing in web applications and related technologies, I’m all about collaboration and being open and honest about what I don’t know 🙂
+I’m a lead software developer specializing in web applications and related technologies, I’m all about collaboration. I try to be as open and honest about what I don’t know as I can be. I am a curious human and I love to learn 🙂
 
 ## Tools and processes
 
-I’ve been programming professionally for over a decade. My career started with Microsoft ASP 2.0, hacking on VBScript and Access Data Objects. From there I discovered PHP and open source software. This lead me to Python through Django and eventually to Ruby and Rails.
+I’ve been programming professionally for over a decade. My career started with Microsoft ASP 2.0, hacking on VBScript and Access Data Objects. From there I discovered PHP and open source software. This lead me to Python through Django and eventually to Ruby, Rails, and beyond.
 
 During this time I attempted to get into design school twice ([YSDN](https://en.m.wikipedia.org/wiki/York/Sheridan_Design)). I could never make it past the interview, too little applicable education, and a brutally weak portfolio. I kept persisting though, developing my design eye and related skills in tandem with web development. Reading as much literature on the subject that I could get my hands on, online, at the library, and book stores.
 
