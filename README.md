@@ -1,12 +1,14 @@
-# Carsten's Page
+# Carsten’s Page
 
-Time for a refresh.
+Time for a new personal page 🙂
 
-## Fresh Thots
+## Index
 
-* Interactive and fun (explore animations etc, curious to learn)
-* Call for others to reach out for collaboration
-* Background (who tf is Carsten) still have to answer that
-* Twitter / ig integrations?
+Intro:
 
-## Copy ideas :thinking:
+Hi, I’m Carsten 👋🏼
+
+I’m a lead software developer specializing in web applications and related technologies, I’m all about collaboration and being open and honest about what I don’t know 🙂
+
+## Tools and processes
+
