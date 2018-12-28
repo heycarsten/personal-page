@@ -20,6 +20,8 @@ I guess you’d say I’m a Full Stack Developer. Now that you know a little bit
 
 These preferences I have developed over time, based on my experiences and requirements, also my privilege. Some of these things are expensive, and I’m fortunate enough to be able to afford them or be provided them by my workplace. This is not intended to convince you what I have chosen is the best or better. You may have different preferences based on your own requirements, that’s a good thing! These tools and processes are constantly changing and evolving.
 
+If you have any feedback for me on any of this stuff, feel free to hit me up on [Twitter](https://twitter.com/heycarsten) or send me an email: heycarsten 🌀 gmail 🌎 com
+
 ### MacBook Pro 15’’ (1st gen TouchBar)
 
 This is my company issued laptop (thanks [Crowdmark](https://crowdmark.com)), it is also my choice of laptop. I would own this exact computer regardless of my workplace or not. I like Apple hardware, I like how well they support their products, I like that they take security, reliability, and ease of use seriously. My experience with Apple products since 2006 has been overwhelmingly positive.
@@ -60,11 +62,15 @@ I really like the Material Dark theme, I’ve always preferred dark themes, I fi
 
 ### Git / GitHub
 
-However you decide to store your source repositories, it’s super important to use some form of version control. When I started my career Subversion was the standard, around 2007-2008 I learned about Git and was sold on it immediately. I also really like GitHub, I have been using it since it launched and continue to be a satisfied customer.
+However you decide to store your source repositories, I feel it’s super important to use some form of version control. When I started my career Subversion was the standard, around 2007-2008 I learned about Git and was sold on it immediately. I also really like GitHub, I have been using it since it launched and continue to be a satisfied customer.
 
 ### iTerm2 / Terminal
 
-For about 5 years now I have been using zsh as my shell, with the help of Oh-My-ZSH. I still really like it a lot. I had a brief time with Hyper a year or so ago and I liked it but it just wasn’t quite for me at the time. I look forward to seeing how it has progressed since then.
+For about 5 years now I have been using zsh as my shell, with the help of Oh-My-ZSH. I still really like it a lot. I had a brief time with Hyper a year or so ago and I liked it but it just wasn’t quite for me at the time. I look forward to seeing how it has progressed since then. I think there is a lot of room for improvement in CLI interfaces and shells!
+
+### Chrome / Safari
+
+I tend to use Chrome on my desktop environment (macOS) and Safari on my touch devices (iOS). Firefox is also really great on macOS, but I just don't find myself using it very often. Developer Tools in Chrome are still my preference, but Safari is a close second.
 
 ### Homebrew
 
