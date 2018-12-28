@@ -20,7 +20,7 @@ I guess you’d say I’m a Full Stack Developer. Now that you know a little bit
 
 These preferences I have developed over time, based on my experiences and requirements, also my privilege. Some of these things are expensive, and I’m fortunate enough to be able to afford them or be provided them by my workplace. This is not intended to convince you what I have chosen is the best or better. You may have different preferences based on your own requirements, that’s a good thing! These tools and processes are constantly changing and evolving.
 
-### MacBook Pro TouchBar 15’’
+### MacBook Pro 15’’ (1st gen TouchBar)
 
 This is my company issued laptop (thanks [Crowdmark](https://crowdmark.com)), it is also my choice of laptop. I would own this exact computer regardless of my workplace or not. I like Apple hardware, I like how well they support their products, I like that they take security, reliability, and ease of use seriously. My experience with Apple products since 2006 has been overwhelmingly positive.
 
@@ -40,7 +40,7 @@ I have always thought of tablets as sort of a frivolous thing, useful, but also 
 - Working Copy: Great app for interacting with Git repos
 - GoCoEdit: Great text editor for code and can SSH too
 
-All those apps work on the iPhone too and I've used them all on there too.
+All those apps work on the iPhone too and I've used them all on there too. I also really enjoy fronted dev on the iPad with Safari and remote dev tools. It works really well and makes interactively developing UIs on touch a lot nicer.
 
 ### VirtualBox
 
