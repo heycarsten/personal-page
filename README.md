@@ -12,15 +12,21 @@ Intro:
 
 Hi, I’m Carsten 👋🏼
 
-I’m a lead software developer specializing in web applications and related technologies, I’m all about collaboration. I try to be as open and honest about what I don’t know as I can be. I am a curious human and I love to learn 🙂
+I’m a lead software developer specializing in web applications and related technologies, I’m all about collaboration. I try to be as open and honest about what I don’t know as I can be, I was . I am a curious human and I love to learn and connect with people.  🙂
+
+Nav:
+
+
 
 ## Tools and processes
 
-I’ve been programming professionally for over a decade. My career started with Microsoft ASP 2.0, hacking on VBScript and Access Data Objects. From there I discovered PHP and open source software. This lead me to Python through Django and eventually to Ruby, Rails, and beyond.
+I’ve been programming professionally for over a decade. My career started with [Microsoft ASP 2.0](https://en.m.wikipedia.org/wiki/Active_Server_Pages), hacking on [VBScript](https://en.m.wikipedia.org/wiki/VBScript) and [ActiveX Data Objects](https://en.m.wikipedia.org/wiki/ActiveX_Data_Objects). From there I discovered [PHP](https://en.m.wikipedia.org/wiki/PHP) and [open source software](https://en.m.wikipedia.org/wiki/Open-source_software). This lead me to [Python](https://www.python.org) through [Django](https://www.djangoproject.com) and eventually to [Ruby](https://www.ruby-lang.org/en/) through [Rails](https://rubyonrails.org).
 
 During this time I attempted to get into design school twice ([YSDN](https://en.m.wikipedia.org/wiki/York/Sheridan_Design)). I could never make it past the interview, too little applicable education, and a brutally weak portfolio. I kept persisting though, developing my design eye and related skills in tandem with web development. Reading as much literature on the subject that I could get my hands on, online, at the library, and book stores.
 
-I guess you’d say I’m a Full Stack Developer. Now that you know a little bit about how I got to where I am, I’m going to share with you the tools that I use to perform my various roles as a software developer.
+I guess you’d say I’m a [Full Stack Developer](https://hackernoon.com/what-is-a-full-stack-developer-in-2018-and-how-to-become-one-ca82e8906c87). To be honest, I’m not entirely comfortable with the concept, it’s impossible to be truly “all knowing” about the “full stack” because it means so many different things depending on the context.
+
+Anyways, now that you know a little bit about how I got to where I am, I’m going to share with you the tools that I use to perform my various roles as a software developer.
 
 These preferences I have developed over time, based on my experiences and requirements, also my privilege. Some of these things are expensive! I’m fortunate enough to be able to afford them or be provided them by my workplace. This is not intended to convince you that my preferences are the best or that they should be your preferences too. You may have different needs based on your own requirements, experience, and budget, that’s a good thing!
 
