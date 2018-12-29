@@ -52,7 +52,7 @@ I have always thought of tablets as sort of a frivolous thing, useful, but also 
 - [Working Copy](https://workingcopyapp.com): Great app for interacting with Git repos
 - [GoCoEdit](https://gocoedit.app): Great text editor for code and can SSH too
 
-All those apps work on the iPhone too and I've used them all on there too. I also really enjoy fronted dev on the iPad with Safari using the remote inspector / dev tools. It works really well and makes interactively developing UIs on an actual touch device a lot nicer.
+All those apps work on the iPhone as well and I've used them all on there too. I also really enjoy fronted dev on the iPad with Safari using the remote inspector / dev tools. It works really well and makes interactively developing UIs on an actual touch device a lot nicer. (Try simulating a stylus on your XCode simulator 😩)
 
 ### [VirtualBox](https://www.virtualbox.org)
 
@@ -68,7 +68,7 @@ _Shout-out to my lad [Aanand](http://aanandprasad.com/cv/), good friend and co-c
 
 Oh, text editors. I have used a number of editors over the years, you name it, if it’s somewhat popular, I’ve probably tried it. [Notepad+](https://en.m.wikipedia.org/wiki/Notepad%2B) back in my Windows days, [TextMate](https://macromates.com) 1 and 2, [Coda](https://panic.com/coda/), [Sublime Text](https://www.sublimetext.com) 2 and 3, [Atom](https://atom.io), [vim](https://www.vim.org), [MacVim](https://macvim-dev.github.io/macvim/), [NeoVim](https://neovim.io), [Spacemacs](http://spacemacs.org), and over the past couple years Visual Studio Code.
 
-These days I do 80% of my coding and writing in Visual Studio Code, it works fantastically! The ecosystem of extensions is incredibly rich and diverse, and often very high quality too. It works great for any project I am working on, and [VS Code Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare) is a godsend. Collaboration and learning through pairing is becoming very important to me. It's exciting because I now have an editing and programming environment that's very powerful and is also incredibly accessible to newcomers. [Tmate](https://tmate.io) is excellent, and I have used tmate for years and will continue to. But terminal-based sharing can be daunting for someone new to programming or pairing in general. 
+These days I do 80% of my coding and writing in Visual Studio Code, it works fantastically! The ecosystem of extensions is incredibly rich and diverse, and often very high quality too. It works great for any project I am working on, and [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare) is a godsend! Collaboration and learning through pairing is becoming very important to me. It's exciting because I now have an editing and programming environment that's very powerful and is also incredibly accessible to newcomers. [Tmate](https://tmate.io) is excellent, and I have used tmate for years and will continue to. But terminal-based sharing can be daunting for someone new to programming or pairing in general.
 
 I really like the [Material Dark](https://material-theme.site) theme, I’ve always preferred dark themes, I find them less visually fatiguing. I set a visible gutter to 80 columns and keep my code within that boundary. I use spaces for indentation, defaulting to 2 spaces. I’ll change that depending on the project, but that’s my default. I also enable show trailing white spaces. I use the [Source Code Pro](https://fonts.google.com/specimen/Source+Code+Pro) typeface at 15pt.
 
