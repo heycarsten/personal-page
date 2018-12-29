@@ -108,6 +108,10 @@ Probably like most designy folk out there, I started with Adobe Photoshop and Il
 
 Even if you don’t "create" with these apps, you might find if you do any sort of frontend development that touches HTML / CSS they come in handy. Resizing images, resampling images, rasterizing SVG files, converting Illustrator files to SVG for use on the web, etc.
 
+### [Things 3](https://culturedcode.com/things/)
+
+I’ve been using Things for years, it’s essentially a to-do list and reminders app. It fits in seamlessly to my workflow, I use it on my iPad, iPhone, and on my desktop. I can also share tasks with Erin. It’s my preference for managing all of the little things that come at me, that I can’t get to immediately.
+
 ### [1Password](https://1password.com)
 
 There are numerous password managers these days, iCloud has a built-in one even, but I love 1Password. It integrates on all of my devices, I can store other info in my vaults, not just login information. I also have a family plan so Erin and I can share logins for various shared stuff, along with our own personal vaults. 1Password integrates well virtually everywhere, and makes it dead easy to have a unique strong password for every account.
