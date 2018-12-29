@@ -2,6 +2,10 @@
 
 Time for a new personal page 🙂
 
+## Design
+
+- [Type](https://fonts.google.com/selection?selection.family=Poller+One|Squada+One&thickness=9)
+
 ## Index
 
 Intro:
@@ -9,8 +13,6 @@ Intro:
 Hi, I’m Carsten 👋🏼
 
 I’m a lead software developer specializing in web applications and related technologies, I’m all about collaboration. I try to be as open and honest about what I don’t know as I can be. I am a curious human and I love to learn 🙂
-
-
 
 ## Tools and processes
 
@@ -88,7 +90,7 @@ These days I still use Ansible, but not as often for configuring server dependen
 
 ### [pyenv](https://github.com/pyenv/pyenv) / [rbenv](https://github.com/rbenv/rbenv) / [nvm](https://github.com/creationix/nvm)
 
-For running and installing [Python](https://www.python.org), [Ruby](https://www.ruby-lang.org/en/), and [Node](https://nodejs.org/en/) directly on my host machine, I use their respective version managers so that I can easily toggle between versions for different projects. I can also easily “implode” an environment and bring it back up if I need to. I prefer this method over installing specific versions of programming tools directly on my machine. 
+For running and installing [Python](https://www.python.org), [Ruby](https://www.ruby-lang.org/en/), and [Node](https://nodejs.org/en/) directly on my host machine, I use their respective version managers so that I can easily toggle between versions for different projects. I can also easily "implode" an environment and bring it back up if I need to. I prefer this method over installing specific versions of programming tools directly on my machine. 
 
 ### [SSH](https://en.m.wikipedia.org/wiki/Secure_Shell)
 
@@ -98,7 +100,7 @@ I use [public key authentication](https://www.linode.com/docs/security/authentic
 
 Probably like most designy folk out there, I started with Adobe Photoshop and Illustrator. Years ago I decided to give Pixelmator a try instead of Photoshop, I’m still using it today. Affinity Designer followed as a replacement for Illustrator, it also has a companion iPad app.
 
-Even if you don’t “create” with these apps, you might find if you do any sort of frontend development that touches HTML / CSS they come in handy. Resizing images, resampling images, rasterizing SVG files, converting Illustrator files to SVG for use on the web, etc.
+Even if you don’t "create" with these apps, you might find if you do any sort of frontend development that touches HTML / CSS they come in handy. Resizing images, resampling images, rasterizing SVG files, converting Illustrator files to SVG for use on the web, etc.
 
 ### [1Password](https://1password.com)
 
@@ -110,7 +112,7 @@ Before I started using a password manager I was the doing the "one password" thi
 
 I do not have an external monitor at the moment, I plan to get one in the future when I am able.
 
-I have not included “tech stack” stuff here: programming languages, frameworks, libraries. This stuff is forever in flux, sure I have my core knowledge of Ruby, JavaScript, Rails, Ember, Node, Python, etc. but I'm also interested in Rust, Elixir, TypeScript, React, Elm, Go, and so much more! I consider it my job to be open to working with any technology in the appropriate context.
+I have not included "tech stack" stuff here: programming languages, frameworks, libraries. This stuff is forever in flux, sure I have my core knowledge of Ruby, JavaScript, Rails, Ember, Node, Python, etc. but I'm also interested in Rust, Elixir, TypeScript, React, Elm, Go, and so much more! I consider it my job to be open to working with any technology in the appropriate context.
 
 ## Me outside of tech
 
