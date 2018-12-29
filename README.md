@@ -12,11 +12,16 @@ Intro:
 
 Hi, I’m Carsten 👋🏼
 
-I’m a lead software developer specializing in web applications and related technologies, I’m all about collaboration. I try to be as open and honest about what I don’t know as I can be, I was . I am a curious human and I love to learn and connect with people.  🙂
+I’m a lead software developer specializing in web applications and related technologies, I’m all about collaboration. I try to be as open and honest about what I don’t know as I can be. I wasn't always like that, but as soon as I stopped holding ownership over ideas my world started expanding at a rate that still dumbfounds me! I am a curious human and I love to learn and connect with people. 🙂
 
 Nav:
 
-
+- Writings
+- Open source (GitHub)
+- My tools and processes
+- Me outside of tech
+- A call to collaborate (learn together)
+- Social links
 
 ## Tools and processes
 
@@ -70,7 +75,7 @@ Oh, text editors. I have used a number of editors over the years, you name it, i
 
 These days I do 80% of my coding and writing in Visual Studio Code, it works fantastically! The ecosystem of extensions is incredibly rich and diverse, and often very high quality too. It works great for any project I am working on, and [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare) is a godsend! Collaboration and learning through pairing is becoming very important to me. It's exciting because I now have an editing and programming environment that's very powerful and is also incredibly accessible to newcomers. [Tmate](https://tmate.io) is excellent, and I have used tmate for years and will continue to. But terminal-based sharing can be daunting for someone new to programming or pairing in general.
 
-I really like the [Material Dark](https://material-theme.site) theme, I’ve always preferred dark themes, I find them less visually fatiguing. I set a visible gutter to 80 columns and keep my code within that boundary. I use spaces for indentation, defaulting to 2 spaces. I’ll change that depending on the project, but that’s my default. I also enable show trailing white spaces. I use the [Source Code Pro](https://fonts.google.com/specimen/Source+Code+Pro) typeface at 15pt.
+I really like the [Material Dark](https://material-theme.site) theme, I’ve always preferred dark themes, I find them less visually fatiguing. I set a visible gutter to 80 columns and keep my code within that boundary. I use spaces for indentation, defaulting to 2 spaces. I’ll change that depending on the project, but that’s my default. I also enable show trailing white spaces. I use the [Source Code Pro](https://fonts.google.com/specimen/Source+Code+Pro) font set in the Regular typeface at 15pt.
 
 ### [Git](https://git-scm.com) / [GitHub](https://github.com)
 
