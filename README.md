@@ -10,6 +10,8 @@ Hi, I’m Carsten 👋🏼
 
 I’m a lead software developer specializing in web applications and related technologies, I’m all about collaboration. I try to be as open and honest about what I don’t know as I can be. I am a curious human and I love to learn 🙂
 
+
+
 ## Tools and processes
 
 I’ve been programming professionally for over a decade. My career started with Microsoft ASP 2.0, hacking on VBScript and Access Data Objects. From there I discovered PHP and open source software. This lead me to Python through Django and eventually to Ruby, Rails, and beyond.
@@ -129,4 +131,6 @@ I’m an activist. When I am distrusting of someone or something, I am honest an
 I’m a father and husband. First and foremost, it is what matters most to me; the health and safety of my family. (That rhymes, see, told you I’m an artist 😉)
 
 ## Let’s learn together!
+
+
 
