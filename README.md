@@ -104,3 +104,6 @@ I do not have an external monitor at the moment, I plan to get one in the future
 
 I have not included “tech stack” stuff here: programming languages, frameworks, libraries. This stuff is forever in flux, sure I have my core knowledge of Ruby, JavaScript, Rails, Ember, Node, Python, etc. but I'm also interested in Rust, Elixir, TypeScript, React, Elm, Go, and beyond. I consider it my job to be open to working with any technology under the right circumstances.
 
+## Beyond technology
+
+I have a lot of other interests outside of software and related technologies. I enjoy spending time with my family…
