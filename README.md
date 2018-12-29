@@ -50,7 +50,7 @@ I’ve also used [VMware Fusion](https://www.vmware.com/ca/products/fusion.html)
 
 ### [Docker for Mac](https://www.docker.com/products/docker-desktop) (Docker Desktop)
 
-[Docker](https://docs.docker.com/get-started/) and [Docker Compose](https://docs.docker.com/compose/overview/) make creating and running development environments a breeze. You also gain the advantage of being able to apply a lot of these learnings directly to production environments. These days with Docker Desktop the performance and stability of Docker is satisfactory or beyond satisfactory for my needs.
+[Docker](https://docs.docker.com/get-started/) and [Docker Compose](https://docs.docker.com/compose/overview/) make creating and running development environments a breeze. You also gain the advantage of being able to apply a lot of these learnings directly to production environments, and [CI](https://circleci.com/continuous-integration/) too! These days with Docker Desktop the performance and stability of Docker is satisfactory or beyond satisfactory for my needs.
 
 _Shout-out to my lad [Aanand](http://aanandprasad.com/cv/), good friend and co-creator of Docker Compose!_
 
@@ -104,7 +104,7 @@ I do not have an external monitor at the moment, I plan to get one in the future
 
 I have not included “tech stack” stuff here: programming languages, frameworks, libraries. This stuff is forever in flux, sure I have my core knowledge of Ruby, JavaScript, Rails, Ember, Node, Python, etc. but I'm also interested in Rust, Elixir, TypeScript, React, Elm, Go, and so much more! I consider it my job to be open to working with any technology in the appropriate context.
 
-## Beyond technology
+## Me outside of tech
 
 I have a lot of other interests outside of software and related technologies. Above all I enjoy spending time with my family and my friends, sharing stories, discussing topics; just existing together.
 
@@ -118,7 +118,7 @@ I’m an outdoorsman. I find gardening very satisfying. Hiking through the Dunda
 
 I’m an artist. I think we all are. I love music of many forms: techno, jazz, metal, punk, hardcore, dancehall, hip hop, classical. I enjoy visual art, and design of many styles and tastes. I am fascinated by all of the different ways we can communicate our emotions, intentions, fears, joys through these mediums, often with great clarity.
 
-I’m an activist. When I am distrusting, I am honest and open about it. I don’t see life as a competition to be solely won, I see it as a mutually beneficial goal to be achieved. When I observe injustice, evil, or cruelty: I call it out! I support indigenous rights, I support women, I support the marginalized. My actions over time have and will continue to demonstrate this.
+I’m an activist. When I am distrusting of someone or something, I am honest and open about it. I don’t see life as a competition to be solely won, I see it as a mutually beneficial goal to be achieved. When I observe injustice, evil, or cruelty: I call it out! I support indigenous rights, human rights, I support women, I support the marginalized.
 
 I’m a father and husband. First and foremost, it is what matters most to me; the health and safety of my family. (That rhymes, see, told you I’m an artist 😉)
 
