@@ -118,7 +118,7 @@ I’m an outdoorsman. I find gardening very satisfying. Hiking through the Dunda
 
 I’m an artist. I think we all are. I love music of many forms: techno, jazz, metal, punk, hardcore, dancehall, hip hop, classical. I enjoy visual art, and design of many styles and tastes. I am fascinated by all of the different ways we can communicate our emotions, intentions, fears, joys through these mediums, often with great clarity.
 
-I’m an activist. When I am distrusting of someone or something, I am honest and open about it. I don’t see life as a competition to be solely won, I see it as a mutually beneficial goal to be achieved. When I observe injustice, evil, or cruelty: I call it out! I support indigenous rights, human rights, I support women, I support the marginalized.
+I’m an activist. When I am distrusting of someone or something, I am honest and open about it. I don’t see life as a competition to be solely won, I see it as a series of interconnected mutually beneficial goals to be achieved. When I observe injustice, evil, or cruelty: I call it out! I support indigenous rights, human rights, I support women, I support the marginalized.
 
 I’m a father and husband. First and foremost, it is what matters most to me; the health and safety of my family. (That rhymes, see, told you I’m an artist 😉)
 
