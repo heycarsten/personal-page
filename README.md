@@ -92,6 +92,12 @@ For running and installing [Python](https://www.python.org), [Ruby](https://www.
 
 I use [public key authentication](https://www.linode.com/docs/security/authentication/use-public-key-authentication-with-ssh/) exclusively for accessing remote systems. I rotate my private key usually every few years, I should maybe get on that more often 🤔
 
+### [Affinity Designer](https://affinity.serif.com/en-gb/designer/desktop/) / [Pixelmator Pro](https://www.pixelmator.com/pro/)
+
+Probably like most designy folk out there, I started with Adobe Photoshop and Illustrator. Years ago I decided to give Pixelmator a try instead of Photoshop, I’m still using it today. Affinity Designer followed as a replacement for Illustrator, it also has a companion iPad app.
+
+Even if you don’t “create” with these apps, you might find if you do any sort of frontend development that touches HTML / CSS they come in handy. Resizing images, resampling images, rasterizing SVG files, converting Illustrator files to SVG for use on the web, etc.
+
 ### [1Password](https://1password.com)
 
 There are numerous password managers these days, iCloud has a built-in one even, but I love 1Password. It integrates on all of my devices, I can store other info in my vaults, not just login information. I also have a family plan so Erin and I can share logins for various shared stuff, along with our own personal vaults. 1Password integrates well virtually everywhere, and makes it dead easy to have a unique strong password for every account.
@@ -121,4 +127,6 @@ I’m an artist. I think we all are. I love music of many forms: techno, jazz, m
 I’m an activist. When I am distrusting of someone or something, I am honest and open about it. I don’t see life as a competition to be solely won, I see it as a series of interconnected mutually beneficial goals to be achieved. When I observe injustice, evil, or cruelty: I call it out! I support indigenous rights, human rights, I support women, I support the marginalized.
 
 I’m a father and husband. First and foremost, it is what matters most to me; the health and safety of my family. (That rhymes, see, told you I’m an artist 😉)
+
+## Let’s learn together!
 
