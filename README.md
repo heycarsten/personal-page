@@ -35,7 +35,7 @@ Anyways, now that you know a little bit about how I got to where I am, I’m goi
 
 These preferences I have developed over time, based on my experiences and requirements, also my privilege. Some of these things are expensive! I’m fortunate enough to be able to afford them or be provided them by my workplace. This is not intended to convince you that my preferences are the best or that they should be your preferences too. You may have different needs based on your own requirements, experience, and budget, that’s a good thing!
 
-My tools and processes are also constantly changing and evolving. If you have any feedback for me on any of this stuff, feel free to hit me up on [Twitter](https://twitter.com/heycarsten) or send me an email: heycarsten 🌀 gmail 🌎 com
+My tools and processes are also constantly changing and evolving. If you have any feedback for me on any of this stuff, feel free to hit me up on [Twitter](https://twitter.com/heycarsten) or send me an email: heycarsten@gmail.com
 
 ### [MacBook Pro 15’’ (1st gen TouchBar)](https://everymac.com/systems/apple/macbook_pro/specs/macbook-pro-core-i7-2.9-15-late-2016-retina-display-touch-bar-specs.html)
 
