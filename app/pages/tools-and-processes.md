@@ -1,30 +1,3 @@
-# Carsten’s Page
-
-Time for a new personal page 🙂
-
-Heavily inspired by: https://shipshape.io/blog/static-blogs-with-prember-and-markdown/
-
-## Design
-
-- [Type](https://fonts.google.com/selection?selection.family=Poller+One|Squada+One&thickness=9)
-
-## Index
-
-Intro:
-
-Hi, I’m Carsten 👋🏼
-
-I’m a lead software developer specializing in web applications and related technologies and systems. I’m all about collaboration, I try to be as open and honest about what I don’t know as I can be. I wasn't always like that, but as soon as I stopped my world started expanding at a rate that still dumbfounds me! I am a curious human and I love to learn and connect with people. 🙂
-
-Nav:
-
-- Writings
-- Open source (GitHub)
-- My tools and processes
-- Me outside of tech
-- A call to collaborate (learn together)
-- Social links
-
 ## Tools and processes
 
 I’ve been programming professionally for over a decade. My career started with [Microsoft ASP 2.0](https://en.m.wikipedia.org/wiki/Active_Server_Pages), hacking on [VBScript](https://en.m.wikipedia.org/wiki/VBScript) and [ActiveX Data Objects](https://en.m.wikipedia.org/wiki/ActiveX_Data_Objects). From there I discovered [PHP](https://en.m.wikipedia.org/wiki/PHP) and [open source software](https://en.m.wikipedia.org/wiki/Open-source_software). This lead me to [Python](https://www.python.org) through [Django](https://www.djangoproject.com) and eventually to [Ruby](https://www.ruby-lang.org/en/) through [Rails](https://rubyonrails.org).
@@ -130,26 +103,3 @@ Before I started using a password manager I was the doing the "one password" thi
 I do not have an external monitor at the moment, I plan to get one in the future when I am able.
 
 I have not included "tech stack" stuff here: programming languages, frameworks, libraries. This stuff is forever in flux, sure I have my core knowledge of Ruby, JavaScript, Rails, Ember, Node, Python, etc. but I'm also interested in Rust, Elixir, TypeScript, React, Elm, Go, and so much more! I consider it my job to be open to working with any technology in the appropriate context.
-
-## Me outside of tech
-
-I have a lot of other interests outside of software and related technologies. Above all I enjoy spending time with my family and my friends, sharing stories, discussing topics; just existing together.
-
-I’m a cyclist. I ride on-road, off-road, and track. I ride socially for fun, for fitness, to commute, to challenge myself, to connect with the natural world, and sometimes to reconnect with myself. I belong to [Cascade Cycling](https://instagram.com/cascade_cycling), a grassroots cycling club some friends found, we hang out at [Grupetto](https://instagram.com/grupettolife) a lot… it’s maybe kind of a problem 🤪
-
-I’m a motorist. I love vehicles, I enjoy driving, I’m excited by the auto industry. I think electric vehicles are the future, and I think tractor pulls are a part of that future too. I love tinkering with automobiles, I restored and customized a 1989 Chevrolet S-10 in the early 2000s. It was one of the most resonating learning experiences I’ve had in my life, and it demystified so many things.
-
-I’m a cook. Food is important to me, it nourishes me, it excites me, it comforts me, relaxes me. Food connects me to people, memories, cultures, and places. Erin does 95% of the cooking in our household, she’s one of the best cooks I know. We love to host parties and share our food and drink with all who can come.
-
-I’m an outdoorsman. I find gardening very satisfying. Hiking through the Dundas Valley, seeing interesting plants and mushrooms growing. Observing all of the different cycles of plants, animals, and insects throughout the year. I’m very interested in trees, they fascinate me with their mycorrhizal networks and defense systems. In another life I totally might have been an arborist. I’ve never hunted, but I’d be curious to observe an experienced hunter one day.
-
-I’m an artist. I think we all are. I love music of many forms: techno, jazz, metal, punk, hardcore, dancehall, hip hop, classical. I enjoy visual art, and design of many styles and tastes. I am fascinated by all of the different ways we can communicate our emotions, intentions, fears, joys through these mediums, often with great clarity.
-
-I’m an activist. When I am distrusting of someone or something, I am honest and open about it. I don’t see life as a competition to be solely won, I see it as a series of interconnected mutually beneficial goals to be achieved. When I observe injustice, evil, or cruelty: I call it out! I support indigenous rights, human rights, I support women, I support the marginalized.
-
-I’m a father and husband. First and foremost, it is what matters most to me; the health and safety of my family. (That rhymes, see, told you I’m an artist 😉)
-
-## Let’s learn together!
-
-
-
