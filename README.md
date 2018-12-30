@@ -41,13 +41,13 @@ My tools and processes are also constantly changing and evolving. If you have an
 
 This is my company issued laptop (thanks [Crowdmark](https://crowdmark.com)), it is also my choice of laptop. I would own this exact computer regardless of my workplace or not. I like Apple hardware, I like how well they support their products, I like that they take privacy, security, reliability, and ease of use seriously. My experience with Apple products since 2006 has been overwhelmingly positive.
 
-_In the fall I had an issue with the keyboard sticking, I took it in and they replaced the entire keyboard, battery, and TouchBar, no questions asked. Since then I have had zero issues, and the keyboard feels even better._
+_In the fall of 2018 I had an issue with the keyboard sticking, I took it in and they replaced the entire keyboard, battery, and TouchBar, no questions asked. Since then I have had zero issues, and the keyboard feels even better._
 
 ### [iPhone X](https://support.apple.com/kb/SP770?locale=en_CA)
 
-When I was first diagnosed with lymphoma, my friend [Jamie Gilgen](https://en.m.wikipedia.org/wiki/Jamie_Gilgen) rallied the cycling community and gathered enough money to buy me a much needed new phone! Amazing. I’m still in awe of all of the generosity I have received. This made me realize just how important phones have become in our lives. They are a communications and productivity tool and an intergral part of our modern lives.
+When I was first diagnosed with lymphoma, my friend [Jamie Gilgen](https://en.m.wikipedia.org/wiki/Jamie_Gilgen) rallied the cycling community and gathered enough money to buy me a much needed new phone! Amazing. I’m still in awe of all of the generosity I have received. This made me realize just how important my phone has become in my life. It is a vital communications and productivity tool and an intergral part of my modern life.
 
-My previous phone (an iPhone 5) was fine, it functioned. But when I upgraded to a modern, fast phone it was stunning how much smoother it made everything. With a good phone you can do so much! Any time I see a way to remove friction by changing tools or processes and I am able to act on it, I do. I didn't realize that my phone was one of those tools, I do now.
+My previous phone (an iPhone 5) was fine, it functioned. But when I upgraded to a modern, fast phone it was stunning how much smoother it made everything. With a good phone I can do so much! Whenever I see a way to remove friction by changing tools or processes and I am able to act on it, I do. I didn't realize that my outdated phone was adding so much friction to my day.
 
 ### [iPad Pro](https://support.apple.com/kb/SP762?locale=en_CA)
 
