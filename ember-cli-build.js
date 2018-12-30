@@ -7,7 +7,9 @@ module.exports = function(defaults) {
     // Add options here
     prember: {
       urls: [
-        '/'
+        '/',
+        '/tools-and-processes',
+        '/outside-of-tech'
       ]
     }
   });

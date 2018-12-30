@@ -1,5 +1,18 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+{{head-layout}}
+{{title "Carsten Nielsen"}}
 
-{{outlet}}
+<header>
+  <h1>
+    {{#link-to "index"}}
+      Carsten Nielsen
+    {{/link-to}}
+  </h1>
+</header>
+
+<div class="container">
+  {{outlet}}
+</div>
+
+<footer>
+  &copy; {{model.year}} Carsten Nielsen
+</footer>

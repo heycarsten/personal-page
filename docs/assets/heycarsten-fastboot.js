@@ -1,4 +1,4 @@
-define("heycarsten-site/initializers/ajax", ["exports"], function (_exports) {
+define("heycarsten/initializers/ajax", ["exports"], function (_exports) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -45,7 +45,7 @@ define("heycarsten-site/initializers/ajax", ["exports"], function (_exports) {
   };
   _exports.default = _default;
 });
-define("heycarsten-site/initializers/error-handler", ["exports"], function (_exports) {
+define("heycarsten/initializers/error-handler", ["exports"], function (_exports) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -71,4 +71,4 @@ define("heycarsten-site/initializers/error-handler", ["exports"], function (_exp
     }
   };
   _exports.default = _default;
-});//# sourceMappingURL=heycarsten-site-fastboot.map
+});//# sourceMappingURL=heycarsten-fastboot.map

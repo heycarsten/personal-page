@@ -1,6 +1,6 @@
 'use strict';
 
-define("heycarsten-site/tests/helpers/ember-cli-clipboard", ["exports"], function (_exports) {
+define("heycarsten/tests/helpers/ember-cli-clipboard", ["exports"], function (_exports) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -114,7 +114,7 @@ define("heycarsten-site/tests/helpers/ember-cli-clipboard", ["exports"], functio
     });
   }
 });
-define("heycarsten-site/tests/lint/app.lint-test", [], function () {
+define("heycarsten/tests/lint/app.lint-test", [], function () {
   "use strict";
 
   QUnit.module('ESLint | app');
@@ -129,6 +129,18 @@ define("heycarsten-site/tests/lint/app.lint-test", [], function () {
   QUnit.test('router.js', function (assert) {
     assert.expect(1);
     assert.ok(true, 'router.js should pass ESLint\n\n');
+  });
+  QUnit.test('routes/application.js', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'routes/application.js should pass ESLint\n\n');
+  });
+  QUnit.test('routes/index.js', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'routes/index.js should pass ESLint\n\n');
+  });
+  QUnit.test('routes/page.js', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'routes/page.js should pass ESLint\n\n');
   });
   QUnit.test('tailwind/config/background-colors.js', function (assert) {
     assert.expect(1);
@@ -243,16 +255,28 @@ define("heycarsten-site/tests/lint/app.lint-test", [], function () {
     assert.ok(true, 'tailwind/config/z-index.js should pass ESLint\n\n');
   });
 });
-define("heycarsten-site/tests/lint/templates.template.lint-test", [], function () {
+define("heycarsten/tests/lint/templates.template.lint-test", [], function () {
   "use strict";
 
   QUnit.module('TemplateLint');
-  QUnit.test('heycarsten-site/templates/application.hbs', function (assert) {
+  QUnit.test('heycarsten/templates/application.hbs', function (assert) {
     assert.expect(1);
-    assert.ok(true, 'heycarsten-site/templates/application.hbs should pass TemplateLint.\n\n');
+    assert.ok(true, 'heycarsten/templates/application.hbs should pass TemplateLint.\n\n');
+  });
+  QUnit.test('heycarsten/templates/head.hbs', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'heycarsten/templates/head.hbs should pass TemplateLint.\n\n');
+  });
+  QUnit.test('heycarsten/templates/index.hbs', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'heycarsten/templates/index.hbs should pass TemplateLint.\n\n');
+  });
+  QUnit.test('heycarsten/templates/page.hbs', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'heycarsten/templates/page.hbs should pass TemplateLint.\n\n');
   });
 });
-define("heycarsten-site/tests/lint/tests.lint-test", [], function () {
+define("heycarsten/tests/lint/tests.lint-test", [], function () {
   "use strict";
 
   QUnit.module('ESLint | tests');
@@ -261,17 +285,17 @@ define("heycarsten-site/tests/lint/tests.lint-test", [], function () {
     assert.ok(true, 'test-helper.js should pass ESLint\n\n');
   });
 });
-define("heycarsten-site/tests/test-helper", ["heycarsten-site/app", "heycarsten-site/config/environment", "@ember/test-helpers", "ember-qunit"], function (_app, _environment, _testHelpers, _emberQunit) {
+define("heycarsten/tests/test-helper", ["heycarsten/app", "heycarsten/config/environment", "@ember/test-helpers", "ember-qunit"], function (_app, _environment, _testHelpers, _emberQunit) {
   "use strict";
 
   (0, _testHelpers.setApplication)(_app.default.create(_environment.default.APP));
   (0, _emberQunit.start)();
 });
-define('heycarsten-site/config/environment', [], function() {
+define('heycarsten/config/environment', [], function() {
   if (typeof FastBoot !== 'undefined') {
-return FastBoot.config('heycarsten-site');
+return FastBoot.config('heycarsten');
 } else {
-var prefix = 'heycarsten-site';try {
+var prefix = 'heycarsten';try {
   var metaName = prefix + '/config/environment';
   var rawConfig = document.querySelector('meta[name="' + metaName + '"]').getAttribute('content');
   var config = JSON.parse(unescape(rawConfig));
@@ -289,6 +313,6 @@ catch(err) {
 }
 });
 
-require('heycarsten-site/tests/test-helper');
+require('heycarsten/tests/test-helper');
 EmberENV.TESTS_FILE_LOADED = true;
 //# sourceMappingURL=tests.map

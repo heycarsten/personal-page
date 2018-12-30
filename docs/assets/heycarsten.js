@@ -2,7 +2,7 @@
 
 
 
-;define("heycarsten-site/app", ["exports", "heycarsten-site/resolver", "ember-load-initializers", "heycarsten-site/config/environment"], function (_exports, _resolver, _emberLoadInitializers, _environment) {
+;define("heycarsten/app", ["exports", "heycarsten/resolver", "ember-load-initializers", "heycarsten/config/environment"], function (_exports, _resolver, _emberLoadInitializers, _environment) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -18,7 +18,7 @@
   var _default = App;
   _exports.default = _default;
 });
-;define("heycarsten-site/components/code-block", ["exports", "ember-prism/components/code-block"], function (_exports, _codeBlock) {
+;define("heycarsten/components/code-block", ["exports", "ember-prism/components/code-block"], function (_exports, _codeBlock) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -28,7 +28,7 @@
   var _default = _codeBlock.default;
   _exports.default = _default;
 });
-;define("heycarsten-site/components/code-inline", ["exports", "ember-prism/components/code-inline"], function (_exports, _codeInline) {
+;define("heycarsten/components/code-inline", ["exports", "ember-prism/components/code-inline"], function (_exports, _codeInline) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -38,7 +38,7 @@
   var _default = _codeInline.default;
   _exports.default = _default;
 });
-;define("heycarsten-site/components/copy-button", ["exports", "ember-cli-clipboard/components/copy-button"], function (_exports, _copyButton) {
+;define("heycarsten/components/copy-button", ["exports", "ember-cli-clipboard/components/copy-button"], function (_exports, _copyButton) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -51,7 +51,7 @@
     }
   });
 });
-;define("heycarsten-site/components/etw/module-section", ["exports"], function (_exports) {
+;define("heycarsten/components/etw/module-section", ["exports"], function (_exports) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -65,7 +65,7 @@
 
   _exports.default = _default;
 });
-;define("heycarsten-site/components/etw/module-style-detail", ["exports", "ember-cli-tailwind/utils/classes-for-module-style"], function (_exports, _classesForModuleStyle) {
+;define("heycarsten/components/etw/module-style-detail", ["exports", "ember-cli-tailwind/utils/classes-for-module-style"], function (_exports, _classesForModuleStyle) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -101,7 +101,7 @@
 
   _exports.default = _default;
 });
-;define("heycarsten-site/components/etw/module-style-example", ["exports", "ember-cli-tailwind/utils/classes-for-module-style"], function (_exports, _classesForModuleStyle) {
+;define("heycarsten/components/etw/module-style-example", ["exports", "ember-cli-tailwind/utils/classes-for-module-style"], function (_exports, _classesForModuleStyle) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -127,7 +127,62 @@
 
   _exports.default = _default;
 });
-;define("heycarsten-site/components/markdown-menu-item", ["exports", "ember-cli-markdown-resolver/components/markdown-menu-item"], function (_exports, _markdownMenuItem) {
+;define("heycarsten/components/head-content", ["exports", "heycarsten/templates/head"], function (_exports, _head) {
+  "use strict";
+
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  _exports.default = void 0;
+
+  var _default = Ember.Component.extend({
+    tagName: '',
+    model: Ember.inject.service('head-data'),
+    layout: _head.default
+  });
+
+  _exports.default = _default;
+});
+;define("heycarsten/components/head-layout", ["exports", "ember-cli-head/components/head-layout"], function (_exports, _headLayout) {
+  "use strict";
+
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(_exports, "default", {
+    enumerable: true,
+    get: function () {
+      return _headLayout.default;
+    }
+  });
+});
+;define("heycarsten/components/head-tag", ["exports", "ember-cli-meta-tags/components/head-tag"], function (_exports, _headTag) {
+  "use strict";
+
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(_exports, "default", {
+    enumerable: true,
+    get: function () {
+      return _headTag.default;
+    }
+  });
+});
+;define("heycarsten/components/head-tags", ["exports", "ember-cli-meta-tags/components/head-tags"], function (_exports, _headTags) {
+  "use strict";
+
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(_exports, "default", {
+    enumerable: true,
+    get: function () {
+      return _headTags.default;
+    }
+  });
+});
+;define("heycarsten/components/markdown-menu-item", ["exports", "ember-cli-markdown-resolver/components/markdown-menu-item"], function (_exports, _markdownMenuItem) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -140,7 +195,7 @@
     }
   });
 });
-;define("heycarsten-site/components/markdown-menu", ["exports", "ember-cli-markdown-resolver/components/markdown-menu"], function (_exports, _markdownMenu) {
+;define("heycarsten/components/markdown-menu", ["exports", "ember-cli-markdown-resolver/components/markdown-menu"], function (_exports, _markdownMenu) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -153,7 +208,7 @@
     }
   });
 });
-;define("heycarsten-site/components/markdown-to-html", ["exports", "ember-cli-showdown/components/markdown-to-html"], function (_exports, _markdownToHtml) {
+;define("heycarsten/components/markdown-to-html", ["exports", "ember-cli-showdown/components/markdown-to-html"], function (_exports, _markdownToHtml) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -166,20 +221,7 @@
     }
   });
 });
-;define("heycarsten-site/components/welcome-page", ["exports", "ember-welcome-page/components/welcome-page"], function (_exports, _welcomePage) {
-  "use strict";
-
-  Object.defineProperty(_exports, "__esModule", {
-    value: true
-  });
-  Object.defineProperty(_exports, "default", {
-    enumerable: true,
-    get: function () {
-      return _welcomePage.default;
-    }
-  });
-});
-;define("heycarsten-site/controllers/application-tailwind", ["exports", "heycarsten-site/tailwind/config/colors", "heycarsten-site/tailwind/config/screens", "heycarsten-site/tailwind/config/fonts", "heycarsten-site/tailwind/config/text-sizes", "heycarsten-site/tailwind/config/font-weights", "heycarsten-site/tailwind/config/line-height", "heycarsten-site/tailwind/config/letter-spacing", "heycarsten-site/tailwind/config/border-widths", "heycarsten-site/tailwind/config/border-radius", "heycarsten-site/tailwind/config/width", "heycarsten-site/tailwind/config/height", "heycarsten-site/tailwind/config/min-width", "heycarsten-site/tailwind/config/min-height", "heycarsten-site/tailwind/config/max-width", "heycarsten-site/tailwind/config/max-height", "heycarsten-site/tailwind/config/padding", "heycarsten-site/tailwind/config/margin", "heycarsten-site/tailwind/config/negative-margin", "heycarsten-site/tailwind/config/shadows", "heycarsten-site/tailwind/config/z-index", "heycarsten-site/tailwind/config/opacity", "heycarsten-site/tailwind/config/svg-fill", "heycarsten-site/tailwind/config/svg-stroke"], function (_exports, _colors, _screens, _fonts, _textSizes, _fontWeights, _lineHeight, _letterSpacing, _borderWidths, _borderRadius, _width, _height, _minWidth, _minHeight, _maxWidth, _maxHeight, _padding, _margin, _negativeMargin, _shadows, _zIndex, _opacity, _svgFill, _svgStroke) {
+;define("heycarsten/controllers/application-tailwind", ["exports", "heycarsten/tailwind/config/colors", "heycarsten/tailwind/config/screens", "heycarsten/tailwind/config/fonts", "heycarsten/tailwind/config/text-sizes", "heycarsten/tailwind/config/font-weights", "heycarsten/tailwind/config/line-height", "heycarsten/tailwind/config/letter-spacing", "heycarsten/tailwind/config/border-widths", "heycarsten/tailwind/config/border-radius", "heycarsten/tailwind/config/width", "heycarsten/tailwind/config/height", "heycarsten/tailwind/config/min-width", "heycarsten/tailwind/config/min-height", "heycarsten/tailwind/config/max-width", "heycarsten/tailwind/config/max-height", "heycarsten/tailwind/config/padding", "heycarsten/tailwind/config/margin", "heycarsten/tailwind/config/negative-margin", "heycarsten/tailwind/config/shadows", "heycarsten/tailwind/config/z-index", "heycarsten/tailwind/config/opacity", "heycarsten/tailwind/config/svg-fill", "heycarsten/tailwind/config/svg-stroke"], function (_exports, _colors, _screens, _fonts, _textSizes, _fontWeights, _lineHeight, _letterSpacing, _borderWidths, _borderRadius, _width, _height, _minWidth, _minHeight, _maxWidth, _maxHeight, _padding, _margin, _negativeMargin, _shadows, _zIndex, _opacity, _svgFill, _svgStroke) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -238,16 +280,16 @@
 
   _exports.default = _default;
 });
-;define("heycarsten-site/ember-cli-tailwind/tests/addon.lint-test", [], function () {
+;define("heycarsten/ember-cli-tailwind/tests/addon.lint-test", [], function () {
   "use strict";
 });
-;define("heycarsten-site/ember-cli-tailwind/tests/app.lint-test", [], function () {
+;define("heycarsten/ember-cli-tailwind/tests/app.lint-test", [], function () {
   "use strict";
 });
-;define("heycarsten-site/ember-cli-tailwind/tests/templates.template.lint-test", [], function () {
+;define("heycarsten/ember-cli-tailwind/tests/templates.template.lint-test", [], function () {
   "use strict";
 });
-;define("heycarsten-site/helpers/and", ["exports", "ember-truth-helpers/helpers/and"], function (_exports, _and) {
+;define("heycarsten/helpers/and", ["exports", "ember-truth-helpers/helpers/and"], function (_exports, _and) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -266,7 +308,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/app-version", ["exports", "heycarsten-site/config/environment", "ember-cli-app-version/utils/regexp"], function (_exports, _environment, _regexp) {
+;define("heycarsten/helpers/app-version", ["exports", "heycarsten/config/environment", "ember-cli-app-version/utils/regexp"], function (_exports, _environment, _regexp) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -305,7 +347,7 @@
 
   _exports.default = _default;
 });
-;define("heycarsten-site/helpers/append", ["exports", "ember-composable-helpers/helpers/append"], function (_exports, _append) {
+;define("heycarsten/helpers/append", ["exports", "ember-composable-helpers/helpers/append"], function (_exports, _append) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -324,7 +366,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/array", ["exports", "ember-composable-helpers/helpers/array"], function (_exports, _array) {
+;define("heycarsten/helpers/array", ["exports", "ember-composable-helpers/helpers/array"], function (_exports, _array) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -343,7 +385,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/chunk", ["exports", "ember-composable-helpers/helpers/chunk"], function (_exports, _chunk) {
+;define("heycarsten/helpers/chunk", ["exports", "ember-composable-helpers/helpers/chunk"], function (_exports, _chunk) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -362,7 +404,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/compact", ["exports", "ember-composable-helpers/helpers/compact"], function (_exports, _compact) {
+;define("heycarsten/helpers/compact", ["exports", "ember-composable-helpers/helpers/compact"], function (_exports, _compact) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -381,7 +423,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/compute", ["exports", "ember-composable-helpers/helpers/compute"], function (_exports, _compute) {
+;define("heycarsten/helpers/compute", ["exports", "ember-composable-helpers/helpers/compute"], function (_exports, _compute) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -400,7 +442,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/contains", ["exports", "ember-composable-helpers/helpers/contains"], function (_exports, _contains) {
+;define("heycarsten/helpers/contains", ["exports", "ember-composable-helpers/helpers/contains"], function (_exports, _contains) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -419,7 +461,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/dec", ["exports", "ember-composable-helpers/helpers/dec"], function (_exports, _dec) {
+;define("heycarsten/helpers/dec", ["exports", "ember-composable-helpers/helpers/dec"], function (_exports, _dec) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -438,7 +480,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/drop", ["exports", "ember-composable-helpers/helpers/drop"], function (_exports, _drop) {
+;define("heycarsten/helpers/drop", ["exports", "ember-composable-helpers/helpers/drop"], function (_exports, _drop) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -457,7 +499,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/eq", ["exports", "ember-truth-helpers/helpers/equal"], function (_exports, _equal) {
+;define("heycarsten/helpers/eq", ["exports", "ember-truth-helpers/helpers/equal"], function (_exports, _equal) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -476,7 +518,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/filter-by", ["exports", "ember-composable-helpers/helpers/filter-by"], function (_exports, _filterBy) {
+;define("heycarsten/helpers/filter-by", ["exports", "ember-composable-helpers/helpers/filter-by"], function (_exports, _filterBy) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -495,7 +537,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/filter", ["exports", "ember-composable-helpers/helpers/filter"], function (_exports, _filter) {
+;define("heycarsten/helpers/filter", ["exports", "ember-composable-helpers/helpers/filter"], function (_exports, _filter) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -514,7 +556,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/find-by", ["exports", "ember-composable-helpers/helpers/find-by"], function (_exports, _findBy) {
+;define("heycarsten/helpers/find-by", ["exports", "ember-composable-helpers/helpers/find-by"], function (_exports, _findBy) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -533,7 +575,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/flatten", ["exports", "ember-composable-helpers/helpers/flatten"], function (_exports, _flatten) {
+;define("heycarsten/helpers/flatten", ["exports", "ember-composable-helpers/helpers/flatten"], function (_exports, _flatten) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -552,7 +594,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/get-markdown-content", ["exports", "ember-cli-markdown-resolver/helpers/get-markdown-content"], function (_exports, _getMarkdownContent) {
+;define("heycarsten/helpers/get-markdown-content", ["exports", "ember-cli-markdown-resolver/helpers/get-markdown-content"], function (_exports, _getMarkdownContent) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -565,7 +607,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/get-markdown-file", ["exports", "ember-cli-markdown-resolver/helpers/get-markdown-file"], function (_exports, _getMarkdownFile) {
+;define("heycarsten/helpers/get-markdown-file", ["exports", "ember-cli-markdown-resolver/helpers/get-markdown-file"], function (_exports, _getMarkdownFile) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -578,7 +620,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/get-markdown-tree", ["exports", "ember-cli-markdown-resolver/helpers/get-markdown-tree"], function (_exports, _getMarkdownTree) {
+;define("heycarsten/helpers/get-markdown-tree", ["exports", "ember-cli-markdown-resolver/helpers/get-markdown-tree"], function (_exports, _getMarkdownTree) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -591,7 +633,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/group-by", ["exports", "ember-composable-helpers/helpers/group-by"], function (_exports, _groupBy) {
+;define("heycarsten/helpers/group-by", ["exports", "ember-composable-helpers/helpers/group-by"], function (_exports, _groupBy) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -610,7 +652,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/gt", ["exports", "ember-truth-helpers/helpers/gt"], function (_exports, _gt) {
+;define("heycarsten/helpers/gt", ["exports", "ember-truth-helpers/helpers/gt"], function (_exports, _gt) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -629,7 +671,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/gte", ["exports", "ember-truth-helpers/helpers/gte"], function (_exports, _gte) {
+;define("heycarsten/helpers/gte", ["exports", "ember-truth-helpers/helpers/gte"], function (_exports, _gte) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -648,7 +690,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/has-next", ["exports", "ember-composable-helpers/helpers/has-next"], function (_exports, _hasNext) {
+;define("heycarsten/helpers/has-next", ["exports", "ember-composable-helpers/helpers/has-next"], function (_exports, _hasNext) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -667,7 +709,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/has-previous", ["exports", "ember-composable-helpers/helpers/has-previous"], function (_exports, _hasPrevious) {
+;define("heycarsten/helpers/has-previous", ["exports", "ember-composable-helpers/helpers/has-previous"], function (_exports, _hasPrevious) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -686,7 +728,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/inc", ["exports", "ember-composable-helpers/helpers/inc"], function (_exports, _inc) {
+;define("heycarsten/helpers/inc", ["exports", "ember-composable-helpers/helpers/inc"], function (_exports, _inc) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -705,7 +747,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/intersect", ["exports", "ember-composable-helpers/helpers/intersect"], function (_exports, _intersect) {
+;define("heycarsten/helpers/intersect", ["exports", "ember-composable-helpers/helpers/intersect"], function (_exports, _intersect) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -724,7 +766,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/invoke", ["exports", "ember-composable-helpers/helpers/invoke"], function (_exports, _invoke) {
+;define("heycarsten/helpers/invoke", ["exports", "ember-composable-helpers/helpers/invoke"], function (_exports, _invoke) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -743,7 +785,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/is-array", ["exports", "ember-truth-helpers/helpers/is-array"], function (_exports, _isArray) {
+;define("heycarsten/helpers/is-array", ["exports", "ember-truth-helpers/helpers/is-array"], function (_exports, _isArray) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -762,7 +804,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/is-clipboard-supported", ["exports", "ember-cli-clipboard/helpers/is-clipboard-supported"], function (_exports, _isClipboardSupported) {
+;define("heycarsten/helpers/is-clipboard-supported", ["exports", "ember-cli-clipboard/helpers/is-clipboard-supported"], function (_exports, _isClipboardSupported) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -781,7 +823,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/is-empty", ["exports", "ember-truth-helpers/helpers/is-empty"], function (_exports, _isEmpty) {
+;define("heycarsten/helpers/is-empty", ["exports", "ember-truth-helpers/helpers/is-empty"], function (_exports, _isEmpty) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -794,7 +836,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/is-equal", ["exports", "ember-truth-helpers/helpers/is-equal"], function (_exports, _isEqual) {
+;define("heycarsten/helpers/is-equal", ["exports", "ember-truth-helpers/helpers/is-equal"], function (_exports, _isEqual) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -813,7 +855,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/join", ["exports", "ember-composable-helpers/helpers/join"], function (_exports, _join) {
+;define("heycarsten/helpers/join", ["exports", "ember-composable-helpers/helpers/join"], function (_exports, _join) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -832,7 +874,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/lt", ["exports", "ember-truth-helpers/helpers/lt"], function (_exports, _lt) {
+;define("heycarsten/helpers/lt", ["exports", "ember-truth-helpers/helpers/lt"], function (_exports, _lt) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -851,7 +893,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/lte", ["exports", "ember-truth-helpers/helpers/lte"], function (_exports, _lte) {
+;define("heycarsten/helpers/lte", ["exports", "ember-truth-helpers/helpers/lte"], function (_exports, _lte) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -870,7 +912,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/map-by", ["exports", "ember-composable-helpers/helpers/map-by"], function (_exports, _mapBy) {
+;define("heycarsten/helpers/map-by", ["exports", "ember-composable-helpers/helpers/map-by"], function (_exports, _mapBy) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -889,7 +931,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/map", ["exports", "ember-composable-helpers/helpers/map"], function (_exports, _map) {
+;define("heycarsten/helpers/map", ["exports", "ember-composable-helpers/helpers/map"], function (_exports, _map) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -908,7 +950,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/next", ["exports", "ember-composable-helpers/helpers/next"], function (_exports, _next) {
+;define("heycarsten/helpers/next", ["exports", "ember-composable-helpers/helpers/next"], function (_exports, _next) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -927,7 +969,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/not-eq", ["exports", "ember-truth-helpers/helpers/not-equal"], function (_exports, _notEqual) {
+;define("heycarsten/helpers/not-eq", ["exports", "ember-truth-helpers/helpers/not-equal"], function (_exports, _notEqual) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -946,7 +988,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/not", ["exports", "ember-truth-helpers/helpers/not"], function (_exports, _not) {
+;define("heycarsten/helpers/not", ["exports", "ember-truth-helpers/helpers/not"], function (_exports, _not) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -965,7 +1007,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/object-at", ["exports", "ember-composable-helpers/helpers/object-at"], function (_exports, _objectAt) {
+;define("heycarsten/helpers/object-at", ["exports", "ember-composable-helpers/helpers/object-at"], function (_exports, _objectAt) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -984,7 +1026,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/optional", ["exports", "ember-composable-helpers/helpers/optional"], function (_exports, _optional) {
+;define("heycarsten/helpers/optional", ["exports", "ember-composable-helpers/helpers/optional"], function (_exports, _optional) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -1003,7 +1045,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/or", ["exports", "ember-truth-helpers/helpers/or"], function (_exports, _or) {
+;define("heycarsten/helpers/or", ["exports", "ember-truth-helpers/helpers/or"], function (_exports, _or) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -1022,7 +1064,17 @@
     }
   });
 });
-;define("heycarsten-site/helpers/pipe-action", ["exports", "ember-composable-helpers/helpers/pipe-action"], function (_exports, _pipeAction) {
+;define("heycarsten/helpers/page-title", ["exports", "ember-page-title/helpers/page-title"], function (_exports, _pageTitle) {
+  "use strict";
+
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  _exports.default = void 0;
+  var _default = _pageTitle.default;
+  _exports.default = _default;
+});
+;define("heycarsten/helpers/pipe-action", ["exports", "ember-composable-helpers/helpers/pipe-action"], function (_exports, _pipeAction) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -1035,7 +1087,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/pipe", ["exports", "ember-composable-helpers/helpers/pipe"], function (_exports, _pipe) {
+;define("heycarsten/helpers/pipe", ["exports", "ember-composable-helpers/helpers/pipe"], function (_exports, _pipe) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -1054,7 +1106,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/previous", ["exports", "ember-composable-helpers/helpers/previous"], function (_exports, _previous) {
+;define("heycarsten/helpers/previous", ["exports", "ember-composable-helpers/helpers/previous"], function (_exports, _previous) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -1073,7 +1125,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/queue", ["exports", "ember-composable-helpers/helpers/queue"], function (_exports, _queue) {
+;define("heycarsten/helpers/queue", ["exports", "ember-composable-helpers/helpers/queue"], function (_exports, _queue) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -1092,7 +1144,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/range", ["exports", "ember-composable-helpers/helpers/range"], function (_exports, _range) {
+;define("heycarsten/helpers/range", ["exports", "ember-composable-helpers/helpers/range"], function (_exports, _range) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -1111,7 +1163,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/reduce", ["exports", "ember-composable-helpers/helpers/reduce"], function (_exports, _reduce) {
+;define("heycarsten/helpers/reduce", ["exports", "ember-composable-helpers/helpers/reduce"], function (_exports, _reduce) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -1130,7 +1182,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/reject-by", ["exports", "ember-composable-helpers/helpers/reject-by"], function (_exports, _rejectBy) {
+;define("heycarsten/helpers/reject-by", ["exports", "ember-composable-helpers/helpers/reject-by"], function (_exports, _rejectBy) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -1149,7 +1201,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/repeat", ["exports", "ember-composable-helpers/helpers/repeat"], function (_exports, _repeat) {
+;define("heycarsten/helpers/repeat", ["exports", "ember-composable-helpers/helpers/repeat"], function (_exports, _repeat) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -1168,7 +1220,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/reverse", ["exports", "ember-composable-helpers/helpers/reverse"], function (_exports, _reverse) {
+;define("heycarsten/helpers/reverse", ["exports", "ember-composable-helpers/helpers/reverse"], function (_exports, _reverse) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -1187,7 +1239,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/shuffle", ["exports", "ember-composable-helpers/helpers/shuffle"], function (_exports, _shuffle) {
+;define("heycarsten/helpers/shuffle", ["exports", "ember-composable-helpers/helpers/shuffle"], function (_exports, _shuffle) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -1206,7 +1258,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/slice", ["exports", "ember-composable-helpers/helpers/slice"], function (_exports, _slice) {
+;define("heycarsten/helpers/slice", ["exports", "ember-composable-helpers/helpers/slice"], function (_exports, _slice) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -1225,7 +1277,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/sort-by", ["exports", "ember-composable-helpers/helpers/sort-by"], function (_exports, _sortBy) {
+;define("heycarsten/helpers/sort-by", ["exports", "ember-composable-helpers/helpers/sort-by"], function (_exports, _sortBy) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -1244,7 +1296,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/take", ["exports", "ember-composable-helpers/helpers/take"], function (_exports, _take) {
+;define("heycarsten/helpers/take", ["exports", "ember-composable-helpers/helpers/take"], function (_exports, _take) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -1263,7 +1315,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/toggle-action", ["exports", "ember-composable-helpers/helpers/toggle-action"], function (_exports, _toggleAction) {
+;define("heycarsten/helpers/toggle-action", ["exports", "ember-composable-helpers/helpers/toggle-action"], function (_exports, _toggleAction) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -1276,7 +1328,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/toggle", ["exports", "ember-composable-helpers/helpers/toggle"], function (_exports, _toggle) {
+;define("heycarsten/helpers/toggle", ["exports", "ember-composable-helpers/helpers/toggle"], function (_exports, _toggle) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -1295,7 +1347,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/union", ["exports", "ember-composable-helpers/helpers/union"], function (_exports, _union) {
+;define("heycarsten/helpers/union", ["exports", "ember-composable-helpers/helpers/union"], function (_exports, _union) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -1314,7 +1366,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/without", ["exports", "ember-composable-helpers/helpers/without"], function (_exports, _without) {
+;define("heycarsten/helpers/without", ["exports", "ember-composable-helpers/helpers/without"], function (_exports, _without) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -1333,7 +1385,7 @@
     }
   });
 });
-;define("heycarsten-site/helpers/xor", ["exports", "ember-truth-helpers/helpers/xor"], function (_exports, _xor) {
+;define("heycarsten/helpers/xor", ["exports", "ember-truth-helpers/helpers/xor"], function (_exports, _xor) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -1352,7 +1404,7 @@
     }
   });
 });
-;define("heycarsten-site/initializers/app-version", ["exports", "ember-cli-app-version/initializer-factory", "heycarsten-site/config/environment"], function (_exports, _initializerFactory, _environment) {
+;define("heycarsten/initializers/app-version", ["exports", "ember-cli-app-version/initializer-factory", "heycarsten/config/environment"], function (_exports, _initializerFactory, _environment) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -1372,7 +1424,7 @@
   };
   _exports.default = _default;
 });
-;define("heycarsten-site/initializers/container-debug-adapter", ["exports", "ember-resolver/resolvers/classic/container-debug-adapter"], function (_exports, _containerDebugAdapter) {
+;define("heycarsten/initializers/container-debug-adapter", ["exports", "ember-resolver/resolvers/classic/container-debug-adapter"], function (_exports, _containerDebugAdapter) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -1391,7 +1443,7 @@
   };
   _exports.default = _default;
 });
-;define("heycarsten-site/initializers/export-application-global", ["exports", "heycarsten-site/config/environment"], function (_exports, _environment) {
+;define("heycarsten/initializers/export-application-global", ["exports", "heycarsten/config/environment"], function (_exports, _environment) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -1445,7 +1497,45 @@
   };
   _exports.default = _default;
 });
-;define("heycarsten-site/instance-initializers/clear-double-boot", ["exports", "ember-cli-fastboot/instance-initializers/clear-double-boot"], function (_exports, _clearDoubleBoot) {
+;define("heycarsten/initializers/head-tags", ["exports", "ember-cli-meta-tags/initializers/head-tags"], function (_exports, _headTags) {
+  "use strict";
+
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(_exports, "default", {
+    enumerable: true,
+    get: function () {
+      return _headTags.default;
+    }
+  });
+  Object.defineProperty(_exports, "initialize", {
+    enumerable: true,
+    get: function () {
+      return _headTags.initialize;
+    }
+  });
+});
+;define("heycarsten/initializers/router-head-tags", ["exports", "ember-cli-meta-tags/initializers/router-head-tags"], function (_exports, _routerHeadTags) {
+  "use strict";
+
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(_exports, "default", {
+    enumerable: true,
+    get: function () {
+      return _routerHeadTags.default;
+    }
+  });
+  Object.defineProperty(_exports, "initialize", {
+    enumerable: true,
+    get: function () {
+      return _routerHeadTags.initialize;
+    }
+  });
+});
+;define("heycarsten/instance-initializers/clear-double-boot", ["exports", "ember-cli-fastboot/instance-initializers/clear-double-boot"], function (_exports, _clearDoubleBoot) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -1458,7 +1548,7 @@
     }
   });
 });
-;define("heycarsten-site/instance-initializers/ember-cli-tailwind", ["exports", "heycarsten-site/router"], function (_exports, _router) {
+;define("heycarsten/instance-initializers/ember-cli-tailwind", ["exports", "heycarsten/router"], function (_exports, _router) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -1501,7 +1591,25 @@
   };
   _exports.default = _default;
 });
-;define("heycarsten-site/locations/none", ["exports", "ember-cli-fastboot/locations/none"], function (_exports, _none) {
+;define("heycarsten/instance-initializers/head-browser", ["exports"], function (_exports) {
+  "use strict";
+
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  _exports.default = void 0;
+  var _default = {
+    name: 'head-browser',
+
+    initialize() {// do nothing!
+      // this functionality has been moved into addon/components/head-layout.js
+      // This is only here in order to not break existing addons relying on this, e.g. ember-page-title.
+    }
+
+  };
+  _exports.default = _default;
+});
+;define("heycarsten/locations/none", ["exports", "ember-cli-fastboot/locations/none"], function (_exports, _none) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -1514,7 +1622,7 @@
     }
   });
 });
-;define("heycarsten-site/resolver", ["exports", "ember-resolver"], function (_exports, _emberResolver) {
+;define("heycarsten/resolver", ["exports", "ember-resolver"], function (_exports, _emberResolver) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -1524,7 +1632,7 @@
   var _default = _emberResolver.default;
   _exports.default = _default;
 });
-;define("heycarsten-site/router", ["exports", "heycarsten-site/config/environment"], function (_exports, _environment) {
+;define("heycarsten/router", ["exports", "heycarsten/config/environment"], function (_exports, _environment) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -1535,11 +1643,77 @@
     location: _environment.default.locationType,
     rootURL: _environment.default.rootURL
   });
-  Router.map(function () {});
+  Router.map(function () {
+    this.route('index', {
+      path: '/'
+    });
+    this.route('page', {
+      path: '/:path'
+    });
+  });
   var _default = Router;
   _exports.default = _default;
 });
-;define("heycarsten-site/services/ajax", ["exports", "ember-ajax/services/ajax"], function (_exports, _ajax) {
+;define("heycarsten/routes/application", ["exports"], function (_exports) {
+  "use strict";
+
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  _exports.default = void 0;
+
+  var _default = Ember.Route.extend({
+    model() {
+      return {
+        year: new Date().getFullYear()
+      };
+    }
+
+  });
+
+  _exports.default = _default;
+});
+;define("heycarsten/routes/index", ["exports"], function (_exports) {
+  "use strict";
+
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  _exports.default = void 0;
+
+  var _default = Ember.Route.extend({
+    markdown: Ember.inject.service('markdown-resolver'),
+
+    model() {
+      return this.markdown.file('pages', 'intro');
+    }
+
+  });
+
+  _exports.default = _default;
+});
+;define("heycarsten/routes/page", ["exports"], function (_exports) {
+  "use strict";
+
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  _exports.default = void 0;
+
+  var _default = Ember.Route.extend({
+    markdown: Ember.inject.service('markdown-resolver'),
+
+    model({
+      path
+    }) {
+      return this.markdown.file('pages', path);
+    }
+
+  });
+
+  _exports.default = _default;
+});
+;define("heycarsten/services/ajax", ["exports", "ember-ajax/services/ajax"], function (_exports, _ajax) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -1552,7 +1726,7 @@
     }
   });
 });
-;define("heycarsten-site/services/etw-tailwind-styleguide", ["exports"], function (_exports) {
+;define("heycarsten/services/etw-tailwind-styleguide", ["exports"], function (_exports) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -1565,7 +1739,7 @@
 
   _exports.default = _default;
 });
-;define("heycarsten-site/services/fastboot", ["exports", "ember-cli-fastboot/services/fastboot"], function (_exports, _fastboot) {
+;define("heycarsten/services/fastboot", ["exports", "ember-cli-fastboot/services/fastboot"], function (_exports, _fastboot) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -1578,7 +1752,33 @@
     }
   });
 });
-;define("heycarsten-site/services/markdown-resolver", ["exports", "ember-cli-markdown-resolver/services/markdown-resolver"], function (_exports, _markdownResolver) {
+;define("heycarsten/services/head-data", ["exports", "ember-cli-head/services/head-data"], function (_exports, _headData) {
+  "use strict";
+
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(_exports, "default", {
+    enumerable: true,
+    get: function () {
+      return _headData.default;
+    }
+  });
+});
+;define("heycarsten/services/head-tags", ["exports", "ember-cli-meta-tags/services/head-tags"], function (_exports, _headTags) {
+  "use strict";
+
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(_exports, "default", {
+    enumerable: true,
+    get: function () {
+      return _headTags.default;
+    }
+  });
+});
+;define("heycarsten/services/markdown-resolver", ["exports", "ember-cli-markdown-resolver/services/markdown-resolver"], function (_exports, _markdownResolver) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -1591,7 +1791,30 @@
     }
   });
 });
-;define("heycarsten-site/tailwind/config/background-colors", ["exports", "heycarsten-site/tailwind/config/colors"], function (_exports, _colors) {
+;define("heycarsten/services/page-title-list", ["exports", "ember-page-title/services/page-title-list", "heycarsten/config/environment"], function (_exports, _pageTitleList, _environment) {
+  "use strict";
+
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  _exports.default = void 0;
+
+  function capitalize(key) {
+    return key.charAt(0).toUpperCase() + key.slice(1);
+  }
+
+  let defaults = {};
+  ['separator', 'prepend', 'replace'].forEach(function (key) {
+    if (_environment.default.pageTitle && _environment.default.pageTitle[key]) {
+      defaults[`default${capitalize(key)}`] = _environment.default.pageTitle[key];
+    }
+  });
+
+  var _default = _pageTitleList.default.extend(defaults);
+
+  _exports.default = _default;
+});
+;define("heycarsten/tailwind/config/background-colors", ["exports", "heycarsten/tailwind/config/colors"], function (_exports, _colors) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -1614,7 +1837,7 @@
   var _default = _colors.default;
   _exports.default = _default;
 });
-;define("heycarsten-site/tailwind/config/background-size", ["exports"], function (_exports) {
+;define("heycarsten/tailwind/config/background-size", ["exports"], function (_exports) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -1641,7 +1864,7 @@
   };
   _exports.default = _default;
 });
-;define("heycarsten-site/tailwind/config/border-colors", ["exports", "heycarsten-site/tailwind/config/colors"], function (_exports, _colors) {
+;define("heycarsten/tailwind/config/border-colors", ["exports", "heycarsten/tailwind/config/colors"], function (_exports, _colors) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -1671,7 +1894,7 @@
 
   _exports.default = _default;
 });
-;define("heycarsten-site/tailwind/config/border-radius", ["exports"], function (_exports) {
+;define("heycarsten/tailwind/config/border-radius", ["exports"], function (_exports) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -1703,7 +1926,7 @@
   };
   _exports.default = _default;
 });
-;define("heycarsten-site/tailwind/config/border-widths", ["exports"], function (_exports) {
+;define("heycarsten/tailwind/config/border-widths", ["exports"], function (_exports) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -1732,7 +1955,7 @@
   };
   _exports.default = _default;
 });
-;define("heycarsten-site/tailwind/config/colors", ["exports"], function (_exports) {
+;define("heycarsten/tailwind/config/colors", ["exports"], function (_exports) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -1832,7 +2055,7 @@
   };
   _exports.default = _default;
 });
-;define("heycarsten-site/tailwind/config/font-weights", ["exports"], function (_exports) {
+;define("heycarsten/tailwind/config/font-weights", ["exports"], function (_exports) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -1866,7 +2089,7 @@
   };
   _exports.default = _default;
 });
-;define("heycarsten-site/tailwind/config/fonts", ["exports"], function (_exports) {
+;define("heycarsten/tailwind/config/fonts", ["exports"], function (_exports) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -1898,7 +2121,7 @@
   };
   _exports.default = _default;
 });
-;define("heycarsten-site/tailwind/config/height", ["exports"], function (_exports) {
+;define("heycarsten/tailwind/config/height", ["exports"], function (_exports) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -1941,7 +2164,7 @@
   };
   _exports.default = _default;
 });
-;define("heycarsten-site/tailwind/config/letter-spacing", ["exports"], function (_exports) {
+;define("heycarsten/tailwind/config/letter-spacing", ["exports"], function (_exports) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -1967,7 +2190,7 @@
   };
   _exports.default = _default;
 });
-;define("heycarsten-site/tailwind/config/line-height", ["exports"], function (_exports) {
+;define("heycarsten/tailwind/config/line-height", ["exports"], function (_exports) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -1994,7 +2217,7 @@
   };
   _exports.default = _default;
 });
-;define("heycarsten-site/tailwind/config/margin", ["exports"], function (_exports) {
+;define("heycarsten/tailwind/config/margin", ["exports"], function (_exports) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -2036,7 +2259,7 @@
   };
   _exports.default = _default;
 });
-;define("heycarsten-site/tailwind/config/max-height", ["exports"], function (_exports) {
+;define("heycarsten/tailwind/config/max-height", ["exports"], function (_exports) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -2063,7 +2286,7 @@
   };
   _exports.default = _default;
 });
-;define("heycarsten-site/tailwind/config/max-width", ["exports"], function (_exports) {
+;define("heycarsten/tailwind/config/max-width", ["exports"], function (_exports) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -2099,7 +2322,7 @@
   };
   _exports.default = _default;
 });
-;define("heycarsten-site/tailwind/config/min-height", ["exports"], function (_exports) {
+;define("heycarsten/tailwind/config/min-height", ["exports"], function (_exports) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -2127,7 +2350,7 @@
   };
   _exports.default = _default;
 });
-;define("heycarsten-site/tailwind/config/min-width", ["exports"], function (_exports) {
+;define("heycarsten/tailwind/config/min-width", ["exports"], function (_exports) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -2154,7 +2377,7 @@
   };
   _exports.default = _default;
 });
-;define("heycarsten-site/tailwind/config/negative-margin", ["exports"], function (_exports) {
+;define("heycarsten/tailwind/config/negative-margin", ["exports"], function (_exports) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -2195,7 +2418,7 @@
   };
   _exports.default = _default;
 });
-;define("heycarsten-site/tailwind/config/opacity", ["exports"], function (_exports) {
+;define("heycarsten/tailwind/config/opacity", ["exports"], function (_exports) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -2224,7 +2447,7 @@
   };
   _exports.default = _default;
 });
-;define("heycarsten-site/tailwind/config/padding", ["exports"], function (_exports) {
+;define("heycarsten/tailwind/config/padding", ["exports"], function (_exports) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -2265,7 +2488,7 @@
   };
   _exports.default = _default;
 });
-;define("heycarsten-site/tailwind/config/screens", ["exports"], function (_exports) {
+;define("heycarsten/tailwind/config/screens", ["exports"], function (_exports) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -2299,7 +2522,7 @@
   };
   _exports.default = _default;
 });
-;define("heycarsten-site/tailwind/config/shadows", ["exports"], function (_exports) {
+;define("heycarsten/tailwind/config/shadows", ["exports"], function (_exports) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -2332,7 +2555,7 @@
   };
   _exports.default = _default;
 });
-;define("heycarsten-site/tailwind/config/svg-fill", ["exports"], function (_exports) {
+;define("heycarsten/tailwind/config/svg-fill", ["exports"], function (_exports) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -2358,7 +2581,7 @@
   };
   _exports.default = _default;
 });
-;define("heycarsten-site/tailwind/config/svg-stroke", ["exports"], function (_exports) {
+;define("heycarsten/tailwind/config/svg-stroke", ["exports"], function (_exports) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -2384,7 +2607,7 @@
   };
   _exports.default = _default;
 });
-;define("heycarsten-site/tailwind/config/tailwind", ["exports", "tailwindcss/plugins/container", "heycarsten-site/tailwind/config/colors", "heycarsten-site/tailwind/config/screens", "heycarsten-site/tailwind/config/fonts", "heycarsten-site/tailwind/config/text-sizes", "heycarsten-site/tailwind/config/font-weights", "heycarsten-site/tailwind/config/line-height", "heycarsten-site/tailwind/config/letter-spacing", "heycarsten-site/tailwind/config/text-colors", "heycarsten-site/tailwind/config/background-colors", "heycarsten-site/tailwind/config/background-size", "heycarsten-site/tailwind/config/border-widths", "heycarsten-site/tailwind/config/border-colors", "heycarsten-site/tailwind/config/border-radius", "heycarsten-site/tailwind/config/width", "heycarsten-site/tailwind/config/height", "heycarsten-site/tailwind/config/min-width", "heycarsten-site/tailwind/config/min-height", "heycarsten-site/tailwind/config/max-width", "heycarsten-site/tailwind/config/max-height", "heycarsten-site/tailwind/config/padding", "heycarsten-site/tailwind/config/margin", "heycarsten-site/tailwind/config/negative-margin", "heycarsten-site/tailwind/config/shadows", "heycarsten-site/tailwind/config/z-index", "heycarsten-site/tailwind/config/opacity", "heycarsten-site/tailwind/config/svg-fill", "heycarsten-site/tailwind/config/svg-stroke"], function (_exports, _container, _colors, _screens, _fonts, _textSizes, _fontWeights, _lineHeight, _letterSpacing, _textColors, _backgroundColors, _backgroundSize, _borderWidths, _borderColors, _borderRadius, _width, _height, _minWidth, _minHeight, _maxWidth, _maxHeight, _padding, _margin, _negativeMargin, _shadows, _zIndex, _opacity, _svgFill, _svgStroke) {
+;define("heycarsten/tailwind/config/tailwind", ["exports", "tailwindcss/plugins/container", "heycarsten/tailwind/config/colors", "heycarsten/tailwind/config/screens", "heycarsten/tailwind/config/fonts", "heycarsten/tailwind/config/text-sizes", "heycarsten/tailwind/config/font-weights", "heycarsten/tailwind/config/line-height", "heycarsten/tailwind/config/letter-spacing", "heycarsten/tailwind/config/text-colors", "heycarsten/tailwind/config/background-colors", "heycarsten/tailwind/config/background-size", "heycarsten/tailwind/config/border-widths", "heycarsten/tailwind/config/border-colors", "heycarsten/tailwind/config/border-radius", "heycarsten/tailwind/config/width", "heycarsten/tailwind/config/height", "heycarsten/tailwind/config/min-width", "heycarsten/tailwind/config/min-height", "heycarsten/tailwind/config/max-width", "heycarsten/tailwind/config/max-height", "heycarsten/tailwind/config/padding", "heycarsten/tailwind/config/margin", "heycarsten/tailwind/config/negative-margin", "heycarsten/tailwind/config/shadows", "heycarsten/tailwind/config/z-index", "heycarsten/tailwind/config/opacity", "heycarsten/tailwind/config/svg-fill", "heycarsten/tailwind/config/svg-stroke"], function (_exports, _container, _colors, _screens, _fonts, _textSizes, _fontWeights, _lineHeight, _letterSpacing, _textColors, _backgroundColors, _backgroundSize, _borderWidths, _borderColors, _borderRadius, _width, _height, _minWidth, _minHeight, _maxWidth, _maxHeight, _padding, _margin, _negativeMargin, _shadows, _zIndex, _opacity, _svgFill, _svgStroke) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -2503,7 +2726,7 @@
   };
   _exports.default = _default;
 });
-;define("heycarsten-site/tailwind/config/text-colors", ["exports", "heycarsten-site/tailwind/config/colors"], function (_exports, _colors) {
+;define("heycarsten/tailwind/config/text-colors", ["exports", "heycarsten/tailwind/config/colors"], function (_exports, _colors) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -2526,7 +2749,7 @@
   var _default = _colors.default;
   _exports.default = _default;
 });
-;define("heycarsten-site/tailwind/config/text-sizes", ["exports"], function (_exports) {
+;define("heycarsten/tailwind/config/text-sizes", ["exports"], function (_exports) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -2574,7 +2797,7 @@
   };
   _exports.default = _default;
 });
-;define("heycarsten-site/tailwind/config/width", ["exports"], function (_exports) {
+;define("heycarsten/tailwind/config/width", ["exports"], function (_exports) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -2633,7 +2856,7 @@
   };
   _exports.default = _default;
 });
-;define("heycarsten-site/tailwind/config/z-index", ["exports"], function (_exports) {
+;define("heycarsten/tailwind/config/z-index", ["exports"], function (_exports) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -2664,7 +2887,7 @@
   };
   _exports.default = _default;
 });
-;define("heycarsten-site/templates/application-tailwind", ["exports"], function (_exports) {
+;define("heycarsten/templates/application-tailwind", ["exports"], function (_exports) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -2673,16 +2896,16 @@
   _exports.default = void 0;
 
   var _default = Ember.HTMLBars.template({
-    "id": "fsmObkAW",
+    "id": "3nzVHbAf",
     "block": "{\"symbols\":[],\"statements\":[[7,\"div\"],[11,\"class\",\"etw-px-4 etw-my-8 etw-max-w-3xl etw-mx-auto etw-font-sans\"],[9],[0,\"\\n  \"],[7,\"div\"],[11,\"class\",\"etw-flex etw-mt-6\"],[9],[0,\"\\n    \"],[7,\"div\"],[11,\"class\",\"etw-w-3/4 etw-pr-6\"],[9],[0,\"\\n      \"],[7,\"h1\"],[11,\"class\",\"etw-pt-8 etw-text-3xl etw-font-bold\"],[9],[0,\"Your Tailwind styles\"],[10],[0,\"\\n      \"],[7,\"p\"],[11,\"class\",\"etw-mt-3 etw-mb-4 etw-text-lg\"],[9],[0,\"A reference for every generated class in your app.\"],[10],[0,\"\\n\\n      \"],[1,[27,\"etw/module-section\",null,[[\"title\",\"codeSnippets\",\"moduleStyles\"],[\"Border radius\",[27,\"array\",[\".rounded{-side?}{-size?}\"],null],[23,[\"moduleStyles\",\"borderRadius\"]]]]],false],[0,\"\\n\\n      \"],[1,[27,\"etw/module-section\",null,[[\"title\",\"codeSnippets\",\"moduleStyles\"],[\"Borders\",[27,\"array\",[\".border{-side?}{-width?}\"],null],[23,[\"moduleStyles\",\"borderWidths\"]]]]],false],[0,\"\\n\\n      \"],[1,[27,\"etw/module-section\",null,[[\"title\",\"codeSnippets\",\"moduleStyles\"],[\"Colors\",[27,\"array\",[\".text-{color}\",\".bg-{color}\",\".border-{color}\"],null],[23,[\"moduleStyles\",\"colors\"]]]]],false],[0,\"\\n\\n      \"],[1,[27,\"etw/module-section\",null,[[\"title\",\"codeSnippets\",\"moduleStyles\"],[\"Font weights\",[27,\"array\",[\".font-{weight}\"],null],[23,[\"moduleStyles\",\"fontWeights\"]]]]],false],[0,\"\\n\\n      \"],[1,[27,\"etw/module-section\",null,[[\"title\",\"codeSnippets\",\"moduleStyles\"],[\"Height\",[27,\"array\",[\".h-{size}\"],null],[23,[\"moduleStyles\",\"height\"]]]]],false],[0,\"\\n\\n      \"],[1,[27,\"etw/module-section\",null,[[\"title\",\"codeSnippets\",\"moduleStyles\"],[\"Letter spacing\",[27,\"array\",[\".tracking-{size}\"],null],[23,[\"moduleStyles\",\"letterSpacing\"]]]]],false],[0,\"\\n\\n      \"],[1,[27,\"etw/module-section\",null,[[\"title\",\"codeSnippets\",\"moduleStyles\"],[\"Line height\",[27,\"array\",[\".leading-{size}\"],null],[23,[\"moduleStyles\",\"lineHeight\"]]]]],false],[0,\"\\n\\n      \"],[1,[27,\"etw/module-section\",null,[[\"title\",\"codeSnippets\",\"moduleStyles\"],[\"Margin\",[27,\"array\",[\".m{side?}-{size}\"],null],[23,[\"moduleStyles\",\"margin\"]]]]],false],[0,\"\\n\\n      \"],[1,[27,\"etw/module-section\",null,[[\"title\",\"codeSnippets\",\"moduleStyles\"],[\"Max height\",[27,\"array\",[\".max-h-{size}\"],null],[23,[\"moduleStyles\",\"maxHeight\"]]]]],false],[0,\"\\n\\n      \"],[1,[27,\"etw/module-section\",null,[[\"title\",\"codeSnippets\",\"moduleStyles\"],[\"Max width\",[27,\"array\",[\".max-w-{size}\"],null],[23,[\"moduleStyles\",\"maxWidth\"]]]]],false],[0,\"\\n\\n      \"],[1,[27,\"etw/module-section\",null,[[\"title\",\"codeSnippets\",\"moduleStyles\"],[\"Min height\",[27,\"array\",[\".min-h-{size}\"],null],[23,[\"moduleStyles\",\"minHeight\"]]]]],false],[0,\"\\n\\n      \"],[1,[27,\"etw/module-section\",null,[[\"title\",\"codeSnippets\",\"moduleStyles\"],[\"Min width\",[27,\"array\",[\".min-w-{size}\"],null],[23,[\"moduleStyles\",\"minWidth\"]]]]],false],[0,\"\\n\\n      \"],[1,[27,\"etw/module-section\",null,[[\"title\",\"codeSnippets\",\"moduleStyles\"],[\"Negative margin\",[27,\"array\",[\".-m{side?}-{size}\"],null],[23,[\"moduleStyles\",\"negativeMargin\"]]]]],false],[0,\"\\n\\n      \"],[1,[27,\"etw/module-section\",null,[[\"title\",\"codeSnippets\",\"moduleStyles\"],[\"Opacity\",[27,\"array\",[\".opacity-{name}\"],null],[23,[\"moduleStyles\",\"opacity\"]]]]],false],[0,\"\\n\\n      \"],[1,[27,\"etw/module-section\",null,[[\"title\",\"codeSnippets\",\"moduleStyles\"],[\"Padding\",[27,\"array\",[\".p{side?}-{size}\"],null],[23,[\"moduleStyles\",\"padding\"]]]]],false],[0,\"\\n\\n      \"],[1,[27,\"etw/module-section\",null,[[\"title\",\"codeSnippets\",\"moduleStyles\"],[\"Shadows\",[27,\"array\",[\".shadow-{size?}\"],null],[23,[\"moduleStyles\",\"shadows\"]]]]],false],[0,\"\\n\\n      \"],[1,[27,\"etw/module-section\",null,[[\"title\",\"codeSnippets\",\"moduleStyles\"],[\"SVG fill\",[27,\"array\",[\".fill-{name}\"],null],[23,[\"moduleStyles\",\"svgFill\"]]]]],false],[0,\"\\n\\n      \"],[1,[27,\"etw/module-section\",null,[[\"title\",\"codeSnippets\",\"moduleStyles\"],[\"SVG stroke\",[27,\"array\",[\".stroke-{name}\"],null],[23,[\"moduleStyles\",\"svgStroke\"]]]]],false],[0,\"\\n\\n      \"],[1,[27,\"etw/module-section\",null,[[\"title\",\"codeSnippets\",\"moduleStyles\"],[\"Text sizes\",[27,\"array\",[\".text-{size}\"],null],[23,[\"moduleStyles\",\"textSizes\"]]]]],false],[0,\"\\n\\n      \"],[1,[27,\"etw/module-section\",null,[[\"title\",\"codeSnippets\",\"moduleStyles\"],[\"Width\",[27,\"array\",[\".w-{size}\"],null],[23,[\"moduleStyles\",\"width\"]]]]],false],[0,\"\\n\\n      \"],[1,[27,\"etw/module-section\",null,[[\"title\",\"codeSnippets\",\"moduleStyles\"],[\"Z index\",[27,\"array\",[\".z-{index}\"],null],[23,[\"moduleStyles\",\"zIndex\"]]]]],false],[0,\"\\n\\n    \"],[10],[0,\"\\n\\n    \"],[7,\"div\"],[11,\"class\",\"etw-w-1/4 etw-relative\"],[9],[0,\"\\n      \"],[1,[21,\"etw/module-style-detail\"],false],[0,\"\\n    \"],[10],[0,\"\\n  \"],[10],[0,\"\\n\"],[10],[0,\"\\n\"]],\"hasEval\":false}",
     "meta": {
-      "moduleName": "heycarsten-site/templates/application-tailwind.hbs"
+      "moduleName": "heycarsten/templates/application-tailwind.hbs"
     }
   });
 
   _exports.default = _default;
 });
-;define("heycarsten-site/templates/application", ["exports"], function (_exports) {
+;define("heycarsten/templates/application", ["exports"], function (_exports) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -2691,16 +2914,16 @@
   _exports.default = void 0;
 
   var _default = Ember.HTMLBars.template({
-    "id": "oi024vwz",
-    "block": "{\"symbols\":[],\"statements\":[[1,[21,\"welcome-page\"],false],[0,\"\\n\"],[0,\"\\n\"],[1,[21,\"outlet\"],false]],\"hasEval\":false}",
+    "id": "6Mc6t/6d",
+    "block": "{\"symbols\":[],\"statements\":[[1,[21,\"head-layout\"],false],[0,\"\\n\"],[1,[27,\"page-title\",[\"Carsten Nielsen\"],null],false],[0,\"\\n\\n\"],[7,\"header\"],[9],[0,\"\\n  \"],[7,\"h1\"],[9],[0,\"\\n\"],[4,\"link-to\",[\"index\"],null,{\"statements\":[[0,\"      Carsten Nielsen\\n\"]],\"parameters\":[]},null],[0,\"  \"],[10],[0,\"\\n\"],[10],[0,\"\\n\\n\"],[7,\"div\"],[11,\"class\",\"container\"],[9],[0,\"\\n  \"],[1,[21,\"outlet\"],false],[0,\"\\n\"],[10],[0,\"\\n\\n\"],[7,\"footer\"],[9],[0,\"\\n  © \"],[1,[23,[\"model\",\"year\"]],false],[0,\" Carsten Nielsen\\n\"],[10],[0,\"\\n\"]],\"hasEval\":false}",
     "meta": {
-      "moduleName": "heycarsten-site/templates/application.hbs"
+      "moduleName": "heycarsten/templates/application.hbs"
     }
   });
 
   _exports.default = _default;
 });
-;define("heycarsten-site/templates/components/code-block", ["exports"], function (_exports) {
+;define("heycarsten/templates/components/code-block", ["exports"], function (_exports) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -2709,16 +2932,16 @@
   _exports.default = void 0;
 
   var _default = Ember.HTMLBars.template({
-    "id": "JVnA3tL2",
+    "id": "o+3YVdw3",
     "block": "{\"symbols\":[\"&default\"],\"statements\":[[7,\"code\"],[12,\"class\",[21,\"languageClass\"]],[9],[14,1],[10],[0,\"\\n\"]],\"hasEval\":false}",
     "meta": {
-      "moduleName": "heycarsten-site/templates/components/code-block.hbs"
+      "moduleName": "heycarsten/templates/components/code-block.hbs"
     }
   });
 
   _exports.default = _default;
 });
-;define("heycarsten-site/templates/components/etw/module-section", ["exports"], function (_exports) {
+;define("heycarsten/templates/components/etw/module-section", ["exports"], function (_exports) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -2727,16 +2950,16 @@
   _exports.default = void 0;
 
   var _default = Ember.HTMLBars.template({
-    "id": "zhQuemxE",
+    "id": "2ILfy3Xu",
     "block": "{\"symbols\":[\"moduleStyle\",\"snippet\"],\"statements\":[[7,\"section\"],[9],[0,\"\\n  \"],[7,\"h2\"],[11,\"class\",\"etw-pt-8 etw-mb-6 etw-text-lg etw-font-bold\"],[9],[1,[21,\"title\"],false],[10],[0,\"\\n\\n  \"],[7,\"ul\"],[11,\"class\",\"etw-list-reset etw-leading-normal\"],[9],[0,\"\\n\"],[4,\"each\",[[23,[\"codeSnippets\"]]],null,{\"statements\":[[0,\"      \"],[7,\"li\"],[9],[7,\"code\"],[9],[1,[22,2,[]],false],[10],[10],[0,\"\\n\"]],\"parameters\":[2]},null],[0,\"  \"],[10],[0,\"\\n\\n  \"],[7,\"div\"],[11,\"class\",\"etw-mt-8 etw-flex etw-flex-wrap\"],[9],[0,\"\\n\"],[4,\"each\",[[23,[\"moduleStyles\"]]],null,{\"statements\":[[0,\"      \"],[1,[27,\"etw/module-style-example\",null,[[\"moduleStyle\"],[[22,1,[]]]]],false],[0,\"\\n\"]],\"parameters\":[1]},null],[0,\"  \"],[10],[0,\"\\n\"],[10],[0,\"\\n\"]],\"hasEval\":false}",
     "meta": {
-      "moduleName": "heycarsten-site/templates/components/etw/module-section.hbs"
+      "moduleName": "heycarsten/templates/components/etw/module-section.hbs"
     }
   });
 
   _exports.default = _default;
 });
-;define("heycarsten-site/templates/components/etw/module-style-detail", ["exports"], function (_exports) {
+;define("heycarsten/templates/components/etw/module-style-detail", ["exports"], function (_exports) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -2745,16 +2968,16 @@
   _exports.default = void 0;
 
   var _default = Ember.HTMLBars.template({
-    "id": "ze2Dn4Qm",
+    "id": "4qITxQki",
     "block": "{\"symbols\":[\"style\",\"state\",\"breakpoint\"],\"statements\":[[7,\"div\"],[11,\"class\",\"etw-shadow-lg etw-fixed etw-mr-4 etw-px-4 etw-pt-4 etw-pb-14 etw-bg-white etw-w-64 etw-mt-8 overflow-y-auto etw-h-screen\"],[9],[0,\"\\n  \"],[7,\"h3\"],[9],[0,\"Detail\"],[10],[0,\"\\n\\n\"],[4,\"if\",[[23,[\"moduleStyle\"]]],null,{\"statements\":[[0,\"\\n    \"],[7,\"div\"],[11,\"class\",\"etw-my-8\"],[9],[0,\"\\n      \"],[1,[27,\"etw/module-style-example\",null,[[\"moduleStyle\"],[[23,[\"moduleStyle\"]]]]],false],[0,\"\\n    \"],[10],[0,\"\\n\\n    \"],[7,\"div\"],[11,\"class\",\"etw-mt-4\"],[9],[0,\"\\n      \"],[7,\"h4\"],[11,\"class\",\"etw-inline-block etw-pr-2\"],[9],[0,\"Responsive: \"],[10],[0,\"\\n      \"],[7,\"div\"],[11,\"class\",\"etw-mt-2 etw-text-sm etw-inline-block\"],[9],[0,\"\\n\"],[4,\"each\",[[27,\"array\",[\"all\",\"sm\",\"md\",\"lg\",\"xl\"],null]],null,{\"statements\":[[0,\"          \"],[7,\"a\"],[11,\"href\",\"#\"],[12,\"class\",[28,[\"\\n              etw-no-underline\\n              etw-text-black\\n              etw-pr-2\\n              \",[27,\"if\",[[27,\"eq\",[[23,[\"activeResponsiveClass\"]],[22,3,[]]],null],\"etw-opacity-100\",\"etw-opacity-25\"],null],\"\\n            \"]]],[9],[0,\"\\n            \"],[1,[22,3,[]],false],[0,\"\\n          \"],[3,\"action\",[[22,0,[]],[27,\"mut\",[[23,[\"activeResponsiveClass\"]]],null],[22,3,[]]]],[10],[0,\"\\n\"]],\"parameters\":[3]},null],[0,\"      \"],[10],[0,\"\\n    \"],[10],[0,\"\\n\\n    \"],[7,\"div\"],[11,\"class\",\"etw-mt-4\"],[9],[0,\"\\n      \"],[7,\"h4\"],[11,\"class\",\"etw-inline-block etw-pr-2\"],[9],[0,\"State: \"],[10],[0,\"\\n      \"],[7,\"div\"],[11,\"class\",\"etw-mt-2 etw-text-sm etw-inline-block\"],[9],[0,\"\\n\"],[4,\"each\",[[27,\"array\",[\"none\",\"hover\",\"focus\"],null]],null,{\"statements\":[[0,\"          \"],[7,\"a\"],[11,\"href\",\"#\"],[12,\"class\",[28,[\"\\n              etw-no-underline\\n              etw-text-black\\n              etw-pr-2\\n              \",[27,\"if\",[[27,\"eq\",[[23,[\"activeState\"]],[22,2,[]]],null],\"etw-opacity-100\",\"etw-opacity-25\"],null],\"\\n            \"]]],[9],[0,\"\\n            \"],[1,[22,2,[]],false],[0,\"\\n          \"],[3,\"action\",[[22,0,[]],[27,\"mut\",[[23,[\"activeState\"]]],null],[22,2,[]]]],[10],[0,\"\\n\"]],\"parameters\":[2]},null],[0,\"      \"],[10],[0,\"\\n    \"],[10],[0,\"\\n\\n    \"],[7,\"div\"],[11,\"class\",\"etw-mt-8 etw-mb-4\"],[9],[0,\"\\n      \"],[7,\"p\"],[11,\"class\",\"etw-text-right etw-text-xs etw-opacity-50\"],[9],[0,\"\\n\"],[4,\"if\",[[23,[\"highlightedStyle\"]]],null,{\"statements\":[[0,\"          Copied!\\n\"]],\"parameters\":[]},{\"statements\":[[0,\"          Click to copy\\n\"]],\"parameters\":[]}],[0,\"      \"],[10],[0,\"\\n\\n      \"],[7,\"ul\"],[11,\"class\",\"etw-mt-3 etw-list-reset\"],[9],[0,\"\\n\"],[4,\"each\",[[23,[\"detailStyles\"]]],null,{\"statements\":[[0,\"          \"],[7,\"li\"],[11,\"class\",\"etw-mt-4\"],[9],[0,\"\\n\"],[4,\"copy-button\",null,[[\"class\",\"clipboardText\",\"title\",\"success\"],[[27,\"concat\",[\"etw-bg-grey-light etw-opacity-75 hover:etw-opacity-100 \",\"etw-px-1 etw-py-2 etw-w-full etw-text-left etw-transition \",[27,\"if\",[[27,\"eq\",[[23,[\"highlightedStyle\"]],[22,1,[]]],null],\"etw-bg-green etw-text-white\"],null]],null],[22,1,[]],\"Copy\",[27,\"action\",[[22,0,[]],\"highlightStyle\",[22,1,[]]],null]]],{\"statements\":[[0,\"              \"],[7,\"code\"],[9],[0,\".\"],[1,[22,1,[]],false],[10],[0,\"\\n\"]],\"parameters\":[]},null],[0,\"          \"],[10],[0,\"\\n\"]],\"parameters\":[1]},null],[0,\"      \"],[10],[0,\"\\n    \"],[10],[0,\"\\n\\n\"]],\"parameters\":[]},{\"statements\":[[0,\"\\n    \"],[7,\"p\"],[11,\"class\",\"etw-mt-4 etw-text-grey etw-italic\"],[9],[0,\"Select a module for more detail.\"],[10],[0,\"\\n\\n\"]],\"parameters\":[]}],[0,\"\\n\"],[10],[0,\"\\n\"]],\"hasEval\":false}",
     "meta": {
-      "moduleName": "heycarsten-site/templates/components/etw/module-style-detail.hbs"
+      "moduleName": "heycarsten/templates/components/etw/module-style-detail.hbs"
     }
   });
 
   _exports.default = _default;
 });
-;define("heycarsten-site/templates/components/etw/module-style-example", ["exports"], function (_exports) {
+;define("heycarsten/templates/components/etw/module-style-example", ["exports"], function (_exports) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -2763,10 +2986,64 @@
   _exports.default = void 0;
 
   var _default = Ember.HTMLBars.template({
-    "id": "f1dQvXGp",
+    "id": "E/tzj1Fa",
     "block": "{\"symbols\":[],\"statements\":[[7,\"a\"],[11,\"class\",\"etw-mb-8 etw-w-1/5 etw-p-2\"],[9],[0,\"\\n  \"],[7,\"div\"],[11,\"class\",\"etw-text-center etw-m-4 etw-text-sm \"],[9],[0,\"\\n    \"],[7,\"div\"],[11,\"class\",\"etw-text-center etw-m-4 etw-text-sm \"],[9],[0,\"\\n\\n\"],[4,\"if\",[[27,\"eq\",[[23,[\"moduleStyle\",\"module\"]],\"border-radius\"],null]],null,{\"statements\":[[0,\"\\n        \"],[7,\"div\"],[12,\"class\",[28,[\"\\n          etw-mx-auto etw-w-24 etw-h-24 etw-border\\n          etw-border-solid etw-border-grey\\n          etw-bg-grey-lighter\\n          \",[23,[\"classesForModuleStyle\",\"0\"]],\"\\n        \"]]],[9],[10],[0,\"\\n\\n\"]],\"parameters\":[]},{\"statements\":[[4,\"if\",[[27,\"eq\",[[23,[\"moduleStyle\",\"module\"]],\"border-widths\"],null]],null,{\"statements\":[[0,\"        \"],[7,\"div\"],[12,\"class\",[28,[\"\\n          etw-mx-auto etw-w-24 etw-h-24\\n          etw-border-red etw-bg-grey-lighter etw-border-solid\\n          \",[23,[\"classesForModuleStyle\",\"0\"]],\"\\n        \"]]],[9],[10],[0,\"\\n\\n\"]],\"parameters\":[]},{\"statements\":[[4,\"if\",[[27,\"eq\",[[23,[\"moduleStyle\",\"module\"]],\"colors\"],null]],null,{\"statements\":[[0,\"        \"],[7,\"div\"],[12,\"class\",[28,[\"etw-marginx-auto etw-w-full etw-h-24 bg-\",[23,[\"moduleStyle\",\"name\"]]]]],[9],[10],[0,\"\\n\\n\"]],\"parameters\":[]},{\"statements\":[[4,\"if\",[[27,\"eq\",[[23,[\"moduleStyle\",\"module\"]],\"font-weights\"],null]],null,{\"statements\":[[0,\"        \"],[7,\"p\"],[12,\"class\",[28,[\"font-\",[23,[\"moduleStyle\",\"name\"]]]]],[9],[0,\"\\n          Lorem ipsum dolor sit amet, consectetur adipisicing elit.\\n        \"],[10],[0,\"\\n\\n\"]],\"parameters\":[]},{\"statements\":[[4,\"if\",[[27,\"eq\",[[23,[\"moduleStyle\",\"module\"]],\"height\"],null]],null,{\"statements\":[[0,\"        \"],[7,\"div\"],[12,\"class\",[28,[\"\\n          etw-mx-auto etw-w-24 etw-h-24\\n          etw-border etw-border-solid etw-border-grey\\n          etw-bg-grey-lighter\\n          \",[23,[\"classesForModuleStyle\",\"0\"]],\"\\n        \"]]],[9],[10],[0,\"\\n\\n\"]],\"parameters\":[]},{\"statements\":[[4,\"if\",[[27,\"eq\",[[23,[\"moduleStyle\",\"module\"]],\"letter-spacing\"],null]],null,{\"statements\":[[0,\"        \"],[7,\"p\"],[12,\"class\",[28,[\"text-left tracking-\",[23,[\"moduleStyle\",\"name\"]]]]],[9],[0,\"\\n          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\\n        \"],[10],[0,\"\\n\\n\"]],\"parameters\":[]},{\"statements\":[[4,\"if\",[[27,\"eq\",[[23,[\"moduleStyle\",\"module\"]],\"line-height\"],null]],null,{\"statements\":[[0,\"        \"],[7,\"p\"],[12,\"class\",[28,[\"text-left leading-\",[23,[\"moduleStyle\",\"name\"]]]]],[9],[0,\"\\n          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\\n        \"],[10],[0,\"\\n\\n\"]],\"parameters\":[]},{\"statements\":[[4,\"if\",[[27,\"eq\",[[23,[\"moduleStyle\",\"module\"]],\"margin\"],null]],null,{\"statements\":[[0,\"        \"],[7,\"div\"],[12,\"class\",[28,[\"etw-bg-red etw-w-24 etw-mx-auto etw-border-t etw-border-solid \",[27,\"if\",[[27,\"eq\",[[23,[\"moduleStyle\",\"name\"]],\"auto\"],null],\"\",\"etw-border-transparent\"],null]]]],[9],[0,\"\\n          \"],[7,\"div\"],[12,\"class\",[28,[\"\\n            etw-mx-auto etw-w-24 etw-h-24 etw-border\\n             etw-bg-grey-lighter\\n            mt-\",[23,[\"moduleStyle\",\"name\"]],\"\\n          \"]]],[9],[10],[0,\"\\n        \"],[10],[0,\"\\n\\n\"]],\"parameters\":[]},{\"statements\":[[4,\"if\",[[27,\"eq\",[[23,[\"moduleStyle\",\"module\"]],\"max-height\"],null]],null,{\"statements\":[[0,\"        \"],[7,\"div\"],[12,\"class\",[28,[\"\\n          etw-mx-auto etw-w-24 etw-h-24 etw-bg-grey-lighter\\n          etw-border etw-border-solid etw-border-grey\\n          max-h-\",[23,[\"moduleStyle\",\"name\"]],\"\\n        \"]]],[9],[10],[0,\"\\n\\n\"]],\"parameters\":[]},{\"statements\":[[4,\"if\",[[27,\"eq\",[[23,[\"moduleStyle\",\"module\"]],\"max-width\"],null]],null,{\"statements\":[[0,\"        \"],[7,\"div\"],[12,\"class\",[28,[\"\\n          etw-mx-auto etw-w-24 etw-h-24 etw-bg-grey-lighter\\n          etw-border etw-border-solid etw-border-grey\\n          max-w-\",[23,[\"moduleStyle\",\"name\"]],\"\\n        \"]]],[9],[10],[0,\"\\n\\n\"]],\"parameters\":[]},{\"statements\":[[4,\"if\",[[27,\"eq\",[[23,[\"moduleStyle\",\"module\"]],\"min-height\"],null]],null,{\"statements\":[[0,\"        \"],[7,\"div\"],[12,\"class\",[28,[\"\\n          etw-mx-auto etw-w-24 etw-h-24 etw-bg-grey-lighter\\n          etw-border etw-border-solid etw-border-grey\\n          min-h-\",[23,[\"moduleStyle\",\"name\"]],\"\\n        \"]]],[9],[10],[0,\"\\n\\n\"]],\"parameters\":[]},{\"statements\":[[4,\"if\",[[27,\"eq\",[[23,[\"moduleStyle\",\"module\"]],\"min-width\"],null]],null,{\"statements\":[[0,\"        \"],[7,\"div\"],[12,\"class\",[28,[\"\\n          etw-mx-auto etw-w-24 etw-h-24 etw-bg-grey-lighter\\n          etw-border etw-border-solid etw-border-grey\\n          min-w-\",[23,[\"moduleStyle\",\"name\"]],\"\\n        \"]]],[9],[10],[0,\"\\n\\n\"]],\"parameters\":[]},{\"statements\":[[4,\"if\",[[27,\"eq\",[[23,[\"moduleStyle\",\"module\"]],\"negative-margin\"],null]],null,{\"statements\":[[0,\"        \"],[7,\"div\"],[11,\"class\",\"etw-mb-8 etw-bg-red etw-px-4 etw-pb-4 etw-mx-auto etw-h-32 etw-relative\"],[9],[0,\"\\n          \"],[7,\"div\"],[11,\"class\",\"etw-absolute etw-pin-x\"],[9],[0,\"\\n            \"],[7,\"div\"],[12,\"class\",[28,[\"\\n            etw-mx-auto etw-w-24 etw-h-24 etw-border\\n            etw-bg-grey-lighter etw-shadow-lg\\n            -mt-\",[23,[\"moduleStyle\",\"name\"]],\"\\n            \"]]],[9],[10],[0,\"\\n          \"],[10],[0,\"\\n        \"],[10],[0,\"\\n\\n\"]],\"parameters\":[]},{\"statements\":[[4,\"if\",[[27,\"eq\",[[23,[\"moduleStyle\",\"module\"]],\"opacity\"],null]],null,{\"statements\":[[0,\"        \"],[7,\"div\"],[12,\"class\",[28,[\"\\n          etw-mx-auto etw-w-24 etw-h-24 etw-border\\n          etw-border-grey etw-bg-grey-lighter\\n          opacity-\",[23,[\"moduleStyle\",\"name\"]],\"\\n        \"]]],[9],[10],[0,\"\\n\\n\"]],\"parameters\":[]},{\"statements\":[[4,\"if\",[[27,\"eq\",[[23,[\"moduleStyle\",\"module\"]],\"padding\"],null]],null,{\"statements\":[[0,\"        \"],[7,\"div\"],[11,\"class\",\"etw-bg-red etw-w-24 etw-mx-auto\"],[9],[0,\"\\n          \"],[7,\"div\"],[12,\"class\",[28,[\"\\n            etw-mx-auto etw-w-24 etw-h-24 etw-border\\n             etw-bg-grey-lighter\\n            pt-\",[23,[\"moduleStyle\",\"name\"]],\"\\n          \"]]],[9],[0,\"\\n            \"],[7,\"p\"],[11,\"class\",\"etw-text-grey-darker\"],[9],[0,\"Lorem\"],[10],[0,\"\\n          \"],[10],[0,\"\\n        \"],[10],[0,\"\\n\\n\"]],\"parameters\":[]},{\"statements\":[[4,\"if\",[[27,\"eq\",[[23,[\"moduleStyle\",\"module\"]],\"shadows\"],null]],null,{\"statements\":[[0,\"        \"],[7,\"div\"],[12,\"class\",[28,[\"\\n          etw-mx-auto etw-w-24 etw-h-24 etw-bg-white\\n          \",[23,[\"classesForModuleStyle\",\"0\"]],\"\\n        \"]]],[9],[0,\"\\n        \"],[10],[0,\"\\n\\n\"]],\"parameters\":[]},{\"statements\":[[4,\"if\",[[27,\"eq\",[[23,[\"moduleStyle\",\"module\"]],\"svg-fill\"],null]],null,{\"statements\":[[0,\"        \"],[7,\"div\"],[11,\"class\",\"etw-bg-grey-lighter etw-text-red etw-py-4\"],[9],[0,\"\\n          \"],[7,\"svg\"],[11,\"class\",\"fill-current inline-block h-12 w-12\"],[11,\"xmlns\",\"http://www.w3.org/2000/svg\",\"http://www.w3.org/2000/xmlns/\"],[11,\"viewBox\",\"0 0 20 20\"],[9],[0,\"\\n            \"],[7,\"path\"],[11,\"d\",\"M18 9.87V20H2V9.87a4.25 4.25 0 0 0 3-.38V14h10V9.5a4.26 4.26 0 0 0 3 .37zM3 0h4l-.67 6.03A3.43 3.43 0 0 1 3 9C1.34 9 .42 7.73.95 6.15L3 0zm5 0h4l.7 6.3c.17 1.5-.91 2.7-2.42 2.7h-.56A2.38 2.38 0 0 1 7.3 6.3L8 0zm5 0h4l2.05 6.15C19.58 7.73 18.65 9 17 9a3.42 3.42 0 0 1-3.33-2.97L13 0z\"],[9],[10],[0,\"\\n          \"],[10],[0,\"\\n        \"],[10],[0,\"\\n\\n\"]],\"parameters\":[]},{\"statements\":[[4,\"if\",[[27,\"eq\",[[23,[\"moduleStyle\",\"module\"]],\"svg-stroke\"],null]],null,{\"statements\":[[0,\"        \"],[7,\"div\"],[11,\"class\",\"etw-bg-grey-lighter etw-text-red etw-py-4\"],[9],[0,\"\\n          \"],[7,\"svg\"],[11,\"class\",\"stroke-current inline-block h-12 w-12\"],[11,\"viewBox\",\"0 0 24 24\"],[11,\"xmlns\",\"http://www.w3.org/2000/svg\",\"http://www.w3.org/2000/xmlns/\"],[11,\"fill\",\"none\"],[11,\"stroke-width\",\"2\"],[11,\"stroke-linecap\",\"round\"],[11,\"stroke-linejoin\",\"round\"],[9],[0,\"\\n              \"],[7,\"circle\"],[11,\"cx\",\"8\"],[11,\"cy\",\"21\"],[11,\"r\",\"2\"],[9],[10],[0,\"\\n              \"],[7,\"circle\"],[11,\"cx\",\"20\"],[11,\"cy\",\"21\"],[11,\"r\",\"2\"],[9],[10],[0,\"\\n              \"],[7,\"path\"],[11,\"d\",\"M5.67 6H23l-1.68 8.39a2 2 0 0 1-2 1.61H8.75a2 2 0 0 1-2-1.74L5.23 2.74A2 2 0 0 0 3.25 1H1\"],[9],[10],[0,\"\\n          \"],[10],[0,\"\\n        \"],[10],[0,\"\\n\\n\"]],\"parameters\":[]},{\"statements\":[[4,\"if\",[[27,\"eq\",[[23,[\"moduleStyle\",\"module\"]],\"text-sizes\"],null]],null,{\"statements\":[[0,\"        \"],[7,\"p\"],[12,\"class\",[28,[\"text-left text-\",[23,[\"moduleStyle\",\"name\"]]]]],[9],[0,\"\\n          Lorem ipsum dolor sit amet, consectetur adipisicing elit.\\n        \"],[10],[0,\"\\n\\n\"]],\"parameters\":[]},{\"statements\":[[4,\"if\",[[27,\"eq\",[[23,[\"moduleStyle\",\"module\"]],\"width\"],null]],null,{\"statements\":[[0,\"        \"],[7,\"div\"],[12,\"class\",[28,[\"\\n          etw-mx-auto etw-w-24 etw-h-24 etw-border\\n          etw-border-grey etw-bg-grey-lighter\\n          \",[23,[\"classesForModuleStyle\",\"0\"]],\"\\n        \"]]],[9],[10],[0,\"\\n\\n\"]],\"parameters\":[]},{\"statements\":[[4,\"if\",[[27,\"eq\",[[23,[\"moduleStyle\",\"module\"]],\"z-index\"],null]],null,{\"statements\":[[0,\"        \"],[7,\"div\"],[12,\"class\",[28,[\"\\n          etw-mx-auto etw-w-24 etw-h-24 etw-border\\n          etw-border-grey etw-bg-grey-lighter\\n          \",[23,[\"classesForModuleStyle\",\"0\"]],\"\\n        \"]]],[9],[10],[0,\"\\n\\n      \"]],\"parameters\":[]},null]],\"parameters\":[]}]],\"parameters\":[]}]],\"parameters\":[]}]],\"parameters\":[]}]],\"parameters\":[]}]],\"parameters\":[]}]],\"parameters\":[]}]],\"parameters\":[]}]],\"parameters\":[]}]],\"parameters\":[]}]],\"parameters\":[]}]],\"parameters\":[]}]],\"parameters\":[]}]],\"parameters\":[]}]],\"parameters\":[]}]],\"parameters\":[]}]],\"parameters\":[]}]],\"parameters\":[]}]],\"parameters\":[]}]],\"parameters\":[]}],[0,\"\\n      \"],[7,\"div\"],[11,\"class\",\"etw-mt-3 etw-leading-normal\"],[9],[0,\"\\n        \"],[7,\"p\"],[9],[1,[23,[\"moduleStyle\",\"name\"]],false],[10],[0,\"\\n        \"],[7,\"p\"],[11,\"class\",\"etw-opacity-50\"],[9],[1,[23,[\"moduleStyle\",\"value\"]],false],[10],[0,\"\\n      \"],[10],[0,\"\\n    \"],[10],[0,\"\\n  \"],[10],[0,\"\\n\"],[3,\"action\",[[22,0,[]],\"selectModuleStyle\"]],[10],[0,\"\\n\"]],\"hasEval\":false}",
     "meta": {
-      "moduleName": "heycarsten-site/templates/components/etw/module-style-example.hbs"
+      "moduleName": "heycarsten/templates/components/etw/module-style-example.hbs"
+    }
+  });
+
+  _exports.default = _default;
+});
+;define("heycarsten/templates/head", ["exports"], function (_exports) {
+  "use strict";
+
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  _exports.default = void 0;
+
+  var _default = Ember.HTMLBars.template({
+    "id": "gIwh+Nef",
+    "block": "{\"symbols\":[],\"statements\":[[7,\"title\"],[9],[1,[23,[\"model\",\"title\"]],false],[10],[0,\"\\n\"]],\"hasEval\":false}",
+    "meta": {
+      "moduleName": "heycarsten/templates/head.hbs"
+    }
+  });
+
+  _exports.default = _default;
+});
+;define("heycarsten/templates/index", ["exports"], function (_exports) {
+  "use strict";
+
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  _exports.default = void 0;
+
+  var _default = Ember.HTMLBars.template({
+    "id": "F6MTlfQz",
+    "block": "{\"symbols\":[],\"statements\":[[1,[27,\"page-title\",[\"Lead software developer and curious human\"],null],false],[0,\"\\n\\n\"],[7,\"p\"],[11,\"align\",\"center\"],[9],[0,\"\\n  \"],[7,\"img\"],[11,\"width\",\"200\"],[11,\"height\",\"200\"],[11,\"src\",\"/images/portrait.png\"],[11,\"alt\",\"\"],[9],[10],[0,\"\\n\"],[10],[0,\"\\n\\n\"],[7,\"article\"],[9],[0,\"\\n  \"],[1,[27,\"markdown-to-html\",[[23,[\"model\",\"content\"]]],null],false],[0,\"\\n\"],[10],[0,\"\\n\\n\"],[7,\"nav\"],[9],[0,\"\\n  \"],[7,\"ul\"],[9],[0,\"\\n    \"],[7,\"li\"],[9],[0,\"\\n      \"],[7,\"h3\"],[9],[0,\"\\n\"],[4,\"link-to\",[\"page\",\"tools-and-processes\"],null,{\"statements\":[[0,\"          My tools and processes\\n\"]],\"parameters\":[]},null],[0,\"      \"],[10],[0,\"\\n      \"],[7,\"p\"],[9],[0,\"\\n        Some insight into the tools I use, how I use them, and how I came to\\n        developing these preferences\\n      \"],[10],[0,\"\\n    \"],[10],[0,\"\\n    \"],[7,\"li\"],[9],[0,\"\\n      \"],[7,\"h3\"],[9],[0,\"\\n\"],[4,\"link-to\",[\"page\",\"outside-of-tech\"],null,{\"statements\":[[0,\"          Me outside of tech\\n\"]],\"parameters\":[]},null],[0,\"      \"],[10],[0,\"\\n      \"],[7,\"p\"],[9],[0,\"\\n        About my life outside of software and technology, I have a lot of\\n        other interests and passions\\n      \"],[10],[0,\"\\n    \"],[10],[0,\"\\n  \"],[10],[0,\"\\n\"],[10],[0,\"\\n\"]],\"hasEval\":false}",
+    "meta": {
+      "moduleName": "heycarsten/templates/index.hbs"
+    }
+  });
+
+  _exports.default = _default;
+});
+;define("heycarsten/templates/page", ["exports"], function (_exports) {
+  "use strict";
+
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  _exports.default = void 0;
+
+  var _default = Ember.HTMLBars.template({
+    "id": "FxYcG/1Z",
+    "block": "{\"symbols\":[],\"statements\":[[7,\"article\"],[9],[0,\"\\n  \"],[1,[27,\"markdown-to-html\",[[23,[\"model\",\"content\"]]],null],false],[0,\"\\n\"],[10],[0,\"\\n\"]],\"hasEval\":false}",
+    "meta": {
+      "moduleName": "heycarsten/templates/page.hbs"
     }
   });
 
@@ -2774,11 +3051,11 @@
 });
 ;
 
-;define('heycarsten-site/config/environment', [], function() {
+;define('heycarsten/config/environment', [], function() {
   if (typeof FastBoot !== 'undefined') {
-return FastBoot.config('heycarsten-site');
+return FastBoot.config('heycarsten');
 } else {
-var prefix = 'heycarsten-site';try {
+var prefix = 'heycarsten';try {
   var metaName = prefix + '/config/environment';
   var rawConfig = document.querySelector('meta[name="' + metaName + '"]').getAttribute('content');
   var config = JSON.parse(unescape(rawConfig));
@@ -2799,11 +3076,11 @@ catch(err) {
 ;
 if (typeof FastBoot === 'undefined') {
   if (!runningTests) {
-    require('heycarsten-site/app')['default'].create({"name":"heycarsten-site","version":"0.0.0+96d900d5"});
+    require('heycarsten/app')['default'].create({"name":"heycarsten","version":"2.0.0+bd27e2b0"});
   }
 }
 
-define('~fastboot/app-factory', ['heycarsten-site/app', 'heycarsten-site/config/environment'], function(App, config) {
+define('~fastboot/app-factory', ['heycarsten/app', 'heycarsten/config/environment'], function(App, config) {
   App = App['default'];
   config = config['default'];
 
@@ -2814,4 +3091,4 @@ define('~fastboot/app-factory', ['heycarsten-site/app', 'heycarsten-site/config/
   };
 });
 
-//# sourceMappingURL=heycarsten-site.map
+//# sourceMappingURL=heycarsten.map

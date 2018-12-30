@@ -1,4 +1,4 @@
-window.EmberENV = {"FEATURES":{},"EXTEND_PROTOTYPES":{"Date":false}};
+window.EmberENV = {"FEATURES":{},"EXTEND_PROTOTYPES":{"Date":false},"_APPLICATION_TEMPLATE_WRAPPER":false};
 var runningTests = false;
 
 
@@ -69942,6 +69942,80 @@ createDeprecatedModule('resolver');
   var _default = FastBootService;
   _exports.default = _default;
 });
+;define('ember-cli-head/components/head-layout', ['exports', 'ember-cli-head/templates/components/head-layout'], function (exports, _headLayout) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = Ember.Component.extend({
+    tagName: '',
+    layout: _headLayout.default,
+
+    /**
+     * If true, this will tear down any existing head on init of this component.
+     * This is useful if there is a head built with fastboot - it will then be torn down when this is initialized in the browser.
+     * If you do not want this behavior, you can set this to false.
+     * @public
+     */
+    shouldTearDownOnInit: true,
+
+    headElement: Ember.computed(function () {
+      let documentService = Ember.getOwner(this).lookup('service:-document');
+      return documentService.head;
+    }),
+
+    init() {
+      this._super(...arguments);
+
+      if (Ember.get(this, 'shouldTearDownOnInit')) {
+        this._tearDownHead();
+      }
+    },
+
+    /**
+     * Tear down any previous head, if there was one.
+     * @private
+     */
+    _tearDownHead() {
+      if (this._isFastboot()) {
+        return;
+      }
+
+      // clear fast booted head (if any)
+      let startMeta = document.querySelector('meta[name="ember-cli-head-start"]');
+      let endMeta = document.querySelector('meta[name="ember-cli-head-end"]');
+      if (startMeta && endMeta) {
+        let el = startMeta.nextSibling;
+        while (el && el !== endMeta) {
+          document.head.removeChild(el);
+          el = startMeta.nextSibling;
+        }
+        document.head.removeChild(startMeta);
+        document.head.removeChild(endMeta);
+      }
+    },
+
+    _isFastboot() {
+      return typeof FastBoot !== 'undefined';
+    }
+
+  });
+});
+;define('ember-cli-head/services/head-data', ['exports'], function (exports) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = Ember.Service.extend({});
+});
+;define("ember-cli-head/templates/components/head-layout", ["exports"], function (exports) {
+  "use strict";
+
+  exports.__esModule = true;
+  exports.default = Ember.HTMLBars.template({ "id": "ZPPR0Oj/", "block": "{\"symbols\":[],\"statements\":[[4,\"in-element\",[[23,[\"headElement\"]]],[[\"guid\",\"nextSibling\"],[\"%cursor:0%\",null]],{\"statements\":[[0,\"  \"],[7,\"meta\"],[11,\"name\",\"ember-cli-head-start\"],[11,\"content\",\"\"],[9],[10],[1,[21,\"head-content\"],false],[7,\"meta\"],[11,\"name\",\"ember-cli-head-end\"],[11,\"content\",\"\"],[9],[10],[0,\"\\n\"]],\"parameters\":[]},null]],\"hasEval\":false}", "meta": { "moduleName": "ember-cli-head/templates/components/head-layout.hbs" } });
+});
 ;define('ember-cli-markdown-resolver/components/markdown-menu-item', ['exports', 'ember-cli-markdown-resolver/templates/components/markdown-menu-item'], function (exports, _markdownMenuItem) {
   'use strict';
 
@@ -70192,6 +70266,229 @@ createDeprecatedModule('resolver');
       }
     });
   }
+});
+;define('ember-cli-meta-tags/components/head-tag', ['exports', 'ember-cli-meta-tags/templates/components/head-tag'], function (exports, _headTag) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = Ember.Component.extend({
+    layout: _headTag.default,
+
+    init() {
+      this._super(...arguments);
+      this.set('tagName', this.get('headTag.type'));
+    },
+
+    // expected head tag attributes
+    attributeBindings: ['href', 'target', 'charset', 'crossorigin', 'dir', 'hreflang', 'media', 'rel', 'rev', 'sizes', 'type', 'content', 'http-equiv', 'name', 'scheme', 'async', 'defer', 'src', 'property', 'itemprop'],
+    href: Ember.computed.reads('headTag.attrs.href'),
+    target: Ember.computed.reads('headTag.attrs.target'),
+    charset: Ember.computed.reads('headTag.attrs.charset'),
+    crossorigin: Ember.computed.reads('headTag.attrs.crossorigin'),
+    dir: Ember.computed.reads('headTag.attrs.dir'),
+    hreflang: Ember.computed.reads('headTag.attrs.hreflang'),
+    media: Ember.computed.reads('headTag.attrs.media'),
+    rel: Ember.computed.reads('headTag.attrs.rel'),
+    rev: Ember.computed.reads('headTag.attrs.rev'),
+    sizes: Ember.computed.reads('headTag.attrs.sizes'),
+    type: Ember.computed.reads('headTag.attrs.type'),
+    content: Ember.computed.reads('headTag.attrs.content'),
+    'http-equiv': Ember.computed.reads('headTag.attrs.http-equiv'),
+    name: Ember.computed.reads('headTag.attrs.name'),
+    scheme: Ember.computed.reads('headTag.attrs.scheme'),
+    async: Ember.computed.reads('headTag.attrs.async'),
+    defer: Ember.computed.reads('headTag.attrs.defer'),
+    src: Ember.computed.reads('headTag.attrs.src'),
+    property: Ember.computed.reads('headTag.attrs.property'),
+    itemprop: Ember.computed.reads('headTag.attrs.itemprop')
+
+  });
+});
+;define('ember-cli-meta-tags/components/head-tags', ['exports', 'ember-cli-meta-tags/templates/components/head-tags'], function (exports, _headTags) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = Ember.Component.extend({
+    tagName: '',
+    headTags: Ember.A([]),
+    layout: _headTags.default
+  });
+});
+;define('ember-cli-meta-tags/initializers/head-tags', ['exports'], function (exports) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.initialize = initialize;
+  function initialize() {
+    // ember 1.13 backwards compatibility
+    const application = arguments[1] || arguments[0];
+    application.inject('service:head-tags', 'router', 'router:main');
+  }
+
+  exports.default = {
+    name: 'head-tags',
+    initialize: initialize
+  };
+});
+;define('ember-cli-meta-tags/initializers/router-head-tags', ['exports'], function (exports) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.initialize = initialize;
+  function initialize() {
+    Ember.Router.reopen({
+      headTags: Ember.inject.service(),
+
+      didTransition() {
+        Ember.get(this, 'headTags').collectHeadTags();
+        this._super(...arguments);
+      }
+    });
+  }
+
+  exports.default = {
+    name: 'router-head-tags',
+    after: 'head-tags',
+    initialize
+  };
+});
+;define('ember-cli-meta-tags/mixins/route-meta', ['exports'], function (exports) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.metaToHeadTags = metaToHeadTags;
+
+  // Route mixin for setting head meta tags on transition into/out of route
+
+  // @example How to set meta tags on a route
+  //   ExampleRoute = Ember.Route.extend RouteMetaMixin,
+  //     meta: ->
+  //       return
+  //         meta_property_name1: meta_value1
+  //         meta_property_name2: meta_value2
+
+  function metaToHeadTags(meta) {
+    let metaTypes = Object.keys(meta);
+    return metaTypes.reduce(function (headTags, meta_type) {
+      return headTags.pushObjects(Object.keys(meta[meta_type]).map(function (key) {
+        return {
+          tagId: `${meta_type}:${key}`,
+          type: 'meta',
+          attrs: {
+            [meta_type]: key,
+            content: meta[meta_type][key]
+          }
+        };
+      }));
+    }, Ember.A([]));
+  }
+
+  exports.default = Ember.Mixin.create({
+    headTagsService: Ember.inject.service('head-tags'),
+
+    // convert legacy meta tags to headTags
+    headTags() {
+      let meta = this.get('meta');
+      if (typeof meta === 'function') {
+        meta = meta.apply(this);
+      } else if (typeof meta !== 'object') {
+        return undefined;
+      }
+
+      return metaToHeadTags(meta);
+    },
+
+    actions: {
+      resetMeta() {
+        let service = this.get('headTagsService');
+        Ember.run.next(service, 'collectHeadTags');
+      }
+    }
+
+  });
+});
+;define('ember-cli-meta-tags/services/head-tags', ['exports'], function (exports) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+
+
+  //TODO: consider polyfilled Set
+  const VALID_HEAD_TAGS = Ember.A(['base', 'link', 'meta', 'script', 'noscript', 'title']);
+
+  exports.default = Ember.Service.extend({
+    headData: Ember.inject.service(),
+
+    // crawl up the active route stack and collect head tags
+    collectHeadTags() {
+      let tags = {};
+      let currentHandlerInfos = this.get('router._routerMicrolib.currentHandlerInfos');
+      if (!currentHandlerInfos) {
+        currentHandlerInfos = this.get('router.router.currentHandlerInfos');
+      }
+      let handlerInfos = Ember.A(currentHandlerInfos);
+      handlerInfos.forEach(handlerInfo => {
+        Ember.assign(tags, this._extractHeadTagsFromRoute(handlerInfo.handler));
+      });
+      let tagArray = Ember.A(Object.keys(tags)).map(id => tags[id]);
+      this.set('headData.headTags', Ember.A(tagArray));
+    },
+
+    _extractHeadTagsFromRoute(route) {
+      let headTags = Ember.get(route, 'headTags');
+      if (!headTags) {
+        return {};
+      }
+      if (typeof headTags === 'function') {
+        headTags = headTags.apply(route);
+      } else if (typeof headTags !== 'object') {
+        // not recognized construct
+        return {};
+      }
+      // convert headTags to object
+      return this._buildTags(headTags);
+    },
+
+    // ensure all tags have a tagId and build object keyed by id
+    _buildTags(headTagsArray) {
+      let tagMap = {};
+      Ember.A(headTagsArray).forEach(function (tagDefinition) {
+        if (!VALID_HEAD_TAGS.includes(tagDefinition.type)) {
+          return;
+        }
+        let tagId = tagDefinition.tagId;
+        if (!tagId) {
+          tagId = Ember.guidFor(tagDefinition);
+        }
+        tagMap[tagId] = tagDefinition;
+      });
+      return tagMap;
+    }
+  });
+});
+;define("ember-cli-meta-tags/templates/components/head-tag", ["exports"], function (exports) {
+  "use strict";
+
+  exports.__esModule = true;
+  exports.default = Ember.HTMLBars.template({ "id": "KyGxIMNo", "block": "{\"symbols\":[],\"statements\":[[1,[23,[\"headTag\",\"content\"]],false],[0,\"\\n\"]],\"hasEval\":false}", "meta": { "moduleName": "ember-cli-meta-tags/templates/components/head-tag.hbs" } });
+});
+;define("ember-cli-meta-tags/templates/components/head-tags", ["exports"], function (exports) {
+  "use strict";
+
+  exports.__esModule = true;
+  exports.default = Ember.HTMLBars.template({ "id": "+M0CnCyq", "block": "{\"symbols\":[\"headTag\"],\"statements\":[[4,\"each\",[[23,[\"headTags\"]]],null,{\"statements\":[[0,\"  \"],[1,[27,\"head-tag\",null,[[\"headTag\"],[[22,1,[]]]]],false],[0,\"\\n\"]],\"parameters\":[1]},null]],\"hasEval\":false}", "meta": { "moduleName": "ember-cli-meta-tags/templates/components/head-tags.hbs" } });
 });
 ;define('ember-cli-showdown/components/markdown-to-html', ['exports', 'showdown', 'ember-cli-showdown/templates/components/markdown-to-html'], function (exports, _showdown, _markdownToHtml) {
   'use strict';
@@ -72051,6 +72348,139 @@ createDeprecatedModule('resolver');
     return (0, _isObject.default)(obj) && isPromiseLike(obj);
   }
 });
+;define('ember-copy/copy', ['exports', 'ember-copy/copyable'], function (exports, _copyable) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = copy;
+
+
+  function _copy(obj, deep, seen, copies) {
+    // primitive data types are immutable, just return them.
+    if (typeof obj !== 'object' || obj === null) {
+      return obj;
+    }
+
+    let ret, loc;
+
+    // avoid cyclical loops
+    if (deep && (loc = seen.indexOf(obj)) >= 0) {
+      return copies[loc];
+    }
+
+    // IMPORTANT: this specific test will detect a native array only. Any other
+    // object will need to implement Copyable.
+    if (Array.isArray(obj)) {
+      ret = obj.slice();
+
+      if (deep) {
+        loc = ret.length;
+
+        while (--loc >= 0) {
+          ret[loc] = _copy(ret[loc], deep, seen, copies);
+        }
+      }
+    } else if (_copyable.default.detect(obj)) {
+      ret = obj.copy(deep, seen, copies);
+    } else if (obj instanceof Date) {
+      ret = new Date(obj.getTime());
+    } else {
+      (true && !(!(obj instanceof Ember.Object)) && Ember.assert('Cannot clone an EmberObject that does not implement Copyable', !(obj instanceof Ember.Object)));
+
+
+      ret = {};
+      let key;
+      for (key in obj) {
+        // support Null prototype
+        if (!Object.prototype.hasOwnProperty.call(obj, key)) {
+          continue;
+        }
+
+        // Prevents browsers that don't respect non-enumerability from
+        // copying internal Ember properties
+        if (key.substring(0, 2) === '__') {
+          continue;
+        }
+
+        ret[key] = deep ? _copy(obj[key], deep, seen, copies) : obj[key];
+      }
+    }
+    if (deep) {
+      seen.push(obj);
+      copies.push(ret);
+    }
+
+    return ret;
+  }
+
+  /**
+    Creates a shallow copy of the passed object. A deep copy of the object is
+    returned if the optional `deep` argument is `true`.
+  
+    If the passed object implements the `Copyable` interface, then this
+    function will delegate to the object's `copy()` method and return the
+    result. See `Copyable` for further details.
+  
+    For primitive values (which are immutable in JavaScript), the passed object
+    is simply returned.
+  
+    @function copy
+    @param {Object} obj The object to clone
+    @param {Boolean} [deep=false] If true, a deep copy of the object is made.
+    @return {Object} The copied object
+  */
+  function copy(obj, deep) {
+    // fast paths
+    if ('object' !== typeof obj || obj === null) {
+      return obj; // can't copy primitives
+    }
+
+    if (!Array.isArray(obj) && _copyable.default.detect(obj)) {
+      return obj.copy(deep);
+    }
+
+    return _copy(obj, deep, deep ? [] : null, deep ? [] : null);
+  }
+});
+;define('ember-copy/copyable', ['exports'], function (exports) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = Ember.Mixin.create({
+    /**
+      __Required.__ You must implement this method to apply this mixin.
+       Override to return a copy of the receiver. Default implementation raises
+      an exception.
+       @method copy
+      @param {Boolean} deep if `true`, a deep copy of the object should be made
+      @return {Object} copy of receiver
+    */
+    copy: null
+  });
+});
+;define('ember-copy/index', ['exports', 'ember-copy/copy', 'ember-copy/copyable'], function (exports, _copy, _copyable) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'copy', {
+    enumerable: true,
+    get: function () {
+      return _copy.default;
+    }
+  });
+  Object.defineProperty(exports, 'Copyable', {
+    enumerable: true,
+    get: function () {
+      return _copyable.default;
+    }
+  });
+});
 ;define('ember-load-initializers/index', ['exports'], function (exports) {
   'use strict';
 
@@ -72110,6 +72540,272 @@ createDeprecatedModule('resolver');
   function _endsWith(str, suffix) {
     return str.indexOf(suffix, str.length - suffix.length) !== -1;
   }
+});
+;define('ember-page-title/helpers/page-title', ['exports'], function (exports) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+
+
+  function updateTitle(tokens) {
+    Ember.set(this, 'title', tokens.toString());
+  }
+
+  /**
+    `{{page-title}}` is used to communicate with
+  
+    @public
+    @method page-title
+   */
+  exports.default = Ember.Helper.extend({
+    pageTitleList: Ember.inject.service(),
+    headData: Ember.inject.service(),
+
+    init() {
+      this._super();
+      let tokens = Ember.get(this, 'pageTitleList');
+      tokens.push({ id: Ember.guidFor(this) });
+    },
+
+    compute(params, _hash) {
+      let tokens = Ember.get(this, 'pageTitleList');
+      let hash = Ember.merge({}, _hash);
+      hash.id = Ember.guidFor(this);
+      hash.title = params.join('');
+      tokens.push(hash);
+      Ember.run.scheduleOnce('afterRender', Ember.get(this, 'headData'), updateTitle, tokens);
+      return '';
+    },
+
+    destroy() {
+      let tokens = Ember.get(this, 'pageTitleList');
+      let id = Ember.guidFor(this);
+      tokens.remove(id);
+
+      let router = Ember.getOwner(this).lookup('router:main');
+      let routes = router._routerMicrolib || router.router;
+      let { activeTransition } = routes || {};
+      let headData = Ember.get(this, 'headData');
+      if (activeTransition) {
+        activeTransition.promise.finally(function () {
+          if (headData.isDestroyed) {
+            return;
+          }
+          Ember.run.scheduleOnce('afterRender', headData, updateTitle, tokens);
+        });
+      } else {
+        Ember.run.scheduleOnce('afterRender', headData, updateTitle, tokens);
+      }
+    }
+  });
+});
+;define('ember-page-title/services/page-title-list', ['exports', 'ember-copy'], function (exports, _emberCopy) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = Ember.Service.extend({
+
+    init() {
+      this._super();
+      Ember.set(this, 'tokens', Ember.A());
+      Ember.set(this, 'length', 0);
+      this._removeExistingTitleTag();
+    },
+
+    /**
+      The default separator to use between tokens.
+       @property defaultSeparator
+      @default ' | '
+     */
+    defaultSeparator: ' | ',
+
+    /**
+      The default prepend value to use.
+       @property defaultPrepend
+      @default true
+     */
+    defaultPrepend: true,
+
+    /**
+      The default replace value to use.
+       @property defaultReplace
+      @default null
+     */
+    defaultReplace: null,
+    tokens: null,
+
+    applyTokenDefaults(token) {
+      let defaultSeparator = Ember.get(this, "defaultSeparator");
+      let defaultPrepend = Ember.get(this, "defaultPrepend");
+      let defaultReplace = Ember.get(this, "defaultReplace");
+
+      if (token.separator == null) {
+        token.separator = defaultSeparator;
+      }
+
+      if (token.prepend == null && defaultPrepend != null) {
+        token.prepend = defaultPrepend;
+      }
+
+      if (token.replace == null && defaultReplace != null) {
+        token.replace = defaultReplace;
+      }
+    },
+
+    inheritFromPrevious(token) {
+      let previous = token.previous;
+      if (previous) {
+        if (token.separator == null) {
+          token.separator = previous.separator;
+        }
+
+        if (token.prepend == null) {
+          token.prepend = previous.prepend;
+        }
+      }
+    },
+
+    push(token) {
+      let tokenForId = this.tokens.findBy('id', token.id);
+      if (tokenForId) {
+        let index = this.tokens.indexOf(tokenForId);
+        let tokens = (0, _emberCopy.copy)(this.tokens);
+        let previous = tokenForId.previous;
+        token.previous = previous;
+        token.next = tokenForId.next;
+        this.inheritFromPrevious(token);
+        this.applyTokenDefaults(token);
+
+        tokens.splice(index, 1, token);
+        Ember.set(this, 'tokens', Ember.A(tokens));
+        return;
+      }
+
+      var previous = this.tokens.slice(-1)[0];
+      if (previous) {
+        token.previous = previous;
+        previous.next = token;
+        this.inheritFromPrevious(token);
+      }
+
+      this.applyTokenDefaults(token);
+
+      let tokens = (0, _emberCopy.copy)(this.tokens);
+      tokens.push(token);
+      Ember.set(this, 'tokens', Ember.A(tokens));
+      Ember.set(this, 'length', Ember.get(this, 'length') + 1);
+    },
+
+    remove(id) {
+      let token = this.tokens.findBy('id', id);
+      var next = token.next;
+      var previous = token.previous;
+      if (next) {
+        next.previous = previous;
+      }
+
+      if (previous) {
+        previous.next = next;
+      }
+
+      token.previous = token.next = null;
+
+      let tokens = Ember.A((0, _emberCopy.copy)(this.tokens));
+      tokens.removeObject(token);
+      Ember.set(this, 'tokens', Ember.A(tokens));
+      Ember.set(this, 'length', Ember.get(this, 'length') - 1);
+    },
+
+    visibleTokens: Ember.computed('tokens', {
+      get() {
+        let tokens = Ember.get(this, 'tokens');
+        let i = tokens ? tokens.length : 0;
+        let visible = [];
+        while (i--) {
+          let token = tokens[i];
+          if (token.replace) {
+            visible.unshift(token);
+            break;
+          } else {
+            visible.unshift(token);
+          }
+        }
+        return visible;
+      }
+    }),
+
+    sortedTokens: Ember.computed('visibleTokens', {
+      get() {
+        let visible = Ember.get(this, 'visibleTokens');
+        let appending = true;
+        let group = [];
+        let groups = Ember.A([group]);
+        visible.forEach(token => {
+          if (token.prepend) {
+            if (appending) {
+              appending = false;
+              group = [];
+              groups.push(group);
+            }
+            let lastToken = group[0];
+            if (lastToken) {
+              token = (0, _emberCopy.copy)(token);
+              token.separator = lastToken.separator;
+            }
+            group.unshift(token);
+          } else {
+            if (!appending) {
+              appending = true;
+              group = [];
+              groups.push(group);
+            }
+            group.push(token);
+          }
+        });
+
+        return groups.reduce((E, group) => E.concat(group), []);
+      }
+    }),
+
+    toString() {
+      let tokens = Ember.get(this, 'sortedTokens');
+      let title = [];
+      for (let i = 0, len = tokens.length; i < len; i++) {
+        let token = tokens[i];
+        if (token.title) {
+          title.push(token.title);
+          if (i + 1 < len) {
+            title.push(token.separator);
+          }
+        }
+      }
+      return title.join('');
+    },
+
+    /**
+     * Remove any existing title tags from the head.
+     * @private
+     */
+    _removeExistingTitleTag() {
+      if (this._hasFastboot()) {
+        return;
+      }
+
+      let titles = document.getElementsByTagName('title');
+      for (let i = 0; i < titles.length; i++) {
+        let title = titles[i];
+        title.parentNode.removeChild(title);
+      }
+    },
+
+    _hasFastboot() {
+      return !!Ember.getOwner(this).lookup('service:fastboot');
+    }
+  });
 });
 ;define('ember-prism/components/code-base', ['exports'], function (exports) {
   'use strict';
@@ -73007,28 +73703,6 @@ define("ember-resolver/features", [], function () {
       return !!result;
     }
   }
-});
-;define('ember-welcome-page/components/welcome-page', ['exports', 'ember-welcome-page/templates/components/welcome-page'], function (exports, _welcomePage) {
-  'use strict';
-
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  exports.default = Ember.Component.extend({
-    layout: _welcomePage.default,
-
-    emberVersion: Ember.computed(function () {
-      let [major, minor] = Ember.VERSION.split(".");
-
-      return `${major}.${minor}.0`;
-    })
-  });
-});
-;define("ember-welcome-page/templates/components/welcome-page", ["exports"], function (exports) {
-  "use strict";
-
-  exports.__esModule = true;
-  exports.default = Ember.HTMLBars.template({ "id": "VZRs1gM8", "block": "{\"symbols\":[],\"statements\":[[7,\"div\"],[11,\"id\",\"ember-welcome-page-id-selector\"],[12,\"data-ember-version\",[28,[[21,\"emberVersion\"]]]],[9],[0,\"\\n  \"],[7,\"div\"],[11,\"class\",\"columns\"],[9],[0,\"\\n    \"],[7,\"div\"],[11,\"class\",\"tomster\"],[9],[0,\"\\n      \"],[7,\"img\"],[11,\"src\",\"ember-welcome-page/images/construction.png\"],[11,\"alt\",\"Under construction\"],[9],[10],[0,\"\\n    \"],[10],[0,\"\\n    \"],[7,\"div\"],[11,\"class\",\"welcome\"],[9],[0,\"\\n      \"],[7,\"h2\"],[11,\"id\",\"title\"],[9],[0,\"Congratulations, you made it!\"],[10],[0,\"\\n\\n      \"],[7,\"p\"],[9],[0,\"You’ve officially spun up your very first Ember app :-)\"],[10],[0,\"\\n      \"],[7,\"p\"],[9],[0,\"You’ve got one more decision to make: what do you want to do next? We’d suggest one of the following to help you get going:\"],[10],[0,\"\\n      \"],[7,\"ol\"],[9],[0,\"\\n        \"],[7,\"li\"],[9],[7,\"a\"],[12,\"href\",[28,[\"https://guides.emberjs.com/v\",[21,\"emberVersion\"],\"/getting-started/quick-start/\"]]],[9],[0,\"Quick Start\"],[10],[0,\" - a quick introduction to how Ember works. Learn about defining your first route, writing a UI component and deploying your application.\"],[10],[0,\"\\n        \"],[7,\"li\"],[9],[7,\"a\"],[12,\"href\",[28,[\"https://guides.emberjs.com/v\",[21,\"emberVersion\"],\"/tutorial/ember-cli/\"]]],[9],[0,\"Ember Guides\"],[10],[0,\" - this is our more thorough, hands-on intro to Ember. Your crash course in Ember philosophy, background and some in-depth discussion of how things work (and why they work the way they do).\"],[10],[0,\"\\n      \"],[10],[0,\"\\n      \"],[7,\"p\"],[9],[0,\"If you run into problems, you can check \"],[7,\"a\"],[11,\"href\",\"http://stackoverflow.com/questions/tagged/ember.js\"],[9],[0,\"Stack Overflow\"],[10],[0,\" or \"],[7,\"a\"],[11,\"href\",\"http://discuss.emberjs.com/\"],[9],[0,\"our forums\"],[10],[0,\"  for ideas and answers—someone’s probably been through the same thing and already posted an answer.  If not, you can post your \"],[7,\"strong\"],[9],[0,\"own\"],[10],[0,\" question. People love to help new Ember developers get started, and our \"],[7,\"a\"],[11,\"href\",\"https://emberjs.com/community/\"],[9],[0,\"Ember Community\"],[10],[0,\" is incredibly supportive.\"],[10],[0,\"\\n    \"],[10],[0,\"\\n  \"],[10],[0,\"\\n    \"],[7,\"p\"],[11,\"class\",\"postscript\"],[9],[0,\"To remove this welcome message, remove the \"],[7,\"code\"],[9],[0,\"{{welcome-page}}\"],[10],[0,\" component from your \"],[7,\"code\"],[9],[0,\"application.hbs\"],[10],[0,\" file.\"],[7,\"br\"],[9],[10],[0,\"You'll see this page update soon after!\"],[10],[0,\"\\n\"],[10],[0,\"\\n\"]],\"hasEval\":false}", "meta": { "moduleName": "ember-welcome-page/templates/components/welcome-page.hbs" } });
 });
 ;
 //# sourceMappingURL=vendor.map
