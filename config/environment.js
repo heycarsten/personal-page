@@ -27,6 +27,16 @@ module.exports = function(environment) {
       folders: {
         pages: 'app/pages'
       }
+    },
+
+    showdown: {
+      emoji: true,
+      tasklists: true,
+      tables: true,
+      strikethrough: true,
+      parseImgDimensions: true,
+      customizedHeaderId: true,
+      backslashEscapesHTMLTags: true
     }
   };
 

@@ -1,3 +1,15 @@
+---
+author: Carsten Nielsen
+authorId: heycarsten
+categories:
+  - tooling
+  - process
+  - bio
+date: '2018-12-30'
+slug: tools-and-processes
+title: Tools and processes
+---
+
 ## Tools and processes
 
 I’ve been programming professionally for over a decade. My career started with [Microsoft ASP 2.0](https://en.m.wikipedia.org/wiki/Active_Server_Pages), hacking on [VBScript](https://en.m.wikipedia.org/wiki/VBScript) and [ActiveX Data Objects](https://en.m.wikipedia.org/wiki/ActiveX_Data_Objects). From there I discovered [PHP](https://en.m.wikipedia.org/wiki/PHP) and [open source software](https://en.m.wikipedia.org/wiki/Open-source_software). This lead me to [Python](https://www.python.org) through [Django](https://www.djangoproject.com) and eventually to [Ruby](https://www.ruby-lang.org/en/) through [Rails](https://rubyonrails.org).

@@ -1,8 +1,18 @@
+---
+author: Carsten Nielsen
+authorId: heycarsten
+categories:
+  - bio
+date: '2018-12-30'
+slug: outside-of-tech
+title: Me outside of tech
+---
+
 ## Me outside of tech
 
 I have a lot of other interests outside of software and related technologies. Above all I enjoy spending time with my family and my friends, sharing stories, discussing topics; just existing together.
 
-I’m a cyclist. I ride on-road, off-road, and track. I ride socially for fun, for fitness, to commute, to challenge myself, to connect with the natural world, and sometimes to reconnect with myself. I belong to [Cascade Cycling](https://instagram.com/cascade_cycling), a grassroots cycling club some friends found, we hang out at [Grupetto](https://instagram.com/grupettolife) a lot… it’s maybe kind of a problem 🤪
+I’m a cyclist. I ride on-road, off-road, and track. I ride socially for fun, for fitness, to commute, to challenge myself, to connect with the natural world, and sometimes to reconnect with myself. I belong to [Cascade Cycling](https://instagram.com/cascade_cycling), a grassroots cycling club some friends found, we hang out at [Grupetto](https://instagram.com/grupettolife) a lot… it’s maybe kind of a problem.
 
 I’m a motorist. I love vehicles, I enjoy driving, I’m excited by the auto industry. I think electric vehicles are the future, and I think tractor pulls are a part of that future too. I love tinkering with automobiles, I restored and customized a 1989 Chevrolet S-10 in the early 2000s. It was one of the most resonating learning experiences I’ve had in my life, and it demystified so many things.
 
