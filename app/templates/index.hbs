@@ -1,12 +1,16 @@
 {{title model.attributes.title replace=true}}
 
-<p align="center">
-  <img width="200" height="200" src="/images/portrait.png" alt="Carsten's face">
+<p class="-mt-10 text-center">
+  <img class="rounded-full h-48 w-48 shadow-md"
+    src="/images/heycarsten.jpg"
+    alt="Carsten's face"
+  >
 </p>
 
-<article>
-  {{markdown-to-html model.content}}
-</article>
+{{markdown-to-html model.content
+  tagName="article"
+  class="doc intro-doc mx-32 my-8"
+}}
 
 <nav>
   <ul>

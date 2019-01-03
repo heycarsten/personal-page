@@ -37,6 +37,15 @@ module.exports = function(environment) {
       parseImgDimensions: true,
       customizedHeaderId: true,
       backslashEscapesHTMLTags: true
+    },
+
+    'ember-meta': {
+      description: "I'm a lead software developer specializing in web applications and related technologies and systems. I'm all about collaboration and being as open and honest about what I don't know as possible.",
+      imgSrc: 'https://heycarsten.com/images/portrait.png',
+      siteName: 'Carsten Nielsen',
+      title: 'Lead software developer, curious human, open learner',
+      twitterUsername: '@heycarsten',
+      url: 'https://heycarsten.com'
     }
   };
 

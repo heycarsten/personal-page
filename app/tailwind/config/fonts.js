@@ -18,6 +18,7 @@
 
 export default {
   sans: [
+    'Roboto',
     'system-ui',
     'BlinkMacSystemFont',
     '-apple-system',
@@ -50,5 +51,9 @@ export default {
     'Liberation Mono',
     'Courier New',
     'monospace'
+  ],
+  heading: [
+    'Suez One',
+    'serif'
   ]
 };

@@ -1,18 +1,20 @@
 {{head-layout}}
 {{title "Carsten Nielsen"}}
 
-<header>
-  <h1>
-    {{#link-to "index"}}
-      Carsten Nielsen
-    {{/link-to}}
-  </h1>
-</header>
+<div class="container mx-auto px-8 py-8">
+  <header>
+    <h1>
+      {{#link-to "index" class="inline-block"}}
+        {{svg-jar "heycarsten-wordmark" class="block w-64 px-4 py-4"}}
+      {{/link-to}}
+    </h1>
+  </header>
 
-<main>
-  {{outlet}}
-</main>
+  <main>
+    {{outlet}}
+  </main>
 
-<footer>
-  &copy; {{model.year}} Carsten Nielsen
-</footer>
+  <footer class="my-8 text-sm text-grey-darker">
+    &copy; {{model.year}} Carsten Nielsen
+  </footer>
+</div>
