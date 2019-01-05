@@ -5,6 +5,6 @@ export default Route.extend({
   markdown: inject('markdown-resolver'),
 
   model() {
-    return this.markdown.file('pages', 'intro');
+    return this.markdown.file('fragments', 'intro');
   }
 });

@@ -17,5 +17,5 @@
 */
 
 body, html {
-  @apply .bg-grey-lightest;
+  @apply bg-grey-lightest font-sans;
 }

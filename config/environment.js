@@ -25,7 +25,8 @@ module.exports = function(environment) {
     // Markdown source files
     'ember-cli-markdown-resolver': {
       folders: {
-        pages: 'app/pages'
+        pages: 'app/markdown/pages',
+        fragments: 'app/markdown/fragments'
       }
     },
 
@@ -40,12 +41,14 @@ module.exports = function(environment) {
     },
 
     'ember-meta': {
-      description: "I'm a lead software developer specializing in web applications and related technologies and systems. I'm all about collaboration and being as open and honest about what I don't know as possible.",
-      imgSrc: 'https://heycarsten.com/images/portrait.png',
+      locale: 'en_CA',
+      description: "Lead software developer specializing in web applications and related systems / technologies. Focuses on building trust through open and honest communication, to have effective collaborations.",
+      imgSrc: 'https://heycarsten.com/images/heycarsten.jpg',
       siteName: 'Carsten Nielsen',
-      title: 'Lead software developer, curious human, open learner',
+      title: 'Lead software developer, open learning, curious human',
       twitterUsername: '@heycarsten',
-      url: 'https://heycarsten.com'
+      url: 'https://heycarsten.com',
+      authorId: 'heycarsten'
     }
   };
 

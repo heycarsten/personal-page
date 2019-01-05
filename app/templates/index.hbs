@@ -1,15 +1,30 @@
 {{title model.attributes.title replace=true}}
 
-<p class="-mt-10 text-center">
-  <img class="rounded-full h-48 w-48 shadow-md"
+<p class="-mt-8 text-center">
+  <img
+    class="rounded-full h-48 w-48 shadow-md"
     src="/images/heycarsten.jpg"
     alt="Carsten's face"
   >
 </p>
 
-{{markdown-to-html model.content
+<p class="my-8 text-center text-grey-dark">
+  I work remotely from
+  <a
+    class="text-grey-dark"
+    href="https://goo.gl/maps/2k1W6tsf5sF2"
+    target="_blank"
+    rel="noopener"
+  >
+    Dundas, Ontario
+  </a>
+</p>
+
+
+{{markdown-to-html
+  model.content
   tagName="article"
-  class="doc intro-doc mx-32 my-8"
+  class="doc intro-doc container mt-10 mb-12 mx-auto max-w-lg"
 }}
 
 <nav>
