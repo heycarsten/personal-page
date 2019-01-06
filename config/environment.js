@@ -52,6 +52,7 @@ module.exports = function(environment) {
       imgSrc: 'https://heycarsten.com/images/heycarsten.jpg',
       siteName: 'Carsten Nielsen',
       title: 'Carsten Nielsen',
+      type: 'website',
       twitterUsername: '@heycarsten',
       url: 'https://heycarsten.com',
       authorId: 'heycarsten'

@@ -41,7 +41,7 @@
 
 {{!-- Begin opengraph (Facebook, Slack, etc) --}}
 {{#if model.locale}}
-  <meta name="og:locale" content={{model.locale}}>
+  <meta property="og:locale" content={{model.locale}}>
 {{/if}}
 
 {{#if model.siteName}}
@@ -68,6 +68,8 @@
 
 {{#if model.type}}
   <meta property="og:type" content={{model.type}}>
+{{else}}
+  <meta property="og:type" content="website">
 {{/if}}
 
 {{#if model.imgSrc}}
