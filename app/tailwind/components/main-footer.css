@@ -1,0 +1,11 @@
+.main-footer {
+  @apply relative mt-12 mb-8 pb-px text-sm text-grey-darker;
+}
+
+.main-footer > div {
+  @apply absolute;
+}
+
+.main-footer a {
+  @apply text-blue-light;
+}

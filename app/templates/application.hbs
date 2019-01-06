@@ -11,47 +11,42 @@
       </h1>
 
       <nav class="topnav">
-        <a rel="noopener" href="mailto:Carsten%20Nielsen%20%3Cheycarsten@gmail.com%3E">
-          {{svg-jar "email" id="navtop-email-icon"}}
+        <SocialIcon
+          @name="email"
+          @tooltip="Email me"
+          @href="mailto:Carsten%20Nielsen%20%3Cheycarsten@gmail.com%3E"
+        />
 
-          <EmberTooltip @targetId="navtop-email-icon" @side="bottom">
-            Email me
-          </EmberTooltip>
-        </a>
+        <SocialIcon
+          @name="linkedin"
+          @tooltip="LinkedIn"
+          @href="https://www.linkedin.com/in/heycarsten/"
+        />
 
-        <a rel="noopener" href="https://www.linkedin.com/in/heycarsten/">
-          {{svg-jar "linkedin" id="navtop-linkedin-icon"}}
+        <SocialIcon
+          @name="twitter"
+          @tooltip="Twitter"
+          @href="https://twitter.com/heycarsten"
+        />
 
-          <EmberTooltip @targetId="navtop-linkedin-icon" @side="bottom">
-            LinkedIn
-          </EmberTooltip>
-        </a>
+        <SocialIcon
+          @name="github"
+          @tooltip="GitHub"
+          @href="https://github.com/heycarsten"
+        />
 
-        <a rel="noopener" href="https://twitter.com/heycarsten">
-          {{svg-jar "twitter" id="navtop-twitter-icon"}}
+        <SocialIcon
+          @name="dev"
+          @tooltip="DEV Community"
+          @href="https://dev.to/heycarsten"
+        />
 
-          <EmberTooltip @targetId="navtop-twitter-icon" @side="bottom">
-            Twitter
-          </EmberTooltip>
-        </a>
+        <SocialIcon
+          @name="instagram"
+          @tooltip="Instagram"
+          @href="https://instagram.com/heycarsten"
+        />
 
-        <a rel="noopener" href="https://github.com/heycarsten">
-          {{svg-jar "github" id="navtop-github-icon"}}
-
-          <EmberTooltip @targetId="navtop-github-icon" @side="bottom">
-            GitHub
-          </EmberTooltip>
-        </a>
-
-        <a rel="noopener" href="https://instagram.com/heycarsten">
-          {{svg-jar "instagram" id="navtop-instagram-icon"}}
-
-          <EmberTooltip @targetId="navtop-instagram-icon" @side="bottom">
-            Instagram
-          </EmberTooltip>
-        </a>
-
-        {{! dev.to - https://dev.to/heycarsten }}
         {{! medium? https://medium.com/@heycarsten }}
         {{! facebook? https://facebook.com/heycarsten }}
       </nav>
@@ -62,7 +57,22 @@
     {{outlet}}
   </main>
 
-  <footer class="my-8 text-sm text-grey-darker">
-    &copy; {{model.year}} Carsten Nielsen
+  <footer class="main-footer">
+    <div class="pin-l text-grey">
+      {{! template-lint-disable attribute-indentation block-indentation }}
+      Made with
+      <a rel="noopener" href="https://github.com/emberjs/ember.js">Ember.js</a>
+      +
+      <a rel="noopener" href="https://github.com/ef4/prember">Prember</a>,
+      have a look on
+      <a rel="noopener"
+        href="https://github.com/heycarsten/personal-page"
+        title="heycarsten/personal-page.git"
+      >GitHub</a>&nbsp;👀
+    </div>
+
+    <div class="pin-r">
+      &copy; {{model.year}} Carsten Nielsen
+    </div>
   </footer>
 </div>

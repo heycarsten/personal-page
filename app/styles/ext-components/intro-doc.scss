@@ -1,0 +1,14 @@
+.intro-doc {
+  @extend .text-2xl;
+  @extend .max-w-md;
+  @extend .mx-auto;
+
+  a {
+    @extend .text-indigo-dark;
+    @extend .no-underline;
+
+    &:hover {
+      border-bottom: 1px solid #5661b3;
+    }
+  }
+}

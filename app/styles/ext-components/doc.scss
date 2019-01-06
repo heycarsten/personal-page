@@ -1,0 +1,53 @@
+.doc {
+  @extend .font-sans;
+  @extend .text-lg;
+  @extend .max-w-lg;
+  @extend .mx-auto;
+
+  a {
+    @extend .text-indigo-dark;
+    @extend .no-underline;
+
+    &:hover {
+      border-bottom: 1px solid #5661b3;
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @extend .font-heading;
+    @extend .leading-normal;
+    @extend .font-bold;
+
+    a {
+      @extend .text-black;
+      @extend .no-underline;
+      @extend .text-indigo-dark;
+
+      &:hover {
+        border-bottom: 2px solid #5661b3;
+      }
+    }
+  }
+
+  h1 {
+    @extend .text-5xl;
+    border-bottom: 2px solid #ccc;
+  }
+
+  h2 {
+    @extend .text-5xl;
+  }
+
+  h3 {
+    @extend .text-4xl;
+  }
+
+  h4 {
+    @extend .text-3xl;
+  }
+
+  p, ol, ul, li, h1, h2, h3, h4, h5, h6 {
+    @extend .my-6;
+    @extend .leading-normal;
+  }
+}

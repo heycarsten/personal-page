@@ -1,0 +1,17 @@
+.index-content-cards {
+  @apply flex;
+}
+
+.index-content-card {
+  @apply max-w-md w-full m-4 no-underline;
+}
+
+.index-content-card h3 {
+  @apply font-heading font-medium;
+}
+
+@screen lg {
+  .index-content-card {
+    @apply flex;
+  }
+}

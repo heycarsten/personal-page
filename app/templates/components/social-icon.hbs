@@ -1,0 +1,7 @@
+<a class="social-icon" rel="noopener" href={{@href}}>
+  {{svg-jar @name id=(concat "navtop-" @name "-icon")}}
+
+  <EmberTooltip @targetId="navtop-{{@name}}-icon" @side="bottom">
+    {{@tooltip}}
+  </EmberTooltip>
+</a>
