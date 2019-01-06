@@ -1,7 +1,7 @@
 {{head-layout}}
 {{title "Carsten Nielsen"}}
 
-<div class="container__main container mx-auto">
+<div class="container mx-auto">
   <header class="my-6">
     <div class="clearfix">
       <h1 class="float-left">
@@ -12,23 +12,43 @@
 
       <nav class="topnav">
         <a rel="noopener" href="mailto:Carsten%20Nielsen%20%3Cheycarsten@gmail.com%3E">
-          {{svg-jar "email"}}
+          {{svg-jar "email" id="navtop-email-icon"}}
+
+          <EmberTooltip @targetId="navtop-email-icon" @side="bottom">
+            Email me
+          </EmberTooltip>
         </a>
 
         <a rel="noopener" href="https://www.linkedin.com/in/heycarsten/">
-          {{svg-jar "linkedin"}}
+          {{svg-jar "linkedin" id="navtop-linkedin-icon"}}
+
+          <EmberTooltip @targetId="navtop-linkedin-icon" @side="bottom">
+            LinkedIn
+          </EmberTooltip>
         </a>
 
         <a rel="noopener" href="https://twitter.com/heycarsten">
-          {{svg-jar "twitter"}}
+          {{svg-jar "twitter" id="navtop-twitter-icon"}}
+
+          <EmberTooltip @targetId="navtop-twitter-icon" @side="bottom">
+            Twitter
+          </EmberTooltip>
         </a>
 
         <a rel="noopener" href="https://github.com/heycarsten">
-          {{svg-jar "github"}}
+          {{svg-jar "github" id="navtop-github-icon"}}
+
+          <EmberTooltip @targetId="navtop-github-icon" @side="bottom">
+            GitHub
+          </EmberTooltip>
         </a>
 
         <a rel="noopener" href="https://instagram.com/heycarsten">
-          {{svg-jar "instagram"}}
+          {{svg-jar "instagram" id="navtop-instagram-icon"}}
+
+          <EmberTooltip @targetId="navtop-instagram-icon" @side="bottom">
+            Instagram
+          </EmberTooltip>
         </a>
 
         {{! dev.to - https://dev.to/heycarsten }}

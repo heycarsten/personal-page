@@ -8,5 +8,5 @@
 }
 
 .topnav a svg {
-  @apply inline-block h-8 mx-3 my-12;
+  @apply inline-block h-8 mt-12 ml-6;
 }
