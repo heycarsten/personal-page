@@ -50,7 +50,7 @@ All those apps work on the iPhone as well and I've used them all on there too. I
 
 I’ve also used [VMware Fusion](https://www.vmware.com/ca/products/fusion.html) for many years. It’s good, it works well, but it’s not free and I just don’t think it’s worth the cost given how good VirtualBox is these days. In the past I had all of my development environments in VMs managed with Vagrant, these days I’m using Docker for that mostly. These days I find myself using Virtual Box mostly for testing things in Windows using Microsoft's [free VM images](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/).
 
-### [Docker for Mac](https://www.docker.com/products/docker-desktop) (Docker Desktop)
+### [Docker Desktop](https://www.docker.com/products/docker-desktop)
 
 [Docker](https://docs.docker.com/get-started/) and [Docker Compose](https://docs.docker.com/compose/overview/) make creating and running development environments a breeze. You also gain the advantage of being able to apply a lot of these learnings directly to production environments, and [CI](https://circleci.com/continuous-integration/) too! These days with Docker Desktop the performance and stability of Docker is satisfactory or beyond satisfactory for my needs.
 
@@ -68,7 +68,7 @@ I really like the [Material Dark](https://material-theme.site) theme, I’ve alw
 
 However you decide to store your source repositories, I feel it’s super important to use some form of version control. When I started my career [Subversion](https://en.m.wikipedia.org/wiki/Apache_Subversion) was the standard, around 2007-2008 I learned about Git and was sold on it immediately. I also really like GitHub, I have been using it since it launched and continue to be a satisfied customer.
 
-### [iTerm2](https://www.iterm2.com) / [Terminal](https://en.m.wikipedia.org/wiki/Terminal_(macOS))
+### [iTerm2](https://www.iterm2.com)
 
 For about 5 years now I have been using [Z shell](https://en.m.wikipedia.org/wiki/Z_shell) (zsh), with the help of [Oh My ZSH](https://ohmyz.sh). I still really like it a lot. I had a brief time with [Hyper](https://hyper.is) a year or so ago and I liked it but it just wasn’t quite for me at the time. I look forward to seeing how it has progressed since then. I think there is a lot of room for improvement in CLI interfaces and shells!
 
@@ -88,9 +88,9 @@ These days I still use Ansible, but not as often for configuring server dependen
 
 ### [pyenv](https://github.com/pyenv/pyenv) / [rbenv](https://github.com/rbenv/rbenv) / [nvm](https://github.com/creationix/nvm)
 
-For running and installing [Python](https://www.python.org), [Ruby](https://www.ruby-lang.org/en/), and [Node](https://nodejs.org/en/) directly on my host machine, I use their respective version managers so that I can easily toggle between versions for different projects. I can also easily "implode" an environment and bring it back up if I need to. I prefer this method over installing specific versions of programming tools directly on my machine. 
+For running and installing [Python](https://www.python.org), [Ruby](https://www.ruby-lang.org/en/), and [Node](https://nodejs.org/en/) directly on my host machine, I use their respective version managers so that I can easily toggle between versions for different projects. I can also easily "implode" an environment and bring it back up if I need to. I prefer this method over installing specific versions of programming tools directly on my machine.
 
-### [SSH](https://en.m.wikipedia.org/wiki/Secure_Shell)
+### [SSH](https://en.m.wikipedia.org/wiki/Secure_Shell) / [Mosh](https://mosh.org)
 
 I use [public key authentication](https://www.linode.com/docs/security/authentication/use-public-key-authentication-with-ssh/) exclusively for accessing remote systems. I rotate my private key usually every few years, I should maybe get on that more often 🤔
 
@@ -102,7 +102,7 @@ Even if you don’t "create" with these apps, you might find if you do any sort 
 
 ### [Things 3](https://culturedcode.com/things/)
 
-I’ve been using Things for years, it’s essentially a to-do list and reminders app. It fits in seamlessly to my workflow, I use it on my iPad, iPhone, and on my desktop. I can also share tasks with Erin. It’s my preference for managing all of the little things that come at me, that I can’t get to immediately.
+I’ve been using Things for years, it’s essentially a to-do list and reminders app. It fits in seamlessly to my workflow, I use it on my iPad, iPhone, and on my desktop. I can also share tasks with Erin via Apple Reminders. It’s my preference for managing all of the little things that come at me, that I can’t get to immediately.
 
 ### [1Password](https://1password.com)
 

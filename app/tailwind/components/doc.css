@@ -10,12 +10,7 @@
   border-bottom: 1px solid #5661b3;
 }
 
-.doc h1 a,
-.doc h2 a,
-.doc h3 a,
-.doc h4 a,
-.doc h5 a,
-.doc h6 a {
+.doc h1 a, .doc h2 a, .doc h3 a, .doc h4 a, .doc h5 a, .doc h6 a {
   @apply text-black no-underline text-indigo-dark;
 }
 
@@ -29,6 +24,7 @@
 }
 
 .doc p,
+.doc ol,
 .doc ul,
 .doc li,
 .doc h1,
@@ -40,28 +36,23 @@
   @apply my-6 leading-normal;
 }
 
-.doc h1,
-.doc h2,
-.doc h3,
-.doc h4,
-.doc h5,
-.doc h6 {
+.doc h1, .doc h2, .doc h3, .doc h4, .doc h5, .doc h6 {
   @apply font-heading leading-normal font-bold;
 }
 
 .doc h1 {
   @apply text-5xl;
+  border-bottom: 2px solid #ccc;
 }
 
 .doc h2 {
-  @apply text-4xl;
+  @apply text-5xl;
 }
 
 .doc h3 {
-  @apply text-3xl;
+  @apply text-4xl;
 }
 
 .doc h4 {
-  @apply text-2xl;
+  @apply text-3xl;
 }
-

@@ -1,13 +1,41 @@
 {{head-layout}}
 {{title "Carsten Nielsen"}}
 
-<div class="container mx-auto">
+<div class="container__main container mx-auto">
   <header class="my-6">
-    <h1>
-      {{#link-to "index" class="inline-block"}}
-        {{svg-jar "heycarsten-wordmark" class="block w-64 px-4 py-4"}}
-      {{/link-to}}
-    </h1>
+    <div class="clearfix">
+      <h1 class="float-left">
+        {{#link-to "index" class="inline-block"}}
+          {{svg-jar "heycarsten-wordmark" class="block w-64 m-8"}}
+        {{/link-to}}
+      </h1>
+
+      <nav class="topnav">
+        <a rel="noopener" href="mailto:Carsten%20Nielsen%20%3Cheycarsten@gmail.com%3E">
+          {{svg-jar "email"}}
+        </a>
+
+        <a rel="noopener" href="https://www.linkedin.com/in/heycarsten/">
+          {{svg-jar "linkedin"}}
+        </a>
+
+        <a rel="noopener" href="https://twitter.com/heycarsten">
+          {{svg-jar "twitter"}}
+        </a>
+
+        <a rel="noopener" href="https://github.com/heycarsten">
+          {{svg-jar "github"}}
+        </a>
+
+        <a rel="noopener" href="https://instagram.com/heycarsten">
+          {{svg-jar "instagram"}}
+        </a>
+
+        {{! dev.to - https://dev.to/heycarsten }}
+        {{! medium? https://medium.com/@heycarsten }}
+        {{! facebook? https://facebook.com/heycarsten }}
+      </nav>
+    </div>
   </header>
 
   <main>

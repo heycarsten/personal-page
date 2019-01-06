@@ -1,0 +1,12 @@
+.topnav {
+  @apply float-right;
+}
+
+.topnav a {
+  @apply inline-block;
+  border: none;
+}
+
+.topnav a svg {
+  @apply inline-block h-8 mx-3 my-12;
+}

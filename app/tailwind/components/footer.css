@@ -1,0 +1,3 @@
+.container__main > footer {
+  @apply my-16 text-right;
+}
