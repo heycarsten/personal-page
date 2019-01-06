@@ -2,6 +2,11 @@
   @extend .text-2xl;
   @extend .max-w-md;
   @extend .mx-auto;
+  left: 1rem; // bump over to the right
+
+  article {
+    @extend .px-12;
+  }
 
   a {
     @extend .text-indigo-dark;

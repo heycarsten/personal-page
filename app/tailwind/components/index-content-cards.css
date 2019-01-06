@@ -7,7 +7,7 @@
 }
 
 .index-content-card h3 {
-  @apply font-heading font-medium;
+  @apply font-heading font-normal text-grey-darkest text-2xl;
 }
 
 @screen lg {

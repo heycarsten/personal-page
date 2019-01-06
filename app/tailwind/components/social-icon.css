@@ -6,7 +6,3 @@
 .social-icon svg {
   @apply inline-block h-8 mt-12 mr-6;
 }
-
-.social-icon:hover svg path {
-  fill: red;
-}
