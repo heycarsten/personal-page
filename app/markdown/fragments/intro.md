@@ -1,3 +1,1 @@
-Hi, I'm Carsten :wave:
-
-I'm a lead software developer focused on web applications and related technologies. I'm a curious human! I love to learn, connect, and collaborate with others by being open and honest about what I don't know.
+Hi :wave: I'm a lead software developer focused on web applications and related technologies. I'm a curious human! I love to learn, connect, and collaborate with others by being open and honest about what I don't know.

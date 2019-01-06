@@ -1,0 +1,13 @@
+.sub-content-cards {
+  @apply flex;
+}
+
+.sub-content-card {
+  @apply max-w-md w-full m-4;
+}
+
+@screen lg {
+  .sub-content-card {
+    @apply flex;
+  }
+}

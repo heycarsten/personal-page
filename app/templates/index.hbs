@@ -1,55 +1,73 @@
 {{title model.attributes.title replace=true}}
 
-<p class="-mt-10 text-center">
-  <img
-    class="rounded-full h-64 w-64 shadow-md"
-    src="/images/heycarsten.jpg"
-    alt="Carsten's face"
-  >
-</p>
+<section>
+  <p class="-mt-16 text-center">
+    <img
+      class="rounded-full h-64 w-64 shadow-md"
+      src="/images/heycarsten.jpg"
+      alt="Carsten's face"
+    >
+  </p>
 
-<p class="my-8 text-center text-grey-dark">
-  Working and learning remotely from
-  <a
-    class="text-grey-dark"
-    href="https://goo.gl/maps/2k1W6tsf5sF2"
-    target="_blank"
-    rel="noopener"
-  >
-    Dundas, Ontario
-  </a>
-</p>
+  <h1 class="mt-4 mb-3 text-center font-heading text-5xl">
+    Carsten Nielsen
+  </h1>
+
+  <p class="mt-3 text-center text-grey-dark line-loose">
+    <span class="inline-block animated bounce delay-2s slow">
+      {{svg-jar "location" class="inline-block fill-current text-green-light -mb-1"}}
+    </span>
+
+    Collaborating remotely from
+
+    <a
+      class="text-grey-dark"
+      href="https://goo.gl/maps/2k1W6tsf5sF2"
+      target="_blank"
+      rel="noopener"
+    >
+      Dundas, Ontario
+    </a>
+  </p>
 
 
-{{markdown-to-html
-  model.content
-  tagName="article"
-  class="doc intro-doc container mt-10 mb-12 mx-auto max-w-lg"
-}}
+  {{markdown-to-html
+    model.content
+    tagName="article"
+    class="doc intro-doc container mt-10 mb-12 mx-auto max-w-lg"
+  }}
+</section>
 
-<nav>
-  <ul>
-    <li>
-      <h3>
-        {{#link-to "page" "tools-and-processes"}}
-          My tools and processes
-        {{/link-to}}
-      </h3>
-      <p>
-        Some insight into the tools I use, how I use them, and how I came to
-        developing these preferences
-      </p>
-    </li>
-    <li>
-      <h3>
-        {{#link-to "page" "outside-of-tech"}}
+<section class="sub-content-cards">
+  {{#link-to "page" "tools-and-processes" class="sub-content-card"}}
+    <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('https://tailwindcss.com/img/card-left.jpg')" title="Woman holding a mug">
+    </div>
+    <div class="border-r border-b border-l border-grey-light lg:border-l-0 lg:border-t lg:border-grey-light bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+      <div class="mb-8">
+        <div class="text-black font-bold text-xl mb-2">
+          About my tools and processes
+        </div>
+        <p class="text-grey-darker text-base">
+          Some insight into the tools I use, how I use them, and how I came to
+          developing these preferences
+        </p>
+      </div>
+    </div>
+  {{/link-to}}
+
+  {{#link-to "page" "outside-of-tech" class="sub-content-card"}}
+    <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('https://tailwindcss.com/img/card-left.jpg')" title="Woman holding a mug">
+    </div>
+    <div class="border-r border-b border-l border-grey-light lg:border-l-0 lg:border-t lg:border-grey-light bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+      <div class="mb-8">
+        <div class="text-black font-bold text-xl mb-2">
           Me outside of tech
-        {{/link-to}}
-      </h3>
-      <p>
-        About my life outside of software and technology, I have a lot of
-        other interests and passions
-      </p>
-    </li>
-  </ul>
-</nav>
+        </div>
+        <p class="text-grey-darker text-base">
+          About my life outside of software and technology, I have a lot of
+          other interests and passions
+        </p>
+      </div>
+    </div>
+  {{/link-to}}
+</section>

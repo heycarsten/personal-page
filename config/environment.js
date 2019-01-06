@@ -5,7 +5,8 @@ module.exports = function(environment) {
     modulePrefix: 'heycarsten',
     environment,
     rootURL: '/',
-    locationType: 'auto',
+    locationType: 'router-scroll',
+    historySupportMiddleware: true,
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -21,6 +22,11 @@ module.exports = function(environment) {
       // Here you can pass flags/options to your application instance
       // when it is created
     },
+
+    // Router scroll opts
+    // routerScroll: {
+    //   delayScrollTop: true
+    // },
 
     // Markdown source files
     'ember-cli-markdown-resolver': {
