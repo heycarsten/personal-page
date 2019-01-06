@@ -51,8 +51,11 @@
 {{#if (or model.articleTitle model.title)}}
   <meta
     property="og:title"
-    content={{if model.articleTitle model.articleTitle model.title}}
+    content={{or model.articleTitle model.title}}
   >
+{{else}}
+  {{! Stumped... }}
+  <meta property="og:title" content="Carsten Nielsen">
 {{/if}}
 
 {{#if model.url}}
@@ -69,9 +72,11 @@
 
 {{#if model.imgSrc}}
   <meta property="og:image" content={{model.imgSrc}}>
-  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:type" content="image/jpg">
+  {{!--
   <meta property="og:image:width" content="256">
   <meta property="og:image:height" content="256">
+  --}}
 {{/if}}
 {{!-- End opengraph --}}
 
@@ -90,7 +95,7 @@
 {{#if (or model.articleTitle model.title)}}
   <meta
     name="twitter:title"
-    content={{if model.articleTitle model.articleTitle model.title}}
+    content={{or model.articleTitle model.title}}
   >
 {{/if}}
 

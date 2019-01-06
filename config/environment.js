@@ -48,10 +48,10 @@ module.exports = function(environment) {
 
     'ember-meta': {
       locale: 'en_CA',
-      description: "Lead software developer specializing in web applications and related systems / technologies. Focuses on building trust through open and honest communication, to have effective collaborations.",
+      description: "Lead software developer focused on web related technologies. Curious human—loves to learn, connect, and collaborate with others by being open about the unknown.",
       imgSrc: 'https://heycarsten.com/images/heycarsten.jpg',
       siteName: 'Carsten Nielsen',
-      title: 'Lead software developer, open learning, curious human',
+      title: 'Carsten Nielsen',
       twitterUsername: '@heycarsten',
       url: 'https://heycarsten.com',
       authorId: 'heycarsten'
