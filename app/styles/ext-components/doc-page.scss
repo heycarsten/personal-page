@@ -1,0 +1,10 @@
+.doc-page {
+  @extend .text-grey-darkest;
+  @extend .leading-loose;
+  @extend .p-4;
+  font-size: 1.25rem;
+
+  h1, h2, h3, h4, h5, h6 {
+    @extend .text-black;
+  }
+}

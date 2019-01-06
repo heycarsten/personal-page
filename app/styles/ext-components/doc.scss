@@ -5,11 +5,11 @@
   @extend .mx-auto;
 
   a {
-    @extend .text-indigo-dark;
+    @extend .text-blue;
     @extend .no-underline;
 
     &:hover {
-      border-bottom: 1px solid #5661b3;
+      border-bottom: 1px solid $text-blue;
     }
   }
 
@@ -24,7 +24,7 @@
       @extend .text-indigo-dark;
 
       &:hover {
-        border-bottom: 2px solid #5661b3;
+        border-bottom: 2px solid $text-blue;
       }
     }
   }
@@ -35,15 +35,19 @@
   }
 
   h2 {
-    @extend .text-5xl;
-  }
-
-  h3 {
     @extend .text-4xl;
   }
 
-  h4 {
+  h3 {
     @extend .text-3xl;
+  }
+
+  h4 {
+    @extend .text-2xl;
+  }
+
+  h5 {
+    @extend .text-xl;
   }
 
   p, ol, ul, li, h1, h2, h3, h4, h5, h6 {

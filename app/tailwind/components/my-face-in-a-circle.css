@@ -1,0 +1,5 @@
+.my-face-in-a-circle {
+  @apply rounded-full shadow-md;
+  height: 15rem;
+  width: 15rem;
+}

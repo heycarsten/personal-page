@@ -8,8 +8,8 @@ module.exports = function(defaults) {
     prember: {
       urls: [
         '/',
-        '/tools-and-processes',
-        '/outside-of-tech'
+        '/my-tools-and-processes',
+        '/me-outside-of-tech'
       ]
     }
   });

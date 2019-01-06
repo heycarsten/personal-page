@@ -1,13 +1,17 @@
 .index-content-cards {
-  @apply flex;
+  @apply flex my-20;
 }
 
 .index-content-card {
-  @apply max-w-md w-full m-4 no-underline;
+  @apply max-w-md w-full mx-4 my-2 no-underline;
 }
 
 .index-content-card h3 {
   @apply font-heading font-normal text-grey-darkest text-2xl;
+}
+
+.index-content-card__inner {
+  @apply border border-grey-light bg-white rounded-sm p-4 flex flex-col justify-between leading-normal;
 }
 
 @screen lg {

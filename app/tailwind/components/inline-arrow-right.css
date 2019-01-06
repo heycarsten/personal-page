@@ -1,0 +1,5 @@
+.inline-arrow-right {
+  @apply -mb-1 relative fill-current;
+  top: 2px;
+  left: -0.4rem;
+}

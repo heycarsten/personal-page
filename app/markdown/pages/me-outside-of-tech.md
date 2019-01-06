@@ -4,11 +4,11 @@ authorId: heycarsten
 categories:
   - bio
 date: '2018-12-30'
-slug: outside-of-tech
-title: Me outside of tech
+slug: me-outside-of-tech
+title: Me Outside of Tech
 ---
 
-## Me outside of tech
+# Me Outside of Tech
 
 I have a lot of other interests outside of software and related technologies. Above all I enjoy spending time with my family and my friends, sharing stories, discussing topics; just existing together.
 
