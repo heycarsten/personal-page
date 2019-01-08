@@ -22,7 +22,7 @@ Anyways, now that you know a little bit about how I got to where I am, I’m goi
 
 These preferences I have developed over time, based on my experiences and requirements, also my privilege. Some of these things are expensive! I’m fortunate enough to be able to afford them or be provided them by my workplace. This is not intended to convince you that my preferences are the best or that they should be your preferences too. You may have different needs based on your own requirements, experience, and budget, that’s a good thing!
 
-My tools and processes are also constantly changing and evolving. If you have any feedback for me on any of this stuff, feel free to hit me up on [Twitter](https://twitter.com/heycarsten) or send me an email: heycarsten@gmail.com
+My tools and processes are also constantly changing and evolving. If you have any feedback for me on any of this stuff, feel free to hit me up on [Twitter](https://twitter.com/heycarsten) or send me an email: [heycarsten@gmail.com](mailto:Carsten%20Nielsen%20%3Cheycarsten@gmail.com%3E)
 
 ## [MacBook Pro 15’’ (1st gen TouchBar)](https://everymac.com/systems/apple/macbook_pro/specs/macbook-pro-core-i7-2.9-15-late-2016-retina-display-touch-bar-specs.html)
 
@@ -70,11 +70,11 @@ However you decide to store your source repositories, I feel it’s super import
 
 ## [iTerm2](https://www.iterm2.com)
 
-For about 5 years now I have been using [Z shell](https://en.m.wikipedia.org/wiki/Z_shell) (zsh), with the help of [Oh My ZSH](https://ohmyz.sh). I still really like it a lot. I had a brief time with [Hyper](https://hyper.is) a year or so ago and I liked it but it just wasn’t quite for me at the time. I look forward to seeing how it has progressed since then. I think there is a lot of room for improvement in CLI interfaces and shells!
+For about 5 years now I have been using [Z shell](https://en.m.wikipedia.org/wiki/Z_shell) (zsh) as my shell, with the help of [Oh My ZSH](https://ohmyz.sh). I still really like it a lot! As far as macOS terminal apps go, I had a brief time with [Hyper](https://hyper.is) a year or so ago and I liked it, but it just wasn’t quite for me at the time. I look forward to seeing how it has progressed since then. I think there is a lot of room for improvement in CLI interfaces, shells, and terminals!
 
 ## [Chrome](https://www.google.com/chrome/) / [Safari](https://www.apple.com/ca/safari/)
 
-I tend to use Chrome on my desktop environment (macOS) and Safari on my touch devices (iOS). [Firefox](https://www.mozilla.org/en-US/firefox/new/) is also really great on macOS, but I just don't find myself using it very often. [Developer Tools](https://developers.google.com/web/tools/chrome-devtools/) in Chrome are still my preference, but Safari is a close second.
+I tend to use Chrome on my desktop environment (macOS) and Safari on my touch devices (iOS). [Firefox](https://www.mozilla.org/en-US/firefox/new/) is also really great on macOS, but I just don't find myself using it very often. [Developer Tools](https://developers.google.com/web/tools/chrome-devtools/) in Chrome are still my preference, but Safari is rapidly becoming a close second for me these days.
 
 ## [Homebrew](https://brew.sh)
 
@@ -84,7 +84,7 @@ Installing command-line software on your host computer (directly on your laptop)
 
 At a time I was just happy to get a server running my code! Over time, I saw shortcomings in my processes. Manually building servers, became manually provisioning VPSes on Linode and AWS EC2. That then became a step-by-step [guide](https://gist.github.com/heycarsten/7230affa5b399a84e02e). Which then became a shell script ([bash](https://en.m.wikipedia.org/wiki/Bash_(Unix_shell))), that then became a [CLI tool](https://github.com/heycarsten/propro) for building and deploying shell scripts. That became a series of [Ansible Playbooks](https://github.com/heycarsten/propro-ansible) (no longer maintained) for provisioning and configuring servers.
 
-These days I still use Ansible, but not as often for configuring server dependencies and software or for provisioning development environments, I use Docker for that now. It’s a great tool for automating systems administration tasks.
+These days I still use Ansible, but not as often for configuring server dependencies and software or for provisioning development environments, I use Docker for that now. I still use Ansible for automating systems administration tasks, and even for orchestrating AWS infrastructure changes, it’s a great tool!
 
 ## [pyenv](https://github.com/pyenv/pyenv) / [rbenv](https://github.com/rbenv/rbenv) / [nvm](https://github.com/creationix/nvm)
 

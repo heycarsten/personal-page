@@ -19,9 +19,8 @@
     @extend .font-bold;
 
     a {
-      @extend .text-black;
       @extend .no-underline;
-      @extend .text-indigo-dark;
+      @extend .text-blue;
 
       &:hover {
         border-bottom: 2px solid $text-blue;
