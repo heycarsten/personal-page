@@ -53,7 +53,7 @@ export default {
     'monospace'
   ],
   heading: [
-    'Suez One',
+    'Roboto',
     'serif'
   ]
 };

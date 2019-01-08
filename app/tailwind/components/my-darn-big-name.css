@@ -1,0 +1,5 @@
+.my-darn-big-name {
+  @apply mt-4 mb-2 text-center font-heading;
+  font-weight: 700;
+  font-size: 3.6rem;
+}

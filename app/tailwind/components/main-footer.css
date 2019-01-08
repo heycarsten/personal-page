@@ -1,5 +1,5 @@
 .main-footer {
-  @apply relative mt-12 mb-8 pb-px text-sm text-grey-darker;
+  @apply relative mt-16 mb-8 pb-px text-sm text-grey-darker;
 }
 
 .main-footer > div {

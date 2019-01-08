@@ -13,7 +13,7 @@
     @extend .no-underline;
 
     &:hover {
-      border-bottom: 1px solid #5661b3;
+      border-bottom: 1px solid $text-blue;
     }
   }
 }

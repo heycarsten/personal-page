@@ -5,3 +5,12 @@ body, html {
 a {
   @apply text-blue;
 }
+
+/*
+Why dogg, why?
+The problem is that this comes back as "bold" by default, which doesn't select
+the correct weight when using Roboto :-/
+*/
+.font-bold {
+  font-weight: 700 !important;
+}
