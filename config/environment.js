@@ -43,7 +43,8 @@ module.exports = function(environment) {
       strikethrough: true,
       parseImgDimensions: true,
       customizedHeaderId: true,
-      backslashEscapesHTMLTags: true
+      backslashEscapesHTMLTags: true,
+      ghCodeBlocks: true
     },
 
     'ember-meta': {
