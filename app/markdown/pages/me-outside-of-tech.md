@@ -35,7 +35,7 @@ I have a lot of other interests outside of software and related technologies. Ab
 
 I’m [a cyclist](https://www.strava.com/athletes/heycarsten). I ride on-road, off-road, and track. I ride socially for fun, for fitness, to commute, to challenge myself, to connect with the natural world, and sometimes to reconnect with myself. I belong to [Cascade Cycling](https://instagram.com/cascade_cycling), a grassroots cycling club some friends and I founded, we hang out at [Grupetto](https://instagram.com/grupettolife) a lot… it’s maybe kind of a problem. 😂
 
-I’m a motorist. I love vehicles, I truly enjoy driving and I’m excited by the auto industry. I think electric vehicles are the future, and I think tractor pulls are a part of that future too! I love tinkering with automobiles, I restored and customized a [1989 Chevrolet S-10](https://www.youtube.com/watch?v=JEjBxQg2AOg) in the early 2000s. It was one of the most resonating learning experiences I’ve had in my life, and it demystified so many things for me.
+I’m a motorist. I love vehicles, I truly enjoy driving and I’m excited by the auto industry. I think electric vehicles and renewable energy sources are the future. I also think that tractor pulls and drifting competitions are a part of that future too! I love tinkering with automobiles, I restored and customized a [1989 Chevrolet S-10](https://www.youtube.com/watch?v=JEjBxQg2AOg) in the early 2000s. It was one of the most resonating learning experiences I’ve had in my life, and it demystified so many things for me.
 
 <p class="text-center">
   <img
