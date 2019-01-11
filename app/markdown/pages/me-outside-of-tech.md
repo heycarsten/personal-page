@@ -21,6 +21,18 @@ I have a lot of other interests outside of software and related technologies. Ab
   >
 </p>
 
+<p class="text-center text-grey-dark text-sm">
+  Me racing in a fixed gear criterium at
+  <a href="http://www.ossingtonbia.ca/ossfest--oss-crit-2016.html" rel="noopener">
+    OSSFEST 2016
+  </a>
+  in
+  <a href="https://en.wikipedia.org/wiki/Toronto" rel="noopener">
+    Toronto, Canada
+  </a>
+  (I DNF'd 😆)
+</p>
+
 I’m [a cyclist](https://www.strava.com/athletes/heycarsten). I ride on-road, off-road, and track. I ride socially for fun, for fitness, to commute, to challenge myself, to connect with the natural world, and sometimes to reconnect with myself. I belong to [Cascade Cycling](https://instagram.com/cascade_cycling), a grassroots cycling club some friends and I founded, we hang out at [Grupetto](https://instagram.com/grupettolife) a lot… it’s maybe kind of a problem. 😂
 
 I’m a motorist. I love vehicles, I truly enjoy driving and I’m excited by the auto industry. I think electric vehicles are the future, and I think tractor pulls are a part of that future too! I love tinkering with automobiles, I restored and customized a [1989 Chevrolet S-10](https://www.youtube.com/watch?v=JEjBxQg2AOg) in the early 2000s. It was one of the most resonating learning experiences I’ve had in my life, and it demystified so many things for me.
@@ -35,10 +47,11 @@ I’m a motorist. I love vehicles, I truly enjoy driving and I’m excited by th
 </p>
 
 <p class="text-center text-grey-dark text-sm">
-  My 1989 Chevrolet S-10 frame-off restored and customized truck, learn more on
+  My customized 1989
   <a href="https://www.youtube.com/watch?v=JEjBxQg2AOg" rel="noopener">
-    Donut Media
+    Chevrolet S-10
   </a>
+  frame-off restoration
 </p>
 
 I’m a [cook](https://www.instagram.com/p/iZZOc2AeTe/). Food is important to me, it [humours](https://www.instagram.com/p/yezN3UAeex/) me, it [excites](https://www.instagram.com/p/BIKnN4ehPlE/) me, it [comforts](https://www.instagram.com/p/n88CLWgeb3/) me, [relaxes](https://www.instagram.com/p/BXIn_86lcv-/) me. Food [connects me to people](https://www.instagram.com/p/Bh9dZ8inlOz/), memories, cultures, and places. Erin does 95% of the cooking in our household, she’s one of the best cooks I know. We love to host parties and share our food and drink with all who can come.
@@ -52,6 +65,14 @@ I’m an outdoorsman. I find gardening very satisfying. Hiking through the Dunda
     alt=""
     title="Redbud blossoms in bloom in my front yard"
   >
+</p>
+
+<p class="text-center text-grey-dark text-sm">
+  One of the
+  <a href="https://en.wikipedia.org/wiki/Cercis_canadensis" rel="noopener">
+    Eastern Redbud
+  </a>
+  trees in my yard at full spring bloom
 </p>
 
 I’m an artist. I think we all are. I love [music](https://soundcloud.com/weirderness) of many forms: techno, jazz, metal, punk, hardcore, dancehall, hip hop, classical, etc. I enjoy visual art, and design of many styles and tastes. I am fascinated by all of the different ways we can communicate our emotions, intentions, fears, joys through these mediums, often with great clarity.
