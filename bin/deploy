@@ -14,7 +14,7 @@ ember build -prod
 
 echo "--> Committing build"
 git checkout -B gh-pages
-git add dist && git commit -m "Release $(date -u +%F-%H%M)"
+git add -f dist && git commit -m "Release $(date -u +%F-%H%M)"
 git filter-branch -f --prune-empty --subdirectory-filter dist
 git push -f origin gh-pages
 git checkout -
