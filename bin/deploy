@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+set -e
+
+echo "=== Deploying to GitHub Pages"
+
+if [[ $(git status -s) != '' ]]; then
+  echo "ERROR: Commit latest changes and try again"
+  git status
+  exit
+fi
+
+echo "--> Building"
+ember build -prod
+
+echo "--> Committing build"
+git checkout -B gh-pages
+git add dist && git commit -m "Release $(date -u +%F-%H%M)"
+git filter-branch -f --prune-empty --subdirectory-filter dist
+git push -f origin gh-pages
+git checkout -
+
+echo "==> Done 🎉"
